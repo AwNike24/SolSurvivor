@@ -1,0 +1,61 @@
+{
+  "name": "sol-survivor-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
+    "start": "node ./dist/index.js",
+    "babel-node": "babel-node --inspect=0.0.0.0:9229",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "start:dev": "nodemon --exec npm run babel-node -- ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "doc": "./node_modules/.bin/jsdoc -c ./conf.json"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "npm run lint"
+    ]
+  },
+  "engines": {
+    "node": "14.17.3"
+  },
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "4casterschemas": "git+https://awnike24:NyDi4p2etAkuzz3vTTN_@gitlab.com/4Caster/schemas.git#sol-survivor",
+    "convict": "^5.2.1",
+    "dotenv": "^10.0.0",
+    "js-sha256": "^0.9.0",
+    "koa": "^2.13.3",
+    "koa-bodyparser": "^4.3.0",
+    "koa-logger": "^3.2.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.0.11",
+    "password-validator": "^5.1.1",
+    "validate.js": "^0.13.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/eslint-parser": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "@babel/plugin-proposal-optional-chaining": "^7.14.5",
+    "@babel/preset-env": "^7.15.8",
+    "eslint": "^7.18.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.3",
+    "nodemon": "^2.0.13",
+    "standard": "^16.0.4"
+  },
+  "standard": {
+    "parser": "@babel/eslint-parser",
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "globals": []
+  }
+}

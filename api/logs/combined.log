@@ -1,0 +1,1003 @@
+Process: 15263 2021-10-17T03:42:51.590Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 21674 2021-10-17T17:44:15.016Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 21674 2021-10-17T17:44:20.782Z [Background Jobs] [31merror[39m: Server Error Message: Invalid connection string "mongo://root:root@127.0.0.1:27017" exceptionBacktrace: MongoParseError: Invalid connection string "mongo://root:root@127.0.0.1:27017"
+    at new ConnectionString (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb-connection-string-url/lib/index.js:66:19)
+    at Object.parseOptions (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/connection_string.js:210:17)
+    at new MongoClient (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/mongo_client.js:62:46)
+    at /Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/connection.js:779:16
+    at new Promise (<anonymous>)
+    at NativeConnection.Connection.openUri (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/connection.js:776:19)
+    at /Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/index.js:330:10
+    at /Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/helpers/promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/helpers/promiseOrCallback.js:31:10) 
+Process: 21674 2021-10-17T17:44:31.701Z [Background Jobs] [31merror[39m: Server Error Message: Invalid connection string "mongo://root:root@127.0.0.1:27017" exceptionBacktrace: MongoParseError: Invalid connection string "mongo://root:root@127.0.0.1:27017"
+    at new ConnectionString (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb-connection-string-url/lib/index.js:66:19)
+    at Object.parseOptions (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/connection_string.js:210:17)
+    at new MongoClient (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/mongo_client.js:62:46)
+    at /Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/connection.js:779:16
+    at new Promise (<anonymous>)
+    at NativeConnection.Connection.openUri (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/connection.js:776:19)
+    at /Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/index.js:330:10
+    at /Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/helpers/promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/helpers/promiseOrCallback.js:31:10) 
+Process: 21687 2021-10-17T17:45:00.739Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 21687 2021-10-17T17:45:04.446Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SURVIVOR-POOL *** 
+Process: 21720 2021-10-17T17:48:02.257Z [Background Jobs] [31merror[39m: uncaughtException: routes is not defined
+ReferenceError: routes is not defined
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/index.js:38:9)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/node/lib/_babel-node.js:176:21)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+Process: 21730 2021-10-17T17:48:13.947Z [Background Jobs] [31merror[39m: uncaughtException: Cannot find module './schemas/Trace'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/node_modules/4casterschemas/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+Error: Cannot find module './schemas/Trace'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/node_modules/4casterschemas/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/node_modules/4casterschemas/index.js:7:21)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 21860 2021-10-17T17:51:00.171Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 21860 2021-10-17T17:51:04.304Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SURVIVOR-POOL *** 
+Process: 21860 2021-10-17T17:51:04.307Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 21860 2021-10-17T17:51:04.960Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 21872 2021-10-17T17:51:24.919Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 21872 2021-10-17T17:52:03.174Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SURVIVOR-POOL *** 
+Process: 21872 2021-10-17T17:53:38.905Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 21872 2021-10-17T17:53:38.942Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 21998 2021-10-17T17:53:53.490Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22007 2021-10-17T17:54:09.949Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22007 2021-10-17T17:54:13.165Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SURVIVOR-POOL *** 
+Process: 22007 2021-10-17T17:54:13.169Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 22007 2021-10-17T17:54:13.814Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 22007 2021-10-17T17:54:14.644Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 22007 2021-10-17T17:54:14.674Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 22007 2021-10-17T17:54:15.500Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 22007 2021-10-17T17:54:15.528Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 22018 2021-10-17T17:54:59.005Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22031 2021-10-17T17:55:02.644Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22031 2021-10-17T17:55:03.911Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SURVIVOR-POOL *** 
+Process: 22031 2021-10-17T17:55:03.914Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 22031 2021-10-17T17:55:04.541Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 22094 2021-10-17T18:01:07.708Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22094 2021-10-17T18:01:09.717Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SURVIVOR-POOL *** 
+Process: 22094 2021-10-17T18:01:09.741Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: LOGIN =============== START
+Process: 22094 2021-10-17T18:01:10.510Z [Background Jobs] [31merror[39m: Exception raised in Service Message: Cannot call abortTransaction after calling commitTransaction class: LogIn context: [{"method":"1","url":"2","header":"3"},"POST","/api/v1/user/logIn",{"content-type":"4","user-agent":"5","accept":"6","postman-token":"7","host":"8","accept-encoding":"9","connection":"10","content-length":"11"},"application/json","PostmanRuntime/7.28.4","*/*","2c5f8b95-863e-459c-ac00-c0cf69952ed3","localhost:8080","gzip, deflate, br","keep-alive","55"] exceptionBacktrace: MongoTransactionError: Cannot call abortTransaction after calling commitTransaction
+    at endTransaction (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/sessions.js:435:22)
+    at /Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/sessions.js:259:53
+    at Object.maybePromise (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/utils.js:518:5)
+    at ClientSession.abortTransaction (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/sessions.js:259:24)
+    at LogIn.run (/Users/adamwiniecke/sol-survivor-api/src/services/user/login.js:102:29)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async LogIn.tryExecuting (/Users/adamwiniecke/sol-survivor-api/src/lib/serviceBase.js:86:22)
+    at async Function.execute (/Users/adamwiniecke/sol-survivor-api/src/lib/serviceBase.js:191:5)
+    at async logIn (/Users/adamwiniecke/sol-survivor-api/src/controllers/v1/UserController.js:34:27)
+    at async logger (/Users/adamwiniecke/sol-survivor-api/node_modules/koa-logger/index.js:67:7) 
+Process: 22094 2021-10-17T18:01:10.512Z [Background Jobs] [31merror[39m: Server Error Message: Cannot call abortTransaction after calling commitTransaction exceptionBacktrace: MongoTransactionError: Cannot call abortTransaction after calling commitTransaction
+    at endTransaction (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/sessions.js:435:22)
+    at /Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/sessions.js:259:53
+    at Object.maybePromise (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/utils.js:518:5)
+    at ClientSession.abortTransaction (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/sessions.js:259:24)
+    at LogIn.run (/Users/adamwiniecke/sol-survivor-api/src/services/user/login.js:102:29)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async LogIn.tryExecuting (/Users/adamwiniecke/sol-survivor-api/src/lib/serviceBase.js:86:22)
+    at async Function.execute (/Users/adamwiniecke/sol-survivor-api/src/lib/serviceBase.js:191:5)
+    at async logIn (/Users/adamwiniecke/sol-survivor-api/src/controllers/v1/UserController.js:34:27)
+    at async logger (/Users/adamwiniecke/sol-survivor-api/node_modules/koa-logger/index.js:67:7) 
+Process: 22106 2021-10-17T18:01:38.029Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22118 2021-10-17T18:01:39.915Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22128 2021-10-17T18:01:54.689Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22149 2021-10-17T18:02:07.463Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22149 2021-10-17T18:02:13.673Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SURVIVOR-POOL *** 
+Process: 22149 2021-10-17T18:02:13.697Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: LOGIN =============== START
+Process: 22149 2021-10-17T18:02:14.460Z [Background Jobs] [31merror[39m: Exception raised in Service Message: Cannot call abortTransaction after calling commitTransaction class: LogIn context: [{"method":"1","url":"2","header":"3"},"POST","/api/v1/user/logIn",{"content-type":"4","user-agent":"5","accept":"6","postman-token":"7","host":"8","accept-encoding":"9","connection":"10","content-length":"11"},"application/json","PostmanRuntime/7.28.4","*/*","1f711c43-baf2-4dbf-af05-e97fa6d0a111","localhost:8080","gzip, deflate, br","keep-alive","55"] exceptionBacktrace: MongoTransactionError: Cannot call abortTransaction after calling commitTransaction
+    at endTransaction (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/sessions.js:435:22)
+    at /Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/sessions.js:259:53
+    at Object.maybePromise (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/utils.js:518:5)
+    at ClientSession.abortTransaction (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/sessions.js:259:24)
+    at LogIn.run (/Users/adamwiniecke/sol-survivor-api/src/services/user/logIn.js:103:29)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async LogIn.tryExecuting (/Users/adamwiniecke/sol-survivor-api/src/lib/serviceBase.js:86:22)
+    at async Function.execute (/Users/adamwiniecke/sol-survivor-api/src/lib/serviceBase.js:191:5)
+    at async logIn (/Users/adamwiniecke/sol-survivor-api/src/controllers/v1/UserController.js:34:27)
+    at async logger (/Users/adamwiniecke/sol-survivor-api/node_modules/koa-logger/index.js:67:7) 
+Process: 22149 2021-10-17T18:02:14.462Z [Background Jobs] [31merror[39m: Server Error Message: Cannot call abortTransaction after calling commitTransaction exceptionBacktrace: MongoTransactionError: Cannot call abortTransaction after calling commitTransaction
+    at endTransaction (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/sessions.js:435:22)
+    at /Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/sessions.js:259:53
+    at Object.maybePromise (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/utils.js:518:5)
+    at ClientSession.abortTransaction (/Users/adamwiniecke/sol-survivor-api/node_modules/mongodb/lib/sessions.js:259:24)
+    at LogIn.run (/Users/adamwiniecke/sol-survivor-api/src/services/user/logIn.js:103:29)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async LogIn.tryExecuting (/Users/adamwiniecke/sol-survivor-api/src/lib/serviceBase.js:86:22)
+    at async Function.execute (/Users/adamwiniecke/sol-survivor-api/src/lib/serviceBase.js:191:5)
+    at async logIn (/Users/adamwiniecke/sol-survivor-api/src/controllers/v1/UserController.js:34:27)
+    at async logger (/Users/adamwiniecke/sol-survivor-api/node_modules/koa-logger/index.js:67:7) 
+Process: 22160 2021-10-17T18:03:21.457Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22176 2021-10-17T18:03:27.689Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22194 2021-10-17T18:03:57.873Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22203 2021-10-17T18:04:00.858Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22213 2021-10-17T18:04:03.185Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22223 2021-10-17T18:04:19.858Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22223 2021-10-17T18:04:22.197Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SURVIVOR-POOL *** 
+Process: 22223 2021-10-17T18:04:22.218Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: LOGIN =============== START
+Process: 22223 2021-10-17T18:04:22.986Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: LOGIN =============== END
+Process: 22223 2021-10-17T18:04:47.394Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETME =============== START
+Process: 22223 2021-10-17T18:04:47.396Z [Background Jobs] [31merror[39m: Server Error Message: non-error thrown: {"GetMe":{"user":"User can't be blank","token":"Token can't be blank"}} exceptionBacktrace: Error: non-error thrown: {"GetMe":{"user":"User can't be blank","token":"Token can't be blank"}}
+    at Object.onerror (/Users/adamwiniecke/sol-survivor-api/node_modules/koa/lib/context.js:119:31)
+    at onerror (/Users/adamwiniecke/sol-survivor-api/node_modules/koa/lib/application.js:165:32)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) 
+Process: 22223 2021-10-17T18:04:48.447Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETME =============== START
+Process: 22223 2021-10-17T18:04:48.449Z [Background Jobs] [31merror[39m: Server Error Message: non-error thrown: {"GetMe":{"user":"User can't be blank","token":"Token can't be blank"}} exceptionBacktrace: Error: non-error thrown: {"GetMe":{"user":"User can't be blank","token":"Token can't be blank"}}
+    at Object.onerror (/Users/adamwiniecke/sol-survivor-api/node_modules/koa/lib/context.js:119:31)
+    at onerror (/Users/adamwiniecke/sol-survivor-api/node_modules/koa/lib/application.js:165:32)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) 
+Process: 22241 2021-10-17T18:05:25.594Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22258 2021-10-17T18:06:28.903Z [Background Jobs] [31merror[39m: uncaughtException: Cannot read property 'router' of undefined
+TypeError: Cannot read property 'router' of undefined
+    at Router.use (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/router.js:264:11)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/user.js:18:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+Process: 22268 2021-10-17T18:06:49.902Z [Background Jobs] [31merror[39m: uncaughtException: Cannot read property 'router' of undefined
+TypeError: Cannot read property 'router' of undefined
+    at Router.use (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/router.js:264:11)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/user.js:18:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+Process: 22273 2021-10-17T18:07:34.612Z [Background Jobs] [31merror[39m: uncaughtException:  `([^/]*)`: `middleware` must be a function, not `object`
+Error:  `([^/]*)`: `middleware` must be a function, not `object`
+    at new Layer (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/layer.js:37:13)
+    at Router.register (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/router.js:570:17)
+    at Router.use (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/router.js:296:14)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/user.js:18:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+Process: 22281 2021-10-17T18:07:38.240Z [Background Jobs] [31merror[39m: uncaughtException:  `([^/]*)`: `middleware` must be a function, not `object`
+Error:  `([^/]*)`: `middleware` must be a function, not `object`
+    at new Layer (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/layer.js:37:13)
+    at Router.register (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/router.js:570:17)
+    at Router.use (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/router.js:296:14)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/user.js:18:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+Process: 22294 2021-10-17T18:07:48.732Z [Background Jobs] [31merror[39m: uncaughtException: Cannot read property 'auth' of undefined
+TypeError: Cannot read property 'auth' of undefined
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/user.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js:12:36)
+Process: 22298 2021-10-17T18:08:00.230Z [Background Jobs] [31merror[39m: uncaughtException: Cannot read property 'auth' of undefined
+TypeError: Cannot read property 'auth' of undefined
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/user.js:18:26)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js:12:36)
+Process: 22302 2021-10-17T18:08:24.840Z [Background Jobs] [31merror[39m: uncaughtException: /Users/adamwiniecke/sol-survivor-api/src/middlewares/user.js: Unexpected reserved word 'let'. (6:2)
+
+[0m [90m 4 |[39m [36mexport[39m [36mdefault[39m {[0m
+[0m [90m 5 |[39m   auth[33m:[39m   [90m// We first try to get the token from cookies[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m   [36mlet[39m token [33m=[39m ctx[33m.[39mcookies[33m.[39m[36mget[39m([32m'auth'[39m[33m,[39m { signed[33m:[39m [36mtrue[39m })[0m
+[0m [90m   |[39m   [31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m[0m
+[0m [90m 8 |[39m   [90m// if cookies fail, get token from authorization header[39m[0m
+[0m [90m 9 |[39m   [36mif[39m ([33m![39mtoken) {[0m
+SyntaxError: /Users/adamwiniecke/sol-survivor-api/src/middlewares/user.js: Unexpected reserved word 'let'. (6:2)
+
+[0m [90m 4 |[39m [36mexport[39m [36mdefault[39m {[0m
+[0m [90m 5 |[39m   auth[33m:[39m   [90m// We first try to get the token from cookies[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 |[39m   [36mlet[39m token [33m=[39m ctx[33m.[39mcookies[33m.[39m[36mget[39m([32m'auth'[39m[33m,[39m { signed[33m:[39m [36mtrue[39m })[0m
+[0m [90m   |[39m   [31m[1m^[22m[39m[0m
+[0m [90m 7 |[39m[0m
+[0m [90m 8 |[39m   [90m// if cookies fail, get token from authorization header[39m[0m
+[0m [90m 9 |[39m   [36mif[39m ([33m![39mtoken) {[0m
+    at Parser._raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:541:17)
+    at Parser.raiseWithData (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:534:17)
+    at Parser.raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:495:17)
+    at Parser.checkReservedWord (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:12749:12)
+    at Parser.parseIdentifierName (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:12703:12)
+    at Parser.parseIdentifier (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:12677:23)
+    at Parser.parseExprAtom (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11827:27)
+    at Parser.parseExprSubscripts (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11414:23)
+    at Parser.parseUpdate (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11394:21)
+    at Parser.parseMaybeUnary (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11369:23)
+Process: 22307 2021-10-17T18:08:45.040Z [Background Jobs] [31merror[39m: uncaughtException:  `([^/]*)`: `middleware` must be a function, not `object`
+Error:  `([^/]*)`: `middleware` must be a function, not `object`
+    at new Layer (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/layer.js:37:13)
+    at Router.register (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/router.js:570:17)
+    at Router.use (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/router.js:296:14)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/user.js:18:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+Process: 22312 2021-10-17T18:08:50.602Z [Background Jobs] [31merror[39m: uncaughtException:  `([^/]*)`: `middleware` must be a function, not `object`
+Error:  `([^/]*)`: `middleware` must be a function, not `object`
+    at new Layer (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/layer.js:37:13)
+    at Router.register (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/router.js:570:17)
+    at Router.use (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/router.js:296:14)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/user.js:18:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+Process: 22325 2021-10-17T18:10:15.850Z [Background Jobs] [31merror[39m: uncaughtException: /Users/adamwiniecke/sol-survivor-api/src/middlewares/user.js: Unexpected token, expected "{" (5:0)
+
+[0m [90m 3 |[39m [36mimport[39m[0m
+[0m [90m 4 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mexport[39m [36mdefault[39m {[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m   auth[33m:[39m [36masync[39m (ctx[33m,[39m next) [33m=>[39m {[0m
+[0m [90m 7 |[39m     [90m// We first try to get the token from cookies[39m[0m
+[0m [90m 8 |[39m     [36mlet[39m token [33m=[39m ctx[33m.[39mcookies[33m.[39m[36mget[39m([32m'auth'[39m[33m,[39m { signed[33m:[39m [36mtrue[39m })[0m
+SyntaxError: /Users/adamwiniecke/sol-survivor-api/src/middlewares/user.js: Unexpected token, expected "{" (5:0)
+
+[0m [90m 3 |[39m [36mimport[39m[0m
+[0m [90m 4 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mexport[39m [36mdefault[39m {[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m   auth[33m:[39m [36masync[39m (ctx[33m,[39m next) [33m=>[39m {[0m
+[0m [90m 7 |[39m     [90m// We first try to get the token from cookies[39m[0m
+[0m [90m 8 |[39m     [36mlet[39m token [33m=[39m ctx[33m.[39mcookies[33m.[39m[36mget[39m([32m'auth'[39m[33m,[39m { signed[33m:[39m [36mtrue[39m })[0m
+    at Parser._raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:541:17)
+    at Parser.raiseWithData (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:534:17)
+    at Parser.raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:495:17)
+    at Parser.unexpected (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3550:16)
+    at Parser.expect (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3524:28)
+    at Parser.parseNamedImportSpecifiers (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:14732:10)
+    at Parser.parseImport (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:14581:39)
+    at Parser.parseStatementContent (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:13241:27)
+    at Parser.parseStatement (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:13139:17)
+    at Parser.parseBlockOrModuleBlockBody (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:13728:25)
+Process: 22334 2021-10-17T18:10:17.743Z [Background Jobs] [31merror[39m: uncaughtException: /Users/adamwiniecke/sol-survivor-api/src/middlewares/user.js: Unexpected token, expected "{" (5:0)
+
+[0m [90m 3 |[39m [36mimport[39m[0m
+[0m [90m 4 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mexport[39m [36mdefault[39m {[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m   auth[33m:[39m [36masync[39m (ctx[33m,[39m next) [33m=>[39m {[0m
+[0m [90m 7 |[39m     [90m// We first try to get the token from cookies[39m[0m
+[0m [90m 8 |[39m     [36mlet[39m token [33m=[39m ctx[33m.[39mcookies[33m.[39m[36mget[39m([32m'auth'[39m[33m,[39m { signed[33m:[39m [36mtrue[39m })[0m
+SyntaxError: /Users/adamwiniecke/sol-survivor-api/src/middlewares/user.js: Unexpected token, expected "{" (5:0)
+
+[0m [90m 3 |[39m [36mimport[39m[0m
+[0m [90m 4 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mexport[39m [36mdefault[39m {[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m   auth[33m:[39m [36masync[39m (ctx[33m,[39m next) [33m=>[39m {[0m
+[0m [90m 7 |[39m     [90m// We first try to get the token from cookies[39m[0m
+[0m [90m 8 |[39m     [36mlet[39m token [33m=[39m ctx[33m.[39mcookies[33m.[39m[36mget[39m([32m'auth'[39m[33m,[39m { signed[33m:[39m [36mtrue[39m })[0m
+    at Parser._raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:541:17)
+    at Parser.raiseWithData (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:534:17)
+    at Parser.raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:495:17)
+    at Parser.unexpected (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3550:16)
+    at Parser.expect (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3524:28)
+    at Parser.parseNamedImportSpecifiers (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:14732:10)
+    at Parser.parseImport (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:14581:39)
+    at Parser.parseStatementContent (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:13241:27)
+    at Parser.parseStatement (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:13139:17)
+    at Parser.parseBlockOrModuleBlockBody (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:13728:25)
+Process: 22338 2021-10-17T18:10:20.140Z [Background Jobs] [31merror[39m: uncaughtException: /Users/adamwiniecke/sol-survivor-api/src/middlewares/user.js: Unexpected token, expected "{" (5:0)
+
+[0m [90m 3 |[39m [36mimport[39m[0m
+[0m [90m 4 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mexport[39m [36mdefault[39m {[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m   auth[33m:[39m [36masync[39m (ctx[33m,[39m next) [33m=>[39m {[0m
+[0m [90m 7 |[39m     [90m// We first try to get the token from cookies[39m[0m
+[0m [90m 8 |[39m     [36mlet[39m token [33m=[39m ctx[33m.[39mcookies[33m.[39m[36mget[39m([32m'auth'[39m[33m,[39m { signed[33m:[39m [36mtrue[39m })[0m
+SyntaxError: /Users/adamwiniecke/sol-survivor-api/src/middlewares/user.js: Unexpected token, expected "{" (5:0)
+
+[0m [90m 3 |[39m [36mimport[39m[0m
+[0m [90m 4 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mexport[39m [36mdefault[39m {[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m   auth[33m:[39m [36masync[39m (ctx[33m,[39m next) [33m=>[39m {[0m
+[0m [90m 7 |[39m     [90m// We first try to get the token from cookies[39m[0m
+[0m [90m 8 |[39m     [36mlet[39m token [33m=[39m ctx[33m.[39mcookies[33m.[39m[36mget[39m([32m'auth'[39m[33m,[39m { signed[33m:[39m [36mtrue[39m })[0m
+    at Parser._raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:541:17)
+    at Parser.raiseWithData (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:534:17)
+    at Parser.raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:495:17)
+    at Parser.unexpected (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3550:16)
+    at Parser.expect (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3524:28)
+    at Parser.parseNamedImportSpecifiers (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:14732:10)
+    at Parser.parseImport (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:14581:39)
+    at Parser.parseStatementContent (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:13241:27)
+    at Parser.parseStatement (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:13139:17)
+    at Parser.parseBlockOrModuleBlockBody (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:13728:25)
+Process: 22342 2021-10-17T18:10:35.715Z [Background Jobs] [31merror[39m: uncaughtException:  `([^/]*)`: `middleware` must be a function, not `object`
+Error:  `([^/]*)`: `middleware` must be a function, not `object`
+    at new Layer (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/layer.js:37:13)
+    at Router.register (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/router.js:570:17)
+    at Router.use (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/router.js:296:14)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/user.js:18:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+Process: 22351 2021-10-17T18:11:03.391Z [Background Jobs] [31merror[39m: uncaughtException:  `([^/]*)`: `middleware` must be a function, not `object`
+Error:  `([^/]*)`: `middleware` must be a function, not `object`
+    at new Layer (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/layer.js:37:13)
+    at Router.register (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/router.js:570:17)
+    at Router.use (/Users/adamwiniecke/sol-survivor-api/node_modules/@koa/router/lib/router.js:296:14)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/user.js:18:8)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+Process: 22356 2021-10-17T18:11:58.035Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22375 2021-10-17T18:12:13.569Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22384 2021-10-17T18:12:15.188Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22384 2021-10-17T18:12:30.995Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SURVIVOR-POOL *** 
+Process: 22384 2021-10-17T18:12:31.719Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETME =============== START
+Process: 22384 2021-10-17T18:12:31.722Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: GETME =============== END
+Process: 22384 2021-10-17T18:13:03.143Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: LOGIN =============== START
+Process: 22384 2021-10-17T18:13:03.284Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: LOGIN =============== END
+Process: 22396 2021-10-17T18:13:38.406Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22408 2021-10-17T18:13:40.911Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22408 2021-10-17T18:13:48.941Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SURVIVOR-POOL *** 
+Process: 22408 2021-10-17T18:13:49.634Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 22408 2021-10-17T18:13:49.690Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 22473 2021-10-17T18:26:33.359Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22473 2021-10-17T18:26:38.092Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SURVIVOR-POOL *** 
+Process: 22473 2021-10-17T18:26:38.740Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 22473 2021-10-17T18:26:38.798Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 22493 2021-10-17T18:27:05.605Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22493 2021-10-17T18:27:16.160Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SURVIVOR-POOL *** 
+Process: 22493 2021-10-17T18:27:16.833Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 22493 2021-10-17T18:27:16.925Z [Background Jobs] [31merror[39m: Exception raised in Service Message: Schema hasn't been registered for model "Participant".
+Use mongoose.model(name, schema) class: GetSurvivorPool context: [{"user":"1"},{"_id":"2","username":"3","sportsbookDefault":true,"email":"4","telegramUsername":"5","type":"6","p2pCode":"3","closed":false,"survivorBalance":-100,"creditLimit":0,"defaultOddsFormat":"7","isAdmin":false,"hasMarketMakerAccess":false,"seedAccess":false,"followPinnacleNumbers":false,"notifyViaSMS":false,"balance":"8","displayBalance":"9","matchedAmount":"10","unmatchedAmount":"11","weeklyCarry":"12","referralCode":"13","code":"14","passwordHash":"15","salt":"16","referred":"17","sharpRating":"18","createdAt":"19","updatedAt":"20","__v":0},"616a46a9a9cbc5e864a36635","adam6","awiniecke24@gmail.com","ok","free","american",{"$numberDecimal":"21"},{"$numberDecimal":"22"},{"$numberDecimal":"22"},{"$numberDecimal":"22"},{"$numberDecimal":"22"},"bc1a136e705b5a2c7ac4","aw","e022c134874c9f3fc2638be6165112ff5132a15f1af46defb3de5950381966fa","24639beca99b34088ab1d7be16a915b1027f1f45fbb738009fd4d0712af4ac14",[],[],"2021-10-16T03:27:37.122Z","2021-10-16T03:34:32.488Z","1000","0"] exceptionBacktrace: MissingSchemaError: Schema hasn't been registered for model "Participant".
+Use mongoose.model(name, schema)
+    at NativeConnection.Connection.model (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/connection.js:1133:11)
+    at addModelNamesToMap (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:470:28)
+    at getModelsMapForPopulate (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:174:7)
+    at populate (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/model.js:4437:21)
+    at _populate (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/model.js:4408:5)
+    at /Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/model.js:4385:5
+    at promiseOrCallback (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/helpers/promiseOrCallback.js:10:12)
+    at Mongoose._promiseOrCallback (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/index.js:1151:10)
+    at Function.Model.populate (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/model.js:4383:23)
+    at cb (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/query.js:2129:26) 
+Process: 22493 2021-10-17T18:27:16.928Z [Background Jobs] [31merror[39m: Server Error Message: Schema hasn't been registered for model "Participant".
+Use mongoose.model(name, schema) exceptionBacktrace: MissingSchemaError: Schema hasn't been registered for model "Participant".
+Use mongoose.model(name, schema)
+    at NativeConnection.Connection.model (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/connection.js:1133:11)
+    at addModelNamesToMap (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:470:28)
+    at getModelsMapForPopulate (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:174:7)
+    at populate (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/model.js:4437:21)
+    at _populate (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/model.js:4408:5)
+    at /Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/model.js:4385:5
+    at promiseOrCallback (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/helpers/promiseOrCallback.js:10:12)
+    at Mongoose._promiseOrCallback (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/index.js:1151:10)
+    at Function.Model.populate (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/model.js:4383:23)
+    at cb (/Users/adamwiniecke/sol-survivor-api/node_modules/mongoose/lib/query.js:2129:26) 
+Process: 22514 2021-10-17T18:27:33.659Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22532 2021-10-17T18:28:37.423Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22545 2021-10-17T18:28:54.556Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22545 2021-10-17T18:29:00.841Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SURVIVOR-POOL *** 
+Process: 22545 2021-10-17T18:29:01.478Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 22545 2021-10-17T18:29:01.617Z [Background Jobs] [31merror[39m: Exception raised in Service Message: (0 , _selectionParser.default) is not a function class: GetSurvivorPool context: [{"user":"1"},{"_id":"2","username":"3","sportsbookDefault":true,"email":"4","telegramUsername":"5","type":"6","p2pCode":"3","closed":false,"survivorBalance":-100,"creditLimit":0,"defaultOddsFormat":"7","isAdmin":false,"hasMarketMakerAccess":false,"seedAccess":false,"followPinnacleNumbers":false,"notifyViaSMS":false,"balance":"8","displayBalance":"9","matchedAmount":"10","unmatchedAmount":"11","weeklyCarry":"12","referralCode":"13","code":"14","passwordHash":"15","salt":"16","referred":"17","sharpRating":"18","createdAt":"19","updatedAt":"20","__v":0},"616a46a9a9cbc5e864a36635","adam6","awiniecke24@gmail.com","ok","free","american",{"$numberDecimal":"21"},{"$numberDecimal":"22"},{"$numberDecimal":"22"},{"$numberDecimal":"22"},{"$numberDecimal":"22"},"bc1a136e705b5a2c7ac4","aw","e022c134874c9f3fc2638be6165112ff5132a15f1af46defb3de5950381966fa","24639beca99b34088ab1d7be16a915b1027f1f45fbb738009fd4d0712af4ac14",[],[],"2021-10-16T03:27:37.122Z","2021-10-16T03:34:32.488Z","1000","0"] exceptionBacktrace: TypeError: (0 , _selectionParser.default) is not a function
+    at /Users/adamwiniecke/sol-survivor-api/src/parsers/ticketParser.js:20:83
+    at Array.map (<anonymous>)
+    at /Users/adamwiniecke/sol-survivor-api/src/parsers/ticketParser.js:20:45
+    at Array.map (<anonymous>)
+    at ticketParser (/Users/adamwiniecke/sol-survivor-api/src/parsers/ticketParser.js:14:47)
+    at Array.map (<anonymous>)
+    at getTickets (/Users/adamwiniecke/sol-survivor-api/src/helpers/survivorPool/getTickets.js:22:21)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async GetSurvivorPool.run (/Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js:34:17)
+    at async GetSurvivorPool.tryExecuting (/Users/adamwiniecke/sol-survivor-api/src/lib/serviceBase.js:86:22) 
+Process: 22545 2021-10-17T18:29:01.620Z [Background Jobs] [31merror[39m: Server Error Message: (0 , _selectionParser.default) is not a function exceptionBacktrace: TypeError: (0 , _selectionParser.default) is not a function
+    at /Users/adamwiniecke/sol-survivor-api/src/parsers/ticketParser.js:20:83
+    at Array.map (<anonymous>)
+    at /Users/adamwiniecke/sol-survivor-api/src/parsers/ticketParser.js:20:45
+    at Array.map (<anonymous>)
+    at ticketParser (/Users/adamwiniecke/sol-survivor-api/src/parsers/ticketParser.js:14:47)
+    at Array.map (<anonymous>)
+    at getTickets (/Users/adamwiniecke/sol-survivor-api/src/helpers/survivorPool/getTickets.js:22:21)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async GetSurvivorPool.run (/Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js:34:17)
+    at async GetSurvivorPool.tryExecuting (/Users/adamwiniecke/sol-survivor-api/src/lib/serviceBase.js:86:22) 
+Process: 22555 2021-10-17T18:29:44.684Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22571 2021-10-17T18:30:00.383Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22571 2021-10-17T18:30:20.979Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SURVIVOR-POOL *** 
+Process: 22571 2021-10-17T18:30:21.667Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 22571 2021-10-17T18:30:21.825Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 22588 2021-10-17T18:31:33.442Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22618 2021-10-17T18:33:22.430Z [Background Jobs] [31merror[39m: uncaughtException: /Users/adamwiniecke/sol-survivor-api/src/services/user/createUser.js: Unexpected token, expected "," (41:6)
+
+[0m [90m 39 |[39m       telegramUsername[33m,[39m[0m
+[0m [90m 40 |[39m       type [33m=[39m [32m'survivor'[39m[0m
+[0m[31m[1m>[22m[39m[90m 41 |[39m       username[33m,[39m[0m
+[0m [90m    |[39m       [31m[1m^[22m[39m[0m
+[0m [90m 42 |[39m     } [33m=[39m body[0m
+[0m [90m 43 |[39m[0m
+[0m [90m 44 |[39m     [36mconst[39m mongooseSession [33m=[39m [36mawait[39m mongoose[33m.[39mstartSession()[0m
+SyntaxError: /Users/adamwiniecke/sol-survivor-api/src/services/user/createUser.js: Unexpected token, expected "," (41:6)
+
+[0m [90m 39 |[39m       telegramUsername[33m,[39m[0m
+[0m [90m 40 |[39m       type [33m=[39m [32m'survivor'[39m[0m
+[0m[31m[1m>[22m[39m[90m 41 |[39m       username[33m,[39m[0m
+[0m [90m    |[39m       [31m[1m^[22m[39m[0m
+[0m [90m 42 |[39m     } [33m=[39m body[0m
+[0m [90m 43 |[39m[0m
+[0m [90m 44 |[39m     [36mconst[39m mongooseSession [33m=[39m [36mawait[39m mongoose[33m.[39mstartSession()[0m
+    at Parser._raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:541:17)
+    at Parser.raiseWithData (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:534:17)
+    at Parser.raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:495:17)
+    at Parser.unexpected (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3550:16)
+    at Parser.expect (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3524:28)
+    at Parser.parseObjectLike (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:12282:14)
+    at Parser.parseBindingAtom (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:10821:21)
+    at Parser.parseVarId (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:13830:20)
+    at Parser.parseVar (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:13806:12)
+    at Parser.parseVarStatement (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:13623:10)
+Process: 22627 2021-10-17T18:33:25.707Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22643 2021-10-17T18:35:37.813Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22643 2021-10-17T18:43:05.028Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 22643 2021-10-17T18:43:05.048Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: CREATEUSER =============== START
+Process: 22643 2021-10-17T18:43:05.706Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: CREATEUSER =============== END
+Process: 22643 2021-10-17T18:43:05.707Z [Background Jobs] [31merror[39m: Server Error Message: Cannot destructure property 'user' of 'serviceResult.result' as it is undefined. exceptionBacktrace: TypeError: Cannot destructure property 'user' of 'serviceResult.result' as it is undefined.
+    at createUser (/Users/adamwiniecke/sol-survivor-api/src/controllers/v1/UserController.js:20:7)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async logger (/Users/adamwiniecke/sol-survivor-api/node_modules/koa-logger/index.js:67:7)
+    at async bodyParser (/Users/adamwiniecke/sol-survivor-api/node_modules/koa-bodyparser/index.js:95:5) 
+Process: 22678 2021-10-17T18:44:22.081Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22678 2021-10-17T18:44:25.611Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 22678 2021-10-17T18:44:25.623Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: CREATEUSER =============== START
+Process: 22710 2021-10-17T18:45:44.577Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 22710 2021-10-17T18:46:34.969Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 22710 2021-10-17T18:46:34.991Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: CREATEUSER =============== START
+Process: 22710 2021-10-17T18:46:35.758Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: CREATEUSER =============== END
+Process: 22710 2021-10-17T18:46:48.197Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETME =============== START
+Process: 22710 2021-10-17T18:46:48.198Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: GETME =============== END
+Process: 23133 2021-10-17T18:54:36.609Z [Background Jobs] [31merror[39m: uncaughtException: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+Error: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/db/models/game.js:11:45)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 23139 2021-10-17T18:54:44.300Z [Background Jobs] [31merror[39m: uncaughtException: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+Error: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/db/models/game.js:11:45)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 23150 2021-10-17T18:55:13.405Z [Background Jobs] [31merror[39m: uncaughtException: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+Error: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/db/models/game.js:11:45)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 23159 2021-10-17T18:55:18.551Z [Background Jobs] [31merror[39m: uncaughtException: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+Error: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/db/models/game.js:11:45)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 23208 2021-10-17T18:55:42.997Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23224 2021-10-17T18:55:44.996Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23238 2021-10-17T18:56:45.299Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23238 2021-10-17T18:56:49.926Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 23238 2021-10-17T18:56:50.581Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 23238 2021-10-17T18:56:50.584Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 23252 2021-10-17T18:57:48.141Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23252 2021-10-17T18:57:52.115Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 23252 2021-10-17T18:57:52.820Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 23252 2021-10-17T18:57:52.854Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 23264 2021-10-17T18:59:51.040Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23278 2021-10-17T19:00:22.108Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23309 2021-10-17T19:04:21.958Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23433 2021-10-17T19:06:23.471Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23533 2021-10-17T19:07:44.034Z [Background Jobs] [31merror[39m: uncaughtException: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+Error: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/db/models/game.js:11:45)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 23544 2021-10-17T19:07:47.791Z [Background Jobs] [31merror[39m: uncaughtException: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+Error: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/db/models/game.js:11:45)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 23554 2021-10-17T19:08:32.794Z [Background Jobs] [31merror[39m: uncaughtException: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+Error: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/db/models/game.js:11:45)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 23561 2021-10-17T19:09:03.400Z [Background Jobs] [31merror[39m: uncaughtException: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+Error: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/game.js
+- /Users/adamwiniecke/sol-survivor-api/src/db/models/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/api/index.js
+- /Users/adamwiniecke/sol-survivor-api/src/routes/index.js
+- /Users/adamwiniecke/sol-survivor-api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/sol-survivor-api/src/db/models/game.js:11:45)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/sol-survivor-api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 23625 2021-10-17T19:10:40.247Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23638 2021-10-17T19:10:51.183Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23650 2021-10-17T19:10:58.074Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23663 2021-10-17T19:12:43.722Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23679 2021-10-17T19:14:12.537Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23679 2021-10-17T19:15:43.804Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 23679 2021-10-17T19:15:44.497Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: CREATEBLANKENTRY =============== START
+Process: 23679 2021-10-17T19:15:44.577Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: CREATEBLANKENTRY =============== END
+Process: 23679 2021-10-17T19:15:44.579Z [Background Jobs] [31merror[39m: Server Error Message: Cannot read property 'getSurvivorPool' of undefined exceptionBacktrace: TypeError: Cannot read property 'getSurvivorPool' of undefined
+    at createBlankEntry (/Users/adamwiniecke/sol-survivor-api/src/controllers/v1/SurvivorPoolController.js:53:16)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async /Users/adamwiniecke/sol-survivor-api/src/middlewares/user.js:61:5
+    at async logger (/Users/adamwiniecke/sol-survivor-api/node_modules/koa-logger/index.js:67:7)
+    at async bodyParser (/Users/adamwiniecke/sol-survivor-api/node_modules/koa-bodyparser/index.js:95:5) 
+Process: 23763 2021-10-17T19:25:50.267Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23800 2021-10-17T19:26:38.078Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23800 2021-10-17T19:26:41.624Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 23800 2021-10-17T19:26:42.310Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: CREATEBLANKENTRY =============== START
+Process: 23800 2021-10-17T19:26:42.385Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: CREATEBLANKENTRY =============== END
+Process: 23800 2021-10-17T19:26:42.386Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 23800 2021-10-17T19:26:42.456Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 23841 2021-10-17T19:27:19.862Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23841 2021-10-17T19:27:44.404Z [Background Jobs] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 23841 2021-10-17T19:27:45.088Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: CREATEBLANKENTRY =============== START
+Process: 23841 2021-10-17T19:27:45.186Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: CREATEBLANKENTRY =============== END
+Process: 23841 2021-10-17T19:27:45.187Z [Background Jobs] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 23841 2021-10-17T19:27:45.245Z [Background Jobs] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 23869 2021-10-17T19:29:54.990Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23886 2021-10-17T19:30:11.052Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23899 2021-10-17T19:30:38.334Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 23932 2021-10-17T19:32:28.236Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24003 2021-10-17T19:49:46.929Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24019 2021-10-17T19:50:31.396Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24035 2021-10-17T19:51:38.760Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24050 2021-10-17T19:53:56.236Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24079 2021-10-17T19:58:11.361Z [Background Jobs] [31merror[39m: uncaughtException: /Users/adamwiniecke/sol-survivor-api/src/db/models/survivorPoolTicket.js: Unexpected token, expected "," (46:4)
+
+[0m [90m 44 |[39m       [0m
+[0m [90m 45 |[39m     }[0m
+[0m[31m[1m>[22m[39m[90m 46 |[39m     { session[33m:[39m mongooseSession })[0m
+[0m [90m    |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 47 |[39m }[0m
+[0m [90m 48 |[39m[0m
+[0m [90m 49 |[39m [36mexport[39m [36mdefault[39m [33mSurvivorPoolTicket[39m[0m
+SyntaxError: /Users/adamwiniecke/sol-survivor-api/src/db/models/survivorPoolTicket.js: Unexpected token, expected "," (46:4)
+
+[0m [90m 44 |[39m       [0m
+[0m [90m 45 |[39m     }[0m
+[0m[31m[1m>[22m[39m[90m 46 |[39m     { session[33m:[39m mongooseSession })[0m
+[0m [90m    |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 47 |[39m }[0m
+[0m [90m 48 |[39m[0m
+[0m [90m 49 |[39m [36mexport[39m [36mdefault[39m [33mSurvivorPoolTicket[39m[0m
+    at Parser._raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:541:17)
+    at Parser.raiseWithData (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:534:17)
+    at Parser.raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:495:17)
+    at Parser.unexpected (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3550:16)
+    at Parser.expect (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3524:28)
+    at Parser.parseCallExpressionArguments (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11605:14)
+    at Parser.parseCoverCallAndAsyncArrowHead (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11528:29)
+    at Parser.parseSubscript (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11458:19)
+    at Parser.parseSubscripts (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11431:19)
+    at Parser.parseExprSubscripts (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11420:17)
+Process: 24088 2021-10-17T19:58:22.740Z [Background Jobs] [31merror[39m: uncaughtException: /Users/adamwiniecke/sol-survivor-api/src/db/models/survivorPoolTicket.js: Unexpected token, expected "," (53:4)
+
+[0m [90m 51 |[39m       }[33m,[39m[0m
+[0m [90m 52 |[39m     }[0m
+[0m[31m[1m>[22m[39m[90m 53 |[39m     { session[33m:[39m mongooseSession })[0m
+[0m [90m    |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 54 |[39m }[0m
+[0m [90m 55 |[39m[0m
+[0m [90m 56 |[39m [36mexport[39m [36mdefault[39m [33mSurvivorPoolTicket[39m[0m
+SyntaxError: /Users/adamwiniecke/sol-survivor-api/src/db/models/survivorPoolTicket.js: Unexpected token, expected "," (53:4)
+
+[0m [90m 51 |[39m       }[33m,[39m[0m
+[0m [90m 52 |[39m     }[0m
+[0m[31m[1m>[22m[39m[90m 53 |[39m     { session[33m:[39m mongooseSession })[0m
+[0m [90m    |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 54 |[39m }[0m
+[0m [90m 55 |[39m[0m
+[0m [90m 56 |[39m [36mexport[39m [36mdefault[39m [33mSurvivorPoolTicket[39m[0m
+    at Parser._raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:541:17)
+    at Parser.raiseWithData (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:534:17)
+    at Parser.raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:495:17)
+    at Parser.unexpected (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3550:16)
+    at Parser.expect (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3524:28)
+    at Parser.parseCallExpressionArguments (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11605:14)
+    at Parser.parseCoverCallAndAsyncArrowHead (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11528:29)
+    at Parser.parseSubscript (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11458:19)
+    at Parser.parseSubscripts (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11431:19)
+    at Parser.parseExprSubscripts (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11420:17)
+Process: 24099 2021-10-17T19:58:39.679Z [Background Jobs] [31merror[39m: uncaughtException: /Users/adamwiniecke/sol-survivor-api/src/db/models/survivorPoolTicket.js: Unexpected token, expected "," (53:4)
+
+[0m [90m 51 |[39m       }[33m,[39m[0m
+[0m [90m 52 |[39m     }[0m
+[0m[31m[1m>[22m[39m[90m 53 |[39m     { session[33m:[39m mongooseSession })[0m
+[0m [90m    |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 54 |[39m }[0m
+[0m [90m 55 |[39m[0m
+[0m [90m 56 |[39m [36mexport[39m [36mdefault[39m [33mSurvivorPoolTicket[39m[0m
+SyntaxError: /Users/adamwiniecke/sol-survivor-api/src/db/models/survivorPoolTicket.js: Unexpected token, expected "," (53:4)
+
+[0m [90m 51 |[39m       }[33m,[39m[0m
+[0m [90m 52 |[39m     }[0m
+[0m[31m[1m>[22m[39m[90m 53 |[39m     { session[33m:[39m mongooseSession })[0m
+[0m [90m    |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 54 |[39m }[0m
+[0m [90m 55 |[39m[0m
+[0m [90m 56 |[39m [36mexport[39m [36mdefault[39m [33mSurvivorPoolTicket[39m[0m
+    at Parser._raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:541:17)
+    at Parser.raiseWithData (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:534:17)
+    at Parser.raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:495:17)
+    at Parser.unexpected (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3550:16)
+    at Parser.expect (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3524:28)
+    at Parser.parseCallExpressionArguments (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11605:14)
+    at Parser.parseCoverCallAndAsyncArrowHead (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11528:29)
+    at Parser.parseSubscript (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11458:19)
+    at Parser.parseSubscripts (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11431:19)
+    at Parser.parseExprSubscripts (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11420:17)
+Process: 24120 2021-10-17T19:58:47.012Z [Background Jobs] [31merror[39m: uncaughtException: /Users/adamwiniecke/sol-survivor-api/src/db/models/survivorPoolTicket.js: Unexpected token, expected "," (53:4)
+
+[0m [90m 51 |[39m       }[33m,[39m[0m
+[0m [90m 52 |[39m     }[0m
+[0m[31m[1m>[22m[39m[90m 53 |[39m     { session[33m:[39m mongooseSession })[0m
+[0m [90m    |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 54 |[39m }[0m
+[0m [90m 55 |[39m[0m
+[0m [90m 56 |[39m [36mexport[39m [36mdefault[39m [33mSurvivorPoolTicket[39m[0m
+SyntaxError: /Users/adamwiniecke/sol-survivor-api/src/db/models/survivorPoolTicket.js: Unexpected token, expected "," (53:4)
+
+[0m [90m 51 |[39m       }[33m,[39m[0m
+[0m [90m 52 |[39m     }[0m
+[0m[31m[1m>[22m[39m[90m 53 |[39m     { session[33m:[39m mongooseSession })[0m
+[0m [90m    |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 54 |[39m }[0m
+[0m [90m 55 |[39m[0m
+[0m [90m 56 |[39m [36mexport[39m [36mdefault[39m [33mSurvivorPoolTicket[39m[0m
+    at Parser._raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:541:17)
+    at Parser.raiseWithData (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:534:17)
+    at Parser.raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:495:17)
+    at Parser.unexpected (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3550:16)
+    at Parser.expect (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3524:28)
+    at Parser.parseCallExpressionArguments (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11605:14)
+    at Parser.parseCoverCallAndAsyncArrowHead (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11528:29)
+    at Parser.parseSubscript (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11458:19)
+    at Parser.parseSubscripts (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11431:19)
+    at Parser.parseExprSubscripts (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11420:17)
+Process: 24124 2021-10-17T19:59:09.381Z [Background Jobs] [31merror[39m: uncaughtException: /Users/adamwiniecke/sol-survivor-api/src/db/models/survivorPoolTicket.js: Unexpected token, expected "," (53:4)
+
+[0m [90m 51 |[39m       }[33m,[39m[0m
+[0m [90m 52 |[39m     }[0m
+[0m[31m[1m>[22m[39m[90m 53 |[39m     { session[33m:[39m mongooseSession })[0m
+[0m [90m    |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 54 |[39m }[0m
+[0m [90m 55 |[39m[0m
+[0m [90m 56 |[39m [36mexport[39m [36mdefault[39m [33mSurvivorPoolTicket[39m[0m
+SyntaxError: /Users/adamwiniecke/sol-survivor-api/src/db/models/survivorPoolTicket.js: Unexpected token, expected "," (53:4)
+
+[0m [90m 51 |[39m       }[33m,[39m[0m
+[0m [90m 52 |[39m     }[0m
+[0m[31m[1m>[22m[39m[90m 53 |[39m     { session[33m:[39m mongooseSession })[0m
+[0m [90m    |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 54 |[39m }[0m
+[0m [90m 55 |[39m[0m
+[0m [90m 56 |[39m [36mexport[39m [36mdefault[39m [33mSurvivorPoolTicket[39m[0m
+    at Parser._raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:541:17)
+    at Parser.raiseWithData (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:534:17)
+    at Parser.raise (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:495:17)
+    at Parser.unexpected (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3550:16)
+    at Parser.expect (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:3524:28)
+    at Parser.parseCallExpressionArguments (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11605:14)
+    at Parser.parseCoverCallAndAsyncArrowHead (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11528:29)
+    at Parser.parseSubscript (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11458:19)
+    at Parser.parseSubscripts (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11431:19)
+    at Parser.parseExprSubscripts (/Users/adamwiniecke/sol-survivor-api/node_modules/@babel/parser/lib/index.js:11420:17)
+Process: 24128 2021-10-17T19:59:18.184Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24145 2021-10-17T19:59:23.113Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24155 2021-10-17T20:00:08.539Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24167 2021-10-17T20:00:31.822Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24192 2021-10-17T20:02:25.388Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24207 2021-10-17T20:02:33.575Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24280 2021-10-17T20:11:31.684Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24293 2021-10-17T20:12:02.950Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24311 2021-10-17T20:12:44.876Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24325 2021-10-17T20:14:36.987Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24346 2021-10-17T20:14:45.627Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24355 2021-10-17T20:14:47.678Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24364 2021-10-17T20:14:53.320Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24373 2021-10-17T20:15:03.152Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24388 2021-10-17T20:16:16.805Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24405 2021-10-17T20:16:39.573Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24417 2021-10-17T20:17:50.795Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24430 2021-10-17T20:18:10.820Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24441 2021-10-17T20:18:21.052Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24450 2021-10-17T20:18:27.998Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24461 2021-10-17T20:18:53.405Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24478 2021-10-17T20:21:38.523Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24494 2021-10-17T20:22:20.639Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24517 2021-10-17T20:23:09.978Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24531 2021-10-17T20:23:16.540Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24558 2021-10-17T20:23:41.436Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24971 2021-10-17T21:16:27.231Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 24994 2021-10-17T21:16:48.003Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 25016 2021-10-17T21:17:39.792Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 25051 2021-10-17T21:17:59.131Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 25061 2021-10-17T21:18:10.275Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 25077 2021-10-17T21:18:19.214Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 25094 2021-10-17T21:18:23.180Z [Background Jobs] [32minfo[39m: Server Started Message: Listening On 8080 
