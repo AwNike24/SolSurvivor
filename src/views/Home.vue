@@ -2,15 +2,66 @@
   <div class="home">
     <h1>This is an home page</h1>
   </div>
+  <div>
+    <div>Wallet: {{ walletProvider }}</div>
+    <button v-if="connected" @click="disconnect">Disconnect</button>
+    <button v-else @click="connectToPhantom">Connect</button>
+    <h1>publicKey: {{ publicKey }}</h1>
+  </div>
 </template>
 
 <script>
+/* eslint-disable prettier/prettier */
 // @ is an alias to /src
 // import HelloWorld from "@/components/HelloWorld.vue";
+// import { ref } from 'vue';
+import { getPhantomWallet } from '@solana/wallet-adapter-wallets';
+// import { Connection, clusterApiUrl } from '@solana/web3.js';
+import { initWallet, useWallet } from '../useWallet';
+const wallets = [getPhantomWallet()];
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {},
+  setup() {
+    // localStorage.setItem('solana-wallet-provider', JSON.stringify('Phantom'));
+    initWallet(wallets);
+    const {
+      wallet,
+      walletProvider,
+      connect,
+      disconnect,
+      connected,
+      select,
+      publicKey,
+    } = useWallet();
+
+    const connectToPhantom = async () => {
+      await select('Phantom');
+      await connect();
+
+      /* const connection = new Connection(
+        clusterApiUrl('mainnet-beta'),
+        'confirmed'
+      );
+
+      let account = await connection.getAccountInfo(
+        publicKey.value,
+        'confirmed'
+      );
+      console.log('account', account); */
+    };
+
+    return {
+      walletProvider,
+      wallet,
+      disconnect,
+      connected,
+      connect,
+      connectToPhantom,
+      publicKey,
+    };
+  },
 };
 </script>
 
