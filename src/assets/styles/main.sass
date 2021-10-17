@@ -1,0 +1,103 @@
+@import "~bootstrap/scss/bootstrap-grid"
+@import "~bootstrap/scss/mixins"
+@import "~bootstrap/scss/utilities/spacing"
+@import "~bootstrap/scss/utilities/text"
+@import '~bootstrap/scss/_breadcrumb'
+@import "variables"
+
+@import "fonts"
+
+body
+  margin: 0
+  position: relative
+  font-family: 'Roboto Slab', Arial, sans-serif
+  font-size: $font-size-base
+  line-height: 1.5
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-feature-settings: 'liga'
+
+a, a:visited
+  text-decoration: none
+  color: $color-primary
+
+  &:hover
+    text-decoration: underline
+
+
+// Transition for Vue-tag
+
+.fade-enter-active, .fade-leave-active
+    transition: opacity .2s
+
+.fade-enter, .fade-leave-to
+    opacity: 0
+
+
+/* Inputs */
+label
+  display: block
+  padding: .5rem 0
+  font-size: $font-size-sm
+
+input
+    display: block
+    padding: 8px 1rem
+    box-sizing: border-box
+    font-size: $font-size-sm
+    font-family: inherit
+    background: rgba(150, 156, 203, 0.3)
+    color: $color-primary
+    border-radius: 6px
+    font-weight: $font-weight-normal
+    border: none
+    outline: none
+    line-height: 1rem
+    border-bottom: 4px solid transparent
+    border-top: 4px solid transparent
+    @media screen and (max-width: map-get($grid-breakpoints, md))
+        width: 100%
+
+    &:focus
+      border-bottom-color: $color-primary
+
+    &.invalid
+      border-bottom-color: #bf2f29
+
+    &.valid
+      border-bottom-color: #70c257
+
+input::placeholder
+    font-family: 'Roboto Slab', Arial, sans-serif
+    color: $color-primary
+
+/* Buttons */
+
+button
+    display: block
+    font-family: inherit
+    border-radius: 6px
+    background: $color-primary
+    font-size: $font-size-sm
+    padding: 10px 2rem
+    line-height: 20px
+    color: white
+    border: none
+    cursor: pointer
+    font-weight: $font-weight-normal
+    transition: background .2s ease
+    outline: none
+
+    &:hover
+        background: $color-primary
+
+    &:disabled
+      background: #cccccc
+      cursor: default
+
+    &.btn-secondary
+      background: $color-primary
+
+      &:hover
+        background: #4e67df
