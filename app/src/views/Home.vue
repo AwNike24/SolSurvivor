@@ -6,8 +6,6 @@
     <div>Wallet: {{ walletProvider }}</div>
     <button v-if="connected" @click="disconnect">Disconnect</button>
     <button v-else @click="connectToPhantom">Connect</button>
-    <h1>publicKey: {{ publicKey }}</h1>
-    <h1>connection: {{ connection }}</h1>
   </div>
 </template>
 
@@ -69,6 +67,7 @@ export default {
   watch: {
     publicKey(newValue) {
       this.setPublicKey(newValue.toString());
+      this.$router.push('/survivor-pool/my-entries');
     },
   },
   methods: {
