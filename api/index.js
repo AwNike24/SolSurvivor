@@ -28,13 +28,13 @@ app.use(koaBodyParser())
 // use koa logger middleware for logging request and there time
 app.use(koaLogger())
 
+// include all routes
+app.use(routes.routes())
+
 // middleware to handle the error
 app.on('error', err => {
   Logger.error('Server Error', { message: err.message, exception: err })
 })
-
-// include all routes
-app.use(routes.routes())
 
 // start the server
 app.listen(config.get('port'))

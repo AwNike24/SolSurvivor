@@ -39,7 +39,7 @@ export default class LogIn extends ServiceBase {
           .or([{ username }, { email: username }])
           .session(mongooseSession)) === 0
       ) {
-        throw new Error(400, 'Username or password is incorrect')
+        throw new Error('Username or password is incorrect')
       }
 
       const user = await User.findOne()
@@ -81,7 +81,7 @@ export default class LogIn extends ServiceBase {
     } catch (error) {
       console.log(error)
       await mongooseSession.abortTransaction()
-      throw new Error(error.message)
+      throw new Error(error.number, error.message)
     } finally {
       mongooseSession.endSession()
     }

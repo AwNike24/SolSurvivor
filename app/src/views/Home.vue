@@ -7,6 +7,7 @@
     <button v-if="connected" @click="disconnect">Disconnect</button>
     <button v-else @click="connectToPhantom">Connect</button>
     <h1>publicKey: {{ publicKey }}</h1>
+    <h1>connection: {{ connection }}</h1>
   </div>
 </template>
 
@@ -16,7 +17,7 @@
 // import HelloWorld from "@/components/HelloWorld.vue";
 // import { ref } from 'vue';
 import { getPhantomWallet } from '@solana/wallet-adapter-wallets';
-// import { Connection, clusterApiUrl } from '@solana/web3.js';
+import { Connection, clusterApiUrl, Transaction } from '@solana/web3.js';
 import { initWallet, useWallet } from '../useWallet';
 const wallets = [getPhantomWallet()];
 
@@ -40,7 +41,7 @@ export default {
       await select('Phantom');
       await connect();
 
-      /* const connection = new Connection(
+      const connection = new Connection(
         clusterApiUrl('mainnet-beta'),
         'confirmed'
       );
@@ -49,7 +50,10 @@ export default {
         publicKey.value,
         'confirmed'
       );
-      console.log('account', account); */
+
+      const transaction = new Transaction.
+      console.log('account', account);
+      console.log('connection', connection);
     };
 
     return {

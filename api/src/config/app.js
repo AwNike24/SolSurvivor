@@ -5,7 +5,7 @@ const config = convict({
     name: {
       doc: 'Name of the service',
       format: String,
-      default: 'Background Jobs'
+      default: 'Sol Survivor API'
     }
   },
 
@@ -60,10 +60,10 @@ const config = convict({
   },
 
   cors_origin_4caster_app: {
-    doc: 'cors origin of 4caster client',
+    doc: 'cors origin of Sol Survivor client',
     format: String,
     default: '127.0.0.1:8081',
-    env: 'CORS_ORIGIN_4CASTER_APP'
+    env: 'CORS_ORIGIN_SOL_SURVIVOR'
   }
 })
 

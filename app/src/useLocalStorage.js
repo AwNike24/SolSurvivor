@@ -1,4 +1,4 @@
-import { customRef } from 'vue';
+import { customRef } from "vue";
 
 export default function (key, defaultValue) {
   return customRef((track, trigger) => ({

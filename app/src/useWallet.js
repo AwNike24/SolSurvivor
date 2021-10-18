@@ -1,12 +1,12 @@
-import { ref, computed, watch, watchEffect } from 'vue';
-import useLocalStorage from './useLocalStorage';
+import { ref, computed, watch, watchEffect } from "vue";
+import useLocalStorage from "./useLocalStorage";
 
 let walletStore = {};
 
 export const useWallet = () => walletStore;
 
 export const initWallet = (wallets, autoConnect = false) => {
-  const walletProvider = useLocalStorage('solana-wallet-provider');
+  const walletProvider = useLocalStorage("solana-wallet-provider");
   const wallet = ref(null);
   const adapter = ref(null);
   const publicKey = ref(null);
@@ -80,16 +80,16 @@ export const initWallet = (wallets, autoConnect = false) => {
   };
   watchEffect((onInvalidate) => {
     if (!adapter.value) return;
-    adapter.value.on('ready', onReady);
-    adapter.value.on('connect', onConnect);
-    adapter.value.on('disconnect', onDisconnect);
-    adapter.value.on('error', onError);
+    adapter.value.on("ready", onReady);
+    adapter.value.on("connect", onConnect);
+    adapter.value.on("disconnect", onDisconnect);
+    adapter.value.on("error", onError);
     onInvalidate(() => {
       if (!adapter.value) return;
-      adapter.value.off('ready', onReady);
-      adapter.value.off('connect', onConnect);
-      adapter.value.off('disconnect', onDisconnect);
-      adapter.value.off('error', onError);
+      adapter.value.off("ready", onReady);
+      adapter.value.off("connect", onConnect);
+      adapter.value.off("disconnect", onDisconnect);
+      adapter.value.off("error", onError);
     });
   });
 
@@ -103,12 +103,12 @@ export const initWallet = (wallets, autoConnect = false) => {
   // Connect the adapter to the wallet.
   const connect = async () => {
     if (connected.value || connecting.value || disconnecting.value) return;
-    if (!wallet.value || !adapter.value) throw newError('Wallet not selected');
+    if (!wallet.value || !adapter.value) throw newError("Wallet not selected");
 
     if (!ready.value) {
       walletProvider.value = null;
-      window.open(wallet.value.url, '_blank');
-      throw newError('Wallet not ready');
+      window.open(wallet.value.url, "_blank");
+      throw newError("Wallet not ready");
     }
 
     try {
@@ -139,8 +139,8 @@ export const initWallet = (wallets, autoConnect = false) => {
 
   // Send a transaction using the provided connection.
   const sendTransaction = async (transaction, connection, options = {}) => {
-    if (!adapter.value) throw newError('Wallet not selected');
-    if (!connected.value) throw newError('Wallet not connected');
+    if (!adapter.value) throw newError("Wallet not selected");
+    if (!connected.value) throw newError("Wallet not connected");
     return await adapter.value.sendTransaction(
       transaction,
       connection,
@@ -151,21 +151,21 @@ export const initWallet = (wallets, autoConnect = false) => {
   // Sign a transaction if the wallet supports it.
   const signTransaction = async (transaction) => {
     if (!adapter?.value?.signTransaction) return;
-    if (!connected.value) throw newError('Wallet not connected');
+    if (!connected.value) throw newError("Wallet not connected");
     return await adapter.value.signTransaction(transaction);
   };
 
   // Sign multiple transactions if the wallet supports it
   const signAllTransactions = async (transactions) => {
     if (!adapter?.value?.signAllTransactions) return;
-    if (!connected.value) throw newError('Wallet not connected');
+    if (!connected.value) throw newError("Wallet not connected");
     return await adapter.value.signAllTransactions(transactions);
   };
 
   // Sign an arbitrary message if the wallet supports it.
   const signMessage = async (message) => {
     if (!adapter?.value?.signMessage) return;
-    if (!connected.value) throw newError('Wallet not connected');
+    if (!connected.value) throw newError("Wallet not connected");
     return await adapter.value.signMessage(message);
   };
 
