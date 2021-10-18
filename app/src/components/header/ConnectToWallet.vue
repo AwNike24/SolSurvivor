@@ -6,14 +6,14 @@
         v-if="connected"
         @click="disconnect"
       >
-        Disconnect
+        DISCONNECT WALLET
       </button>
       <button
         class="sign-up-button font-weight-bold"
         v-else
         @click="connectToPhantom"
       >
-        Connect
+        CONNECT WALLET
       </button>
     </div>
   </div>

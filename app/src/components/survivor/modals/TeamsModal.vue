@@ -39,7 +39,7 @@
             handleSelectTeam(selectedWeek, game.participantID, game.gameID)
           "
         >
-          SELECT
+          <b> SELECT </b>
         </button>
       </div>
     </div>
