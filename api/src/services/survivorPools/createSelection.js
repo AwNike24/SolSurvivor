@@ -1,6 +1,6 @@
 import ServiceBase from '../../lib/serviceBase'
 import mongoose from 'mongoose'
-import createSelectionOperations from './helpers/createSelectionOperations'
+import createSelectionOperations from '../../helpers/survivorPool/createSelectionOperations'
 
 const constraints = {
   gameID: { presence: true },

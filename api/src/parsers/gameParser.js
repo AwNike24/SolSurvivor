@@ -1,5 +1,4 @@
 function gameParser (game) {
-  console.log(game)
   return {
     id: game._id,
     ended: game.ended,

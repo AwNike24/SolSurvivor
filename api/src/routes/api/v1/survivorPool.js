@@ -9,5 +9,7 @@ router
   .post('/getSurvivorPool', SurvivorPoolController.getSurvivorPool)
   .post('/getGamesByWeek', SurvivorPoolController.getGamesByWeek)
   .post('/createBlankEntry', SurvivorPoolController.createBlankEntry)
+  .post('/createSelection', SurvivorPoolController.createSelection)
+  .post('/editSelection', SurvivorPoolController.editSelection)
 
 export default router

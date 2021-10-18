@@ -1061,3 +1061,177 @@ Process: 1684 2021-10-18T07:34:51.872Z [Sol Survivor API] [31merror[39m: Serve
     at async logger (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-logger/index.js:67:7)
     at async bodyParser (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-bodyparser/index.js:95:5)
     at async cors (/Users/adamwiniecke/SolSurvivor/api/node_modules/@koa/cors/index.js:56:32) 
+Process: 6858 2021-10-18T08:04:10.648Z [Sol Survivor API] [31merror[39m: uncaughtException: Cannot find module './helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+Error: Cannot find module './helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js:12:57)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 6872 2021-10-18T08:04:27.060Z [Sol Survivor API] [31merror[39m: uncaughtException: Cannot find module './helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+Error: Cannot find module './helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js:12:57)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 6928 2021-10-18T08:09:48.796Z [Sol Survivor API] [31merror[39m: uncaughtException: Cannot find module '../../helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+Error: Cannot find module '../../helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js:12:57)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 6936 2021-10-18T08:09:59.256Z [Sol Survivor API] [31merror[39m: uncaughtException: Cannot find module '../../../db/models/survivorPoolSelection'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/helpers/survivorPool/createSelectionOperations.js
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+Error: Cannot find module '../../../db/models/survivorPoolSelection'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/helpers/survivorPool/createSelectionOperations.js
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/SolSurvivor/api/src/helpers/survivorPool/createSelectionOperations.js:10:30)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 7145 2021-10-18T08:34:37.051Z [Sol Survivor API] [31merror[39m: uncaughtException: Cannot find module './helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/editSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+Error: Cannot find module './helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/editSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/editSelection.js:18:57)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 7628 2021-10-18T09:14:45.495Z [Sol Survivor API] [31merror[39m: uncaughtException: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/db/models/game.js
+- /Users/adamwiniecke/SolSurvivor/api/src/db/models/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+Error: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/db/models/game.js
+- /Users/adamwiniecke/SolSurvivor/api/src/db/models/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/SolSurvivor/api/src/db/models/game.js:12:45)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)

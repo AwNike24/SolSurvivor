@@ -1355,3 +1355,493 @@ Process: 6694 2021-10-18T07:41:04.238Z [Sol Survivor API] [32minfo[39m: START 
 Process: 6694 2021-10-18T07:41:04.295Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
 Process: 6694 2021-10-18T07:41:05.576Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
 Process: 6694 2021-10-18T07:41:05.640Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6694 2021-10-18T07:42:34.525Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6694 2021-10-18T07:42:34.602Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6694 2021-10-18T07:42:48.498Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6694 2021-10-18T07:42:48.554Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6694 2021-10-18T07:43:45.217Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6694 2021-10-18T07:43:45.284Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6858 2021-10-18T08:04:10.648Z [Sol Survivor API] [31merror[39m: uncaughtException: Cannot find module './helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+Error: Cannot find module './helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js:12:57)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 6872 2021-10-18T08:04:27.060Z [Sol Survivor API] [31merror[39m: uncaughtException: Cannot find module './helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+Error: Cannot find module './helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js:12:57)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 6928 2021-10-18T08:09:48.796Z [Sol Survivor API] [31merror[39m: uncaughtException: Cannot find module '../../helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+Error: Cannot find module '../../helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js:12:57)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 6936 2021-10-18T08:09:59.256Z [Sol Survivor API] [31merror[39m: uncaughtException: Cannot find module '../../../db/models/survivorPoolSelection'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/helpers/survivorPool/createSelectionOperations.js
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+Error: Cannot find module '../../../db/models/survivorPoolSelection'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/helpers/survivorPool/createSelectionOperations.js
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/SolSurvivor/api/src/helpers/survivorPool/createSelectionOperations.js:10:30)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 6951 2021-10-18T08:10:49.396Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 6951 2021-10-18T08:10:55.702Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 6951 2021-10-18T08:10:56.348Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6951 2021-10-18T08:10:56.411Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6951 2021-10-18T08:10:58.445Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6951 2021-10-18T08:10:58.508Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6951 2021-10-18T08:12:09.701Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6951 2021-10-18T08:12:09.764Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6951 2021-10-18T08:13:56.973Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6951 2021-10-18T08:13:57.141Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6951 2021-10-18T08:14:07.490Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6951 2021-10-18T08:14:07.543Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6951 2021-10-18T08:14:08.922Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6951 2021-10-18T08:14:08.993Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6951 2021-10-18T08:14:10.555Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: CREATESELECTION =============== START
+Process: 6951 2021-10-18T08:14:10.635Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: CREATESELECTION =============== END
+Process: 6951 2021-10-18T08:14:10.635Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6951 2021-10-18T08:14:10.766Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6951 2021-10-18T08:15:13.415Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6951 2021-10-18T08:15:13.544Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6951 2021-10-18T08:16:29.025Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6951 2021-10-18T08:16:29.162Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6951 2021-10-18T08:17:00.597Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6951 2021-10-18T08:17:00.729Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6951 2021-10-18T08:18:33.186Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6951 2021-10-18T08:18:33.332Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6951 2021-10-18T08:23:08.276Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6951 2021-10-18T08:23:08.308Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6951 2021-10-18T08:23:08.418Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6951 2021-10-18T08:23:08.485Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6951 2021-10-18T08:23:58.979Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6951 2021-10-18T08:23:59.052Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6951 2021-10-18T08:24:22.550Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6951 2021-10-18T08:24:22.614Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6951 2021-10-18T08:25:58.652Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6951 2021-10-18T08:25:59.047Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6951 2021-10-18T08:26:10.533Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6951 2021-10-18T08:26:10.593Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6951 2021-10-18T08:27:02.351Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6951 2021-10-18T08:27:02.409Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6951 2021-10-18T08:27:07.088Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6951 2021-10-18T08:27:07.158Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6951 2021-10-18T08:28:26.961Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6951 2021-10-18T08:28:27.045Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6951 2021-10-18T08:29:10.764Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6951 2021-10-18T08:29:10.897Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6951 2021-10-18T08:29:11.914Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6951 2021-10-18T08:29:12.103Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6951 2021-10-18T08:29:19.985Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6951 2021-10-18T08:29:20.111Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6951 2021-10-18T08:29:50.139Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6951 2021-10-18T08:29:50.210Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6951 2021-10-18T08:30:22.149Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6951 2021-10-18T08:30:22.277Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6951 2021-10-18T08:30:37.141Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6951 2021-10-18T08:30:37.199Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6951 2021-10-18T08:33:51.671Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6951 2021-10-18T08:33:51.813Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7145 2021-10-18T08:34:37.051Z [Sol Survivor API] [31merror[39m: uncaughtException: Cannot find module './helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/editSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+Error: Cannot find module './helpers/createSelectionOperations'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/editSelection.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/editSelection.js:18:57)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 7208 2021-10-18T08:41:35.095Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 7227 2021-10-18T08:41:55.058Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 7227 2021-10-18T08:42:10.733Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 7227 2021-10-18T08:42:11.349Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7227 2021-10-18T08:42:11.519Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7227 2021-10-18T08:42:13.591Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7227 2021-10-18T08:42:13.654Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7227 2021-10-18T08:42:15.545Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: EDITSELECTION =============== START
+Process: 7227 2021-10-18T08:42:15.547Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: EDITSELECTION =============== END
+Process: 7227 2021-10-18T08:42:15.547Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7227 2021-10-18T08:42:15.551Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: CREATESELECTION =============== START
+Process: 7227 2021-10-18T08:42:15.630Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: CREATESELECTION =============== END
+Process: 7227 2021-10-18T08:42:15.631Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7227 2021-10-18T08:42:15.681Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7227 2021-10-18T08:42:15.765Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7227 2021-10-18T08:42:21.178Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7227 2021-10-18T08:42:21.310Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7227 2021-10-18T08:42:23.456Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7227 2021-10-18T08:42:23.517Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7227 2021-10-18T08:42:35.515Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7227 2021-10-18T08:42:35.572Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7227 2021-10-18T08:42:39.546Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7227 2021-10-18T08:42:39.601Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7227 2021-10-18T08:43:14.429Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7227 2021-10-18T08:43:14.492Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7227 2021-10-18T08:43:44.852Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7227 2021-10-18T08:43:44.918Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7227 2021-10-18T08:44:33.280Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7227 2021-10-18T08:44:33.413Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7286 2021-10-18T08:45:08.894Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 7286 2021-10-18T08:45:11.550Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 7286 2021-10-18T08:45:12.173Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7286 2021-10-18T08:45:12.322Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7286 2021-10-18T08:45:13.785Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7286 2021-10-18T08:45:13.843Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7286 2021-10-18T08:45:15.617Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: EDITSELECTION =============== START
+Process: 7286 2021-10-18T08:45:15.623Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: EDITSELECTION =============== END
+Process: 7286 2021-10-18T08:45:15.623Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7286 2021-10-18T08:45:15.628Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: CREATESELECTION =============== START
+Process: 7286 2021-10-18T08:45:15.706Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: CREATESELECTION =============== END
+Process: 7286 2021-10-18T08:45:15.706Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7286 2021-10-18T08:45:15.760Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7286 2021-10-18T08:45:15.841Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7286 2021-10-18T08:45:24.299Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7286 2021-10-18T08:45:24.438Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7316 2021-10-18T08:46:22.979Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 7330 2021-10-18T08:46:28.196Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 7330 2021-10-18T08:46:33.385Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 7330 2021-10-18T08:46:34.028Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T08:46:34.196Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T08:46:37.141Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T08:46:37.207Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T08:46:39.004Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: CREATESELECTION =============== START
+Process: 7330 2021-10-18T08:46:39.090Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: CREATESELECTION =============== END
+Process: 7330 2021-10-18T08:46:39.090Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T08:46:39.243Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T08:46:49.304Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T08:46:49.370Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T08:47:32.781Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: CREATESELECTION =============== START
+Process: 7330 2021-10-18T08:47:32.850Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: CREATESELECTION =============== END
+Process: 7330 2021-10-18T08:47:32.850Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T08:47:32.998Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T08:49:10.644Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T08:49:10.706Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T08:49:12.294Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T08:49:12.358Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T08:49:19.066Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T08:49:19.123Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T08:49:22.915Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T08:49:22.978Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T08:50:34.127Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T08:50:34.185Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T08:50:38.676Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T08:50:38.737Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T08:51:25.679Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T08:51:25.740Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T08:51:28.580Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T08:51:28.641Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T08:52:21.580Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T08:52:21.637Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T08:52:23.497Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T08:52:23.558Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T08:52:26.804Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T08:52:26.865Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T08:52:28.039Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: CREATESELECTION =============== START
+Process: 7330 2021-10-18T08:52:28.106Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: CREATESELECTION =============== END
+Process: 7330 2021-10-18T08:52:28.107Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T08:52:28.257Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T08:53:03.545Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T08:53:03.697Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T08:53:06.430Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T08:53:06.496Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T08:53:09.436Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T08:53:09.882Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T08:53:10.941Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T08:53:11.048Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T08:54:42.856Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T08:54:42.929Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T08:55:01.863Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T08:55:02.008Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T08:55:03.109Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T08:55:03.184Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T09:00:03.206Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T09:00:03.313Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T09:00:08.032Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T09:00:08.176Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T09:00:09.781Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T09:00:09.841Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T09:00:33.582Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T09:00:33.728Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T09:00:35.620Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T09:00:35.681Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T09:01:45.286Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T09:01:45.356Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T09:01:56.907Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T09:01:57.059Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T09:01:58.492Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T09:01:58.556Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T09:02:14.289Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: EDITSELECTION =============== START
+Process: 7330 2021-10-18T09:02:14.296Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: EDITSELECTION =============== END
+Process: 7330 2021-10-18T09:02:14.296Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T09:02:14.297Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: CREATESELECTION =============== START
+Process: 7330 2021-10-18T09:02:14.476Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: CREATESELECTION =============== END
+Process: 7330 2021-10-18T09:02:14.477Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T09:02:14.821Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T09:02:14.996Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T09:04:04.679Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T09:04:04.729Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T09:04:06.361Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T09:04:06.422Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T09:04:07.462Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: CREATESELECTION =============== START
+Process: 7330 2021-10-18T09:04:07.527Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: CREATESELECTION =============== END
+Process: 7330 2021-10-18T09:04:07.527Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T09:04:07.667Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T09:04:08.659Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7330 2021-10-18T09:04:08.712Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7330 2021-10-18T09:04:10.121Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: EDITSELECTION =============== START
+Process: 7330 2021-10-18T09:04:10.122Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: EDITSELECTION =============== END
+Process: 7330 2021-10-18T09:04:10.122Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T09:04:10.256Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T09:04:14.541Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T09:04:14.996Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7330 2021-10-18T09:05:43.754Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7330 2021-10-18T09:05:43.886Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7500 2021-10-18T09:06:28.539Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 7500 2021-10-18T09:06:33.800Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 7500 2021-10-18T09:06:34.554Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7500 2021-10-18T09:06:34.619Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7500 2021-10-18T09:06:37.561Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: EDITSELECTION =============== START
+Process: 7500 2021-10-18T09:06:37.563Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: EDITSELECTION =============== END
+Process: 7500 2021-10-18T09:06:37.563Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7500 2021-10-18T09:06:37.695Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7500 2021-10-18T09:07:12.209Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7500 2021-10-18T09:07:12.268Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7500 2021-10-18T09:07:13.909Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: EDITSELECTION =============== START
+Process: 7500 2021-10-18T09:07:13.911Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: EDITSELECTION =============== END
+Process: 7500 2021-10-18T09:07:13.912Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7500 2021-10-18T09:07:14.042Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7500 2021-10-18T09:09:02.859Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7500 2021-10-18T09:09:02.996Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7500 2021-10-18T09:09:03.892Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7500 2021-10-18T09:09:03.952Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7500 2021-10-18T09:09:05.210Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: EDITSELECTION =============== START
+Process: 7500 2021-10-18T09:09:05.393Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: EDITSELECTION =============== END
+Process: 7500 2021-10-18T09:09:05.393Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7500 2021-10-18T09:09:05.531Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7500 2021-10-18T09:09:06.679Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7500 2021-10-18T09:09:06.762Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7500 2021-10-18T09:09:42.017Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7500 2021-10-18T09:09:42.073Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7500 2021-10-18T09:09:47.607Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7500 2021-10-18T09:09:47.665Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7500 2021-10-18T09:09:58.292Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7500 2021-10-18T09:09:58.363Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7500 2021-10-18T09:09:59.262Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: EDITSELECTION =============== START
+Process: 7500 2021-10-18T09:09:59.424Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: EDITSELECTION =============== END
+Process: 7500 2021-10-18T09:09:59.424Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7500 2021-10-18T09:09:59.553Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7500 2021-10-18T09:10:00.274Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7500 2021-10-18T09:10:00.328Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7500 2021-10-18T09:10:01.214Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: EDITSELECTION =============== START
+Process: 7500 2021-10-18T09:10:01.403Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: EDITSELECTION =============== END
+Process: 7500 2021-10-18T09:10:01.403Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7500 2021-10-18T09:10:01.537Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7500 2021-10-18T09:10:02.265Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7500 2021-10-18T09:10:02.320Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7500 2021-10-18T09:10:03.896Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: EDITSELECTION =============== START
+Process: 7500 2021-10-18T09:10:04.056Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: EDITSELECTION =============== END
+Process: 7500 2021-10-18T09:10:04.057Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7500 2021-10-18T09:10:04.193Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7500 2021-10-18T09:10:10.669Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7500 2021-10-18T09:10:10.725Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7500 2021-10-18T09:10:13.400Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7500 2021-10-18T09:10:13.458Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7537 2021-10-18T09:10:28.148Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 7537 2021-10-18T09:11:11.326Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 7537 2021-10-18T09:11:11.958Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7537 2021-10-18T09:11:12.029Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7537 2021-10-18T09:11:14.082Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: EDITSELECTION =============== START
+Process: 7537 2021-10-18T09:11:14.271Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: EDITSELECTION =============== END
+Process: 7537 2021-10-18T09:11:14.271Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7537 2021-10-18T09:11:14.404Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7537 2021-10-18T09:11:52.381Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7537 2021-10-18T09:11:52.518Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7628 2021-10-18T09:14:45.495Z [Sol Survivor API] [31merror[39m: uncaughtException: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/db/models/game.js
+- /Users/adamwiniecke/SolSurvivor/api/src/db/models/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+Error: Cannot find module '4casterschemas'
+Require stack:
+- /Users/adamwiniecke/SolSurvivor/api/src/db/models/game.js
+- /Users/adamwiniecke/SolSurvivor/api/src/db/models/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/getSurvivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/survivorPool.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/v1/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/api/index.js
+- /Users/adamwiniecke/SolSurvivor/api/src/routes/index.js
+- /Users/adamwiniecke/SolSurvivor/api/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:902:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:746:27)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (/Users/adamwiniecke/SolSurvivor/api/src/db/models/game.js:12:45)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module._compile (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.newLoader [as .js] (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 7693 2021-10-18T09:15:11.720Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 7693 2021-10-18T09:15:40.838Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 7693 2021-10-18T09:15:41.475Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7693 2021-10-18T09:15:41.621Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7693 2021-10-18T09:15:44.750Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7693 2021-10-18T09:15:44.811Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7693 2021-10-18T09:19:23.919Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7693 2021-10-18T09:19:24.057Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7693 2021-10-18T09:20:20.367Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7693 2021-10-18T09:20:20.660Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7693 2021-10-18T09:20:30.289Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7693 2021-10-18T09:20:30.438Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7693 2021-10-18T09:22:46.839Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7693 2021-10-18T09:22:46.979Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7789 2021-10-18T09:23:25.484Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 7789 2021-10-18T09:23:26.432Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 7789 2021-10-18T09:23:27.080Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7789 2021-10-18T09:23:27.240Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7815 2021-10-18T09:24:13.850Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 7815 2021-10-18T09:24:14.553Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 7815 2021-10-18T09:24:15.228Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7815 2021-10-18T09:24:15.432Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7815 2021-10-18T09:25:31.042Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7815 2021-10-18T09:25:31.209Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7815 2021-10-18T09:27:57.184Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7815 2021-10-18T09:27:57.324Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7815 2021-10-18T09:29:00.522Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7815 2021-10-18T09:29:00.655Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7815 2021-10-18T09:29:01.994Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7815 2021-10-18T09:29:02.055Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7815 2021-10-18T09:29:04.634Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: CREATESELECTION =============== START
+Process: 7815 2021-10-18T09:29:04.712Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: CREATESELECTION =============== END
+Process: 7815 2021-10-18T09:29:04.712Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7815 2021-10-18T09:29:04.852Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7815 2021-10-18T09:29:08.295Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7815 2021-10-18T09:29:08.352Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7815 2021-10-18T09:34:18.263Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7815 2021-10-18T09:34:18.409Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7815 2021-10-18T09:34:20.550Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7815 2021-10-18T09:34:20.609Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7815 2021-10-18T09:34:48.629Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7815 2021-10-18T09:34:48.687Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7815 2021-10-18T09:36:53.867Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7815 2021-10-18T09:36:53.935Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 7815 2021-10-18T09:38:21.570Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 7815 2021-10-18T09:38:21.715Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 7815 2021-10-18T09:38:31.583Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 7815 2021-10-18T09:38:31.649Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END

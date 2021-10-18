@@ -1,6 +1,8 @@
 import GetSurvivorPool from '../../services/survivorPools/getSurvivorPool'
 import GetGamesByWeek from '../../services/survivorPools/getGamesByWeek'
 import CreateBlankEntry from '../../services/survivorPools/createBlankEntry'
+import CreateSelection from "../../services/survivorPools/createSelection";
+import EditSelection from "../../services/survivorPools/editSelection";
 
 export default class SurvivorPoolController {
   static async getSurvivorPool (ctx) {
@@ -28,6 +30,18 @@ export default class SurvivorPoolController {
     const { entryName } = ctx.request.body
 
     await CreateBlankEntry.execute({ user, entryName })
+
+    await SurvivorPoolController.getSurvivorPool(ctx)
+  }
+
+  static async createSelection (ctx) {
+    await CreateSelection.execute(ctx.request.body)
+
+    await SurvivorPoolController.getSurvivorPool(ctx)
+  }
+
+  static async editSelection (ctx) {
+    await EditSelection.execute(ctx.request.body)
 
     await SurvivorPoolController.getSurvivorPool(ctx)
   }

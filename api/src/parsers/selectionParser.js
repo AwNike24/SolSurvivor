@@ -8,7 +8,6 @@ function selectionParser (rawSelection, selectionID) {
       id: rawSelection._id._id,
       longName: rawSelection._id.longName,
       shortName: rawSelection._id.shortName,
-      outcome: rawSelection._id.outcome
     }
     renderedGame.selectionID = selectionID
   }
