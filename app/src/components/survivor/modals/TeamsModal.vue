@@ -120,7 +120,9 @@ export default {
       return returnArray;
     },
     getSelectedTeam() {
-      if (!this.selection.selection) { return { id: null } }
+      if (!this.selection.selection) {
+        return { id: null };
+      }
       const { selection } = this.selection.selection;
       return selection;
     },
@@ -130,7 +132,7 @@ export default {
   },
   methods: {
     close() {
-      this.$emit('closeModal');
+      this.$emit("closeModal");
     },
     fetchGamesPerWeek() {
       api
@@ -141,8 +143,12 @@ export default {
         });
     },
     handleSelectTeam(selectedWeek, participantID, gameID) {
-      if (this.selectedWeek < this.currentWeek) { return }
-      if (this.alreadySelected.indexOf(participantID) !== -1) { return }
+      if (this.selectedWeek < this.currentWeek) {
+        return;
+      }
+      if (this.alreadySelected.indexOf(participantID) !== -1) {
+        return;
+      }
       if (this.selectedTeams.indexOf(participantID) !== -1) {
         this.$emit("removeSelection", {
           gameID,
