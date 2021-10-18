@@ -1235,3 +1235,25 @@ Require stack:
     at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
     at Object.newLoader [as .js] (/Users/adamwiniecke/SolSurvivor/api/node_modules/pirates/lib/index.js:104:7)
     at Module.load (internal/modules/cjs/loader.js:950:32)
+Process: 8157 2021-10-18T10:02:56.757Z [Sol Survivor API] [31merror[39m: Exception raised in Service Message: Given transaction number 5 does not match any in-progress transactions. class: CreateSelection context: [{"gameID":"1","participantID":"2","ticketID":"3","weekNumber":8,"publicKey":"4"},"616c702888c65122e268650f","616c702688c65122e26864ba","616c793154810122baa30226","EL2mzktaQsS3JnP2qMwAsahdQXtSiUratRix4w9GXvUk"] exceptionBacktrace: Error: Given transaction number 5 does not match any in-progress transactions.
+    at CreateSelection.run (/Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js:58:13)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async CreateSelection.tryExecuting (/Users/adamwiniecke/SolSurvivor/api/src/lib/serviceBase.js:86:22)
+    at async Function.execute (/Users/adamwiniecke/SolSurvivor/api/src/lib/serviceBase.js:191:5)
+    at async createSelection (/Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js:63:5)
+    at async /Users/adamwiniecke/SolSurvivor/api/src/middlewares/user.js:22:5
+    at async logger (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-logger/index.js:67:7)
+    at async bodyParser (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/adamwiniecke/SolSurvivor/api/node_modules/@koa/cors/index.js:98:16) 
+Process: 8157 2021-10-18T10:02:56.758Z [Sol Survivor API] [31merror[39m: Server Error Message: Given transaction number 5 does not match any in-progress transactions. exceptionBacktrace: Error: Given transaction number 5 does not match any in-progress transactions.
+    at CreateSelection.run (/Users/adamwiniecke/SolSurvivor/api/src/services/survivorPools/createSelection.js:58:13)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async CreateSelection.tryExecuting (/Users/adamwiniecke/SolSurvivor/api/src/lib/serviceBase.js:86:22)
+    at async Function.execute (/Users/adamwiniecke/SolSurvivor/api/src/lib/serviceBase.js:191:5)
+    at async createSelection (/Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/SurvivorPoolController.js:63:5)
+    at async /Users/adamwiniecke/SolSurvivor/api/src/middlewares/user.js:22:5
+    at async logger (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-logger/index.js:67:7)
+    at async bodyParser (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/adamwiniecke/SolSurvivor/api/node_modules/@koa/cors/index.js:98:16) 

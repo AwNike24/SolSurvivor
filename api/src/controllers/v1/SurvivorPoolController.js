@@ -1,9 +1,9 @@
 import GetSurvivorPool from '../../services/survivorPools/getSurvivorPool'
 import GetGamesByWeek from '../../services/survivorPools/getGamesByWeek'
 import CreateBlankEntry from '../../services/survivorPools/createBlankEntry'
-import CreateSelection from "../../services/survivorPools/createSelection";
-import EditSelection from "../../services/survivorPools/editSelection";
-import RemoveSelection from "../../services/survivorPools/removeSelection";
+import CreateSelection from '../../services/survivorPools/createSelection'
+import EditSelection from '../../services/survivorPools/editSelection'
+import RemoveSelection from '../../services/survivorPools/removeSelection'
 
 export default class SurvivorPoolController {
   static async getSurvivorPool (ctx) {

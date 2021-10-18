@@ -10,26 +10,26 @@ import mongoMiddleware from './src/middlewares/mongo'
 import routes from './src/routes'
 
 const corsWhitelist = [
-  config.get('cors_origin_sol_survivor_app'),
+  config.get('cors_origin_sol_survivor_app')
 ]
 
 const checkOriginAgainstWhitelist = (ctx) => {
-  const requestOrigin = ctx.request.header.origin;
+  const requestOrigin = ctx.request.header.origin
   if (!corsWhitelist.includes(requestOrigin)) {
     return ctx.throw(
       `The request origin - ${requestOrigin} - is not a valid origin`
-    );
+    )
   }
-  return requestOrigin;
-};
+  return requestOrigin
+}
 
 const corsConfig = {
   origin: checkOriginAgainstWhitelist,
   credentials: true,
   allowMethods: ['POST', 'GET'],
   allowHeaders: ['Authorization', 'Content-Type'],
-  exposeHeaders: ['X-Auth-Token'],
-};
+  exposeHeaders: ['X-Auth-Token']
+}
 
 // create koa app instance
 const app = new Koa()

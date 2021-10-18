@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 import { cancelSurvivorPoolSelection } from '../../db/models/survivorPoolSelection'
 import { removeSelectionAndSelectedTeamFromTicket } from '../../db/models/survivorPoolTicket'
 import { getGameByID } from '../../db/models/game'
-import createSelectionOperations from "../../helpers/survivorPool/createSelectionOperations";
+import createSelectionOperations from '../../helpers/survivorPool/createSelectionOperations'
 
 const constraints = {
   ticketID: { presence: true },

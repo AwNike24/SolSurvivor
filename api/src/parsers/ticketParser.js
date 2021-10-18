@@ -7,8 +7,8 @@ function ticketParser (rawTicket) {
     return {
       weekNumber,
       outcome,
-      selection: selectionParser(ticketSelection.selection, ticketSelection._id),
-        // ticketSelection.selection.map(g => selectionParser(g, ticketSelection._id))
+      selection: selectionParser(ticketSelection.selection, ticketSelection._id)
+      // ticketSelection.selection.map(g => selectionParser(g, ticketSelection._id))
     }
   })
   return {

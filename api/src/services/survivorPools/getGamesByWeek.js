@@ -1,6 +1,6 @@
 import ServiceBase from '../../lib/serviceBase'
 import { getGamesDividedByWeek } from '../../db/models/game'
-import { gameParser } from "../../parsers";
+import { gameParser } from '../../parsers'
 
 const constraints = {
   week: { presence: true }

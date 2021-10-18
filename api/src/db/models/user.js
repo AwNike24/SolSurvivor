@@ -12,7 +12,7 @@ export async function getUserById (userID) {
 
 export async function getUserByPublicKey (publicKey) {
   const user = await User.findOne({
-    publicKey,
+    publicKey
   }).lean()
   return user
 }

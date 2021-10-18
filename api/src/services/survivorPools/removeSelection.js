@@ -8,7 +8,7 @@ const constraints = {
   ticketID: { presence: true },
   oldParticipantID: { presence: true },
   selectionID: { presence: true },
-  gameID: { presence: true },
+  gameID: { presence: true }
 }
 
 export default class RemoveSelection extends ServiceBase {
