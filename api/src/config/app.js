@@ -59,7 +59,7 @@ const config = convict({
     env: 'SESSION_SECRETS_1'
   },
 
-  cors_origin_4caster_app: {
+  cors_origin_sol_survivor_app: {
     doc: 'cors origin of Sol Survivor client',
     format: String,
     default: '127.0.0.1:8081',

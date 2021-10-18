@@ -17,7 +17,7 @@
 // import HelloWorld from "@/components/HelloWorld.vue";
 // import { ref } from 'vue';
 import { getPhantomWallet } from '@solana/wallet-adapter-wallets';
-import { Connection, clusterApiUrl, Transaction } from '@solana/web3.js';
+import { Connection, clusterApiUrl } from '@solana/web3.js';
 import { initWallet, useWallet } from '../useWallet';
 const wallets = [getPhantomWallet()];
 
@@ -51,7 +51,6 @@ export default {
         'confirmed'
       );
 
-      const transaction = new Transaction.
       console.log('account', account);
       console.log('connection', connection);
     };

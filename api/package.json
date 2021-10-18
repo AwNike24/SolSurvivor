@@ -22,6 +22,7 @@
     "node": "14.17.3"
   },
   "dependencies": {
+    "@koa/cors": "^3.1.0",
     "@koa/router": "^10.1.1",
     "4casterschemas": "git+https://awnike24:NyDi4p2etAkuzz3vTTN_@gitlab.com/4Caster/schemas.git#sol-survivor",
     "convict": "^5.2.1",

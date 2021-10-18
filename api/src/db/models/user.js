@@ -10,4 +10,11 @@ export async function getUserById (userID) {
   return user
 }
 
+export async function getUserByPublicKey (publicKey) {
+  const user = await User.findOne({
+    publicKey,
+  }).lean()
+  return user
+}
+
 export default User

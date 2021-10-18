@@ -1031,3 +1031,17 @@ Process: 3902 2021-10-17T22:18:06.581Z [Sol Survivor API] [31merror[39m: Serve
     at async logIn (/Users/adamwiniecke/SolSurvivor/api/src/controllers/v1/UserController.js:34:27)
     at async logger (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-logger/index.js:67:7)
     at async bodyParser (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-bodyparser/index.js:95:5) 
+Process: 11972 2021-10-18T02:56:43.062Z [Sol Survivor API] [31merror[39m: Server Error Message: InvalidCredentials exceptionBacktrace: BadRequestError: InvalidCredentials
+    at Object.throw (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa/lib/context.js:97:11)
+    at /Users/adamwiniecke/SolSurvivor/api/src/middlewares/user.js:37:16
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async logger (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-logger/index.js:67:7)
+    at async bodyParser (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/adamwiniecke/SolSurvivor/api/node_modules/@koa/cors/index.js:98:16) 
+Process: 11972 2021-10-18T02:57:36.528Z [Sol Survivor API] [31merror[39m: Server Error Message: InvalidCredentials exceptionBacktrace: BadRequestError: InvalidCredentials
+    at Object.throw (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa/lib/context.js:97:11)
+    at /Users/adamwiniecke/SolSurvivor/api/src/middlewares/user.js:37:16
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async logger (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-logger/index.js:67:7)
+    at async bodyParser (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/adamwiniecke/SolSurvivor/api/node_modules/@koa/cors/index.js:98:16) 

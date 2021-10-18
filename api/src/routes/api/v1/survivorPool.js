@@ -6,7 +6,7 @@ const router = new Router()
 
 router.use(UserMiddleware.auth())
 router
-  .get('/getSurvivorPool', SurvivorPoolController.getSurvivorPool)
+  .post('/getSurvivorPool', SurvivorPoolController.getSurvivorPool)
   .post('/getGamesByWeek', SurvivorPoolController.getGamesByWeek)
   .post('/createBlankEntry', SurvivorPoolController.createBlankEntry)
 

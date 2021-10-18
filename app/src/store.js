@@ -7,6 +7,7 @@ const initialState = () => ({
   id: "",
   isAdmin: false,
   isLoggedIn: false,
+  publicKey: null,
   survivorBalance: 0,
   type: "",
   username: "",
@@ -16,6 +17,9 @@ const initialState = () => ({
 export default createStore({
   state: initialState(),
   mutations: {
+    setPublicKey(state, publicKey) {
+      state.publicKey = publicKey;
+    },
     getMe(state, payload) {
       state.id = payload.id;
       state.isAdmin = payload.isAdmin;

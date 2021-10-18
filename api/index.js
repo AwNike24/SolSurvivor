@@ -3,10 +3,33 @@ import KeyGrip from 'keygrip'
 import Koa from 'koa'
 import koaLogger from 'koa-logger'
 import koaBodyParser from 'koa-bodyparser'
+import cors from '@koa/cors'
 import config from './src/config/app'
 import Logger from './src/lib/logger'
 import mongoMiddleware from './src/middlewares/mongo'
 import routes from './src/routes'
+
+const corsWhitelist = [
+  config.get('cors_origin_sol_survivor_app'),
+]
+
+const checkOriginAgainstWhitelist = (ctx) => {
+  const requestOrigin = ctx.request.header.origin;
+  if (!corsWhitelist.includes(requestOrigin)) {
+    return ctx.throw(
+      `The request origin - ${requestOrigin} - is not a valid origin`
+    );
+  }
+  return requestOrigin;
+};
+
+const corsConfig = {
+  origin: checkOriginAgainstWhitelist,
+  credentials: true,
+  allowMethods: ['POST', 'GET'],
+  allowHeaders: ['Authorization', 'Content-Type'],
+  exposeHeaders: ['X-Auth-Token'],
+};
 
 // create koa app instance
 const app = new Koa()
@@ -18,6 +41,9 @@ app.keys = new KeyGrip(
   'sha256',
   'base64'
 )
+
+// configure cors so frontend can connect
+app.use(cors(corsConfig))
 
 // create connection to mongo db
 app.use(mongoMiddleware)

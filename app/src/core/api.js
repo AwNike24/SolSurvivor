@@ -11,11 +11,11 @@ axios.defaults.withCredentials = false;
 const addTokenPayload = (data) => {
   if (data) {
     /* eslint-disable-next-line */
-    data.token = store.state.userToken;
+    data.publicKey = store.state.publicKey;
   } else {
     // No data available so we create it with user token
     const newData = {
-      token: store.state.userToken,
+      publicKey: store.state.publicKey,
     };
     return newData;
   }
@@ -28,7 +28,6 @@ export default {
       .post(url, JSON.stringify(addTokenPayload(data)))
       .then((response) => {
         if (response.data && response.data.error) {
-          console.log("This result happened");
           return Promise.reject(response.data.error.message);
         }
         return Promise.resolve(response.data.data);

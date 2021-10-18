@@ -1236,3 +1236,29 @@ Process: 3902 2021-10-17T22:18:24.108Z [Sol Survivor API] [32minfo[39m: END ==
 Process: 3902 2021-10-17T22:18:28.782Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: LOGIN =============== START
 Process: 3902 2021-10-17T22:18:28.916Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: LOGIN =============== END
 Process: 3935 2021-10-17T22:18:50.355Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 11834 2021-10-18T02:51:04.503Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 11853 2021-10-18T02:51:06.191Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 11853 2021-10-18T02:51:08.532Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 11853 2021-10-18T02:51:09.210Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 11853 2021-10-18T02:51:09.278Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 11886 2021-10-18T02:52:43.429Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 11886 2021-10-18T02:52:53.189Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 11929 2021-10-18T02:55:58.603Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 11945 2021-10-18T02:56:02.818Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 11961 2021-10-18T02:56:30.914Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 11972 2021-10-18T02:56:37.284Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 11972 2021-10-18T02:56:42.379Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 11972 2021-10-18T02:56:43.062Z [Sol Survivor API] [31merror[39m: Server Error Message: InvalidCredentials exceptionBacktrace: BadRequestError: InvalidCredentials
+    at Object.throw (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa/lib/context.js:97:11)
+    at /Users/adamwiniecke/SolSurvivor/api/src/middlewares/user.js:37:16
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async logger (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-logger/index.js:67:7)
+    at async bodyParser (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/adamwiniecke/SolSurvivor/api/node_modules/@koa/cors/index.js:98:16) 
+Process: 11972 2021-10-18T02:57:36.528Z [Sol Survivor API] [31merror[39m: Server Error Message: InvalidCredentials exceptionBacktrace: BadRequestError: InvalidCredentials
+    at Object.throw (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa/lib/context.js:97:11)
+    at /Users/adamwiniecke/SolSurvivor/api/src/middlewares/user.js:37:16
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async logger (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-logger/index.js:67:7)
+    at async bodyParser (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/adamwiniecke/SolSurvivor/api/node_modules/@koa/cors/index.js:98:16) 

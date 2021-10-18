@@ -9,6 +9,6 @@ router
   .post('/logIn', UserController.logIn)
 
 router.use(UserMiddleware.auth())
-  .get('/getMe', UserController.getMe)
+  .post('/getMe', UserController.getMe)
 
 export default router
