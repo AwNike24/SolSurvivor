@@ -1045,3 +1045,19 @@ Process: 11972 2021-10-18T02:57:36.528Z [Sol Survivor API] [31merror[39m: Serv
     at async logger (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-logger/index.js:67:7)
     at async bodyParser (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-bodyparser/index.js:95:5)
     at async cors (/Users/adamwiniecke/SolSurvivor/api/node_modules/@koa/cors/index.js:98:16) 
+Process: 656 2021-10-18T06:52:37.243Z [Sol Survivor API] [31merror[39m: Server Error Message: Not authorized! exceptionBacktrace: BadRequestError: Not authorized!
+    at Object.throw (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa/lib/context.js:97:11)
+    at /Users/adamwiniecke/SolSurvivor/api/src/middlewares/user.js:18:16
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async logger (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-logger/index.js:67:7)
+    at async bodyParser (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/adamwiniecke/SolSurvivor/api/node_modules/@koa/cors/index.js:56:32) 
+Process: 1684 2021-10-18T07:34:51.872Z [Sol Survivor API] [31merror[39m: Server Error Message: Not authorized! exceptionBacktrace: BadRequestError: Not authorized!
+    at Object.throw (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa/lib/context.js:97:11)
+    at /Users/adamwiniecke/SolSurvivor/api/src/middlewares/user.js:18:16
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async logger (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-logger/index.js:67:7)
+    at async bodyParser (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/adamwiniecke/SolSurvivor/api/node_modules/@koa/cors/index.js:56:32) 

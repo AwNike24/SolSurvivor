@@ -6,9 +6,9 @@ const Game = model('Game', schemas.GameSchema)
 export async function getGamesDividedByWeek (week) {
   let games
   if (week !== 'all') {
-    games = await Game.find({ league: 'NFL', weekNumber: week }).populate('participants').lean()
+    games = await Game.find({ league: 'NFL', weekNumber: week }).populate('participants._id').lean()
   } else {
-    games = await Game.find({ league: 'NFL', start: { $gt: new Date() } }).populate('participants').lean()
+    games = await Game.find({ league: 'NFL', start: { $gt: new Date() } }).populate('participants._id').lean()
   }
   return games
 }

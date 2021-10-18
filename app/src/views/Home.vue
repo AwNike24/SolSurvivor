@@ -16,6 +16,7 @@
 // @ is an alias to /src
 // import HelloWorld from "@/components/HelloWorld.vue";
 // import { ref } from 'vue';
+import { mapMutations } from "vuex";
 import { getPhantomWallet } from '@solana/wallet-adapter-wallets';
 import { Connection, clusterApiUrl } from '@solana/web3.js';
 import { initWallet, useWallet } from '../useWallet';
@@ -65,6 +66,16 @@ export default {
       publicKey,
     };
   },
+  watch: {
+    publicKey(newValue) {
+      this.setPublicKey(newValue.toString());
+    },
+  },
+  methods: {
+    ...mapMutations([
+      'setPublicKey'
+    ]),
+  }
 };
 </script>
 

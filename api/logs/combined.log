@@ -1262,3 +1262,96 @@ Process: 11972 2021-10-18T02:57:36.528Z [Sol Survivor API] [31merror[39m: Serv
     at async logger (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-logger/index.js:67:7)
     at async bodyParser (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-bodyparser/index.js:95:5)
     at async cors (/Users/adamwiniecke/SolSurvivor/api/node_modules/@koa/cors/index.js:98:16) 
+Process: 656 2021-10-18T05:44:38.517Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 656 2021-10-18T05:51:15.205Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 656 2021-10-18T05:51:15.958Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 656 2021-10-18T05:51:16.025Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 656 2021-10-18T05:51:18.605Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 656 2021-10-18T05:51:18.659Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 656 2021-10-18T05:53:23.363Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 656 2021-10-18T05:53:23.419Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 656 2021-10-18T05:53:35.076Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 656 2021-10-18T05:53:35.129Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 656 2021-10-18T05:53:57.512Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 656 2021-10-18T05:53:57.565Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 656 2021-10-18T05:54:01.362Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 656 2021-10-18T05:54:01.414Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 656 2021-10-18T06:02:20.533Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 656 2021-10-18T06:02:20.598Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 656 2021-10-18T06:39:57.252Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 656 2021-10-18T06:39:57.318Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 656 2021-10-18T06:40:12.581Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 656 2021-10-18T06:40:12.635Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 656 2021-10-18T06:52:37.243Z [Sol Survivor API] [31merror[39m: Server Error Message: Not authorized! exceptionBacktrace: BadRequestError: Not authorized!
+    at Object.throw (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa/lib/context.js:97:11)
+    at /Users/adamwiniecke/SolSurvivor/api/src/middlewares/user.js:18:16
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async logger (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-logger/index.js:67:7)
+    at async bodyParser (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/adamwiniecke/SolSurvivor/api/node_modules/@koa/cors/index.js:56:32) 
+Process: 656 2021-10-18T06:53:22.116Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 656 2021-10-18T06:53:22.170Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 1651 2021-10-18T06:54:54.701Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 1684 2021-10-18T06:56:43.005Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 1684 2021-10-18T06:59:18.183Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 1684 2021-10-18T06:59:18.872Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 1684 2021-10-18T06:59:18.939Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 1684 2021-10-18T06:59:27.427Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 1684 2021-10-18T06:59:27.486Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 1684 2021-10-18T06:59:41.963Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 1684 2021-10-18T06:59:42.022Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 1684 2021-10-18T07:00:19.194Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 1684 2021-10-18T07:00:19.253Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 1684 2021-10-18T07:02:16.905Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 1684 2021-10-18T07:02:17.098Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 1684 2021-10-18T07:03:42.139Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 1684 2021-10-18T07:03:42.197Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 1684 2021-10-18T07:05:24.830Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 1684 2021-10-18T07:05:24.893Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 1684 2021-10-18T07:14:45.365Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 1684 2021-10-18T07:14:45.430Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 1684 2021-10-18T07:19:41.539Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 1684 2021-10-18T07:19:41.605Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 1684 2021-10-18T07:34:51.872Z [Sol Survivor API] [31merror[39m: Server Error Message: Not authorized! exceptionBacktrace: BadRequestError: Not authorized!
+    at Object.throw (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa/lib/context.js:97:11)
+    at /Users/adamwiniecke/SolSurvivor/api/src/middlewares/user.js:18:16
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async logger (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-logger/index.js:67:7)
+    at async bodyParser (/Users/adamwiniecke/SolSurvivor/api/node_modules/koa-bodyparser/index.js:95:5)
+    at async cors (/Users/adamwiniecke/SolSurvivor/api/node_modules/@koa/cors/index.js:56:32) 
+Process: 1684 2021-10-18T07:35:20.578Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 1684 2021-10-18T07:35:20.629Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 1684 2021-10-18T07:35:41.270Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 1684 2021-10-18T07:35:41.325Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 1684 2021-10-18T07:36:39.677Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 1684 2021-10-18T07:36:39.741Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 1684 2021-10-18T07:36:41.981Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 1684 2021-10-18T07:36:42.016Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6597 2021-10-18T07:38:07.392Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 6597 2021-10-18T07:38:13.260Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 6597 2021-10-18T07:38:13.885Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6597 2021-10-18T07:38:13.921Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6597 2021-10-18T07:38:28.880Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6597 2021-10-18T07:38:28.909Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6626 2021-10-18T07:39:25.695Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 6640 2021-10-18T07:39:27.379Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 6640 2021-10-18T07:39:31.372Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 6640 2021-10-18T07:39:32.030Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6640 2021-10-18T07:39:32.076Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6656 2021-10-18T07:40:03.930Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 6656 2021-10-18T07:40:07.645Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 6656 2021-10-18T07:40:08.325Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6656 2021-10-18T07:40:08.378Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6678 2021-10-18T07:40:25.327Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 6694 2021-10-18T07:40:32.307Z [Sol Survivor API] [32minfo[39m: Server Started Message: Listening On 8080 
+Process: 6694 2021-10-18T07:40:39.425Z [Sol Survivor API] [32minfo[39m: Mongo Connect Message: *** [CONNECTED TO DB]: SOL-SURVIVOR *** 
+Process: 6694 2021-10-18T07:40:40.060Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6694 2021-10-18T07:40:40.141Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6694 2021-10-18T07:40:59.771Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6694 2021-10-18T07:40:59.838Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END
+Process: 6694 2021-10-18T07:41:04.238Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETSURVIVORPOOL =============== START
+Process: 6694 2021-10-18T07:41:04.295Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETSURVIVORPOOL =============== END
+Process: 6694 2021-10-18T07:41:05.576Z [Sol Survivor API] [32minfo[39m: START =============== SERVICE STARTED: GETGAMESBYWEEK =============== START
+Process: 6694 2021-10-18T07:41:05.640Z [Sol Survivor API] [32minfo[39m: END =============== SERVICE FINISHED: GETGAMESBYWEEK =============== END

@@ -1,5 +1,6 @@
 import ServiceBase from '../../lib/serviceBase'
 import { getGamesDividedByWeek } from '../../db/models/game'
+import { gameParser } from "../../parsers";
 
 const constraints = {
   week: { presence: true }
@@ -13,6 +14,6 @@ export default class GetGamesByWeek extends ServiceBase {
   async run () {
     const { week } = this.args
     const games = await getGamesDividedByWeek(week)
-    return { games }
+    return { games: games.map(gameParser) }
   }
 }
