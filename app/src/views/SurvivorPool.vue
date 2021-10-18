@@ -26,17 +26,17 @@
               <div class="abstract">
                 <span class="font-weight-light"> Current Selection </span>
                 <br />
-                d
+                Week {{ survivorPool.currentWeek }}
               </div>
               <div class="abstract">
                 <span class="font-weight-light"> Teams Selected </span>
                 <br />
-                d
+                {{ ticket.selectedTeams.length }}
               </div>
               <div class="abstract">
-                <span class="font-weight-light"> Available Credit </span>
+                <span class="font-weight-light"> Status </span>
                 <br />
-                d
+                {{ capitalize(ticket.status) }}
               </div>
             </div>
           </div>
@@ -125,6 +125,11 @@ export default {
       teamsModalShown: false,
       ticket: {},
       weeks: [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+      capitalize: (value) => {
+        if (!value) return value;
+        const s = value.toString();
+        return s.charAt(0).toUpperCase() + s.slice(1);
+      },
     };
   },
   watch: {
