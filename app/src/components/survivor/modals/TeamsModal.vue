@@ -64,6 +64,10 @@ export default {
       type: Number,
       required: true,
     },
+    currentWeek: {
+      type: Number,
+      required: true,
+    },
     selectedTeams: {
       type: Array,
       required: true,
@@ -116,6 +120,7 @@ export default {
       return returnArray;
     },
     getSelectedTeam() {
+      if (!this.selection.selection) { return { id: null } }
       const { selection } = this.selection.selection;
       return selection;
     },
@@ -124,6 +129,9 @@ export default {
     this.fetchGamesPerWeek();
   },
   methods: {
+    close() {
+      this.$emit('closeModal');
+    },
     fetchGamesPerWeek() {
       api
         .request("survivorPool/getGamesByWeek", { week: this.selectedWeek })
@@ -133,8 +141,14 @@ export default {
         });
     },
     handleSelectTeam(selectedWeek, participantID, gameID) {
+      if (this.selectedWeek < this.currentWeek) { return }
+      if (this.alreadySelected.indexOf(participantID) !== -1) { return }
       if (this.selectedTeams.indexOf(participantID) !== -1) {
-        this.$emit("removeSelection", { selectedWeek, participantID, gameID });
+        this.$emit("removeSelection", {
+          gameID,
+          oldParticipantID: participantID,
+          selectionID: this.selection.selection.selectionID,
+        });
       } else if (this.selection.selection) {
         this.$emit("editSelection", {
           gameID,

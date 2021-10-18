@@ -74,12 +74,14 @@
         </div>
       </div>
       <teams-modal
-        v-if="teamsModalShown"
+        v-if="teamsModalShown && !loading"
+        :current-week="survivorPool.currentWeek"
         :selectedWeek="selectedWeek"
         :selectedTeams="ticket.selectedTeams"
         :selection="findSelectionForWeek(selectedWeek)"
         @selectTeam="selectTeam"
         @editSelection="editSelection"
+        @removeSelection="removeSelection"
         @closeModal="closeModal"
       />
       <div v-else-if="mode === 'all-entries'" class="col-10 mt-2">
@@ -187,6 +189,19 @@ export default {
         weekNumber: selectedWeek,
       };
       api.request("survivorPool/createSelection", data).then((res) => {
+        this.handleSurvivorPoolResponse(res);
+      });
+    },
+    removeSelection({ gameID, oldParticipantID, selectionID }) {
+      this.closeModal();
+      this.loading = true;
+      const data = {
+        gameID,
+        oldParticipantID,
+        selectionID,
+        ticketID: this.ticket.id,
+      };
+      api.request("survivorPool/removeSelection", data).then((res) => {
         this.handleSurvivorPoolResponse(res);
       });
     },
