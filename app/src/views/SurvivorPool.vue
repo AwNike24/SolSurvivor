@@ -3,9 +3,7 @@
     <div class="row">
       <div class="col-12 col-md-2 mt-3">
         <nav>
-          <router-link to="/survivor-pool/my-entries">
-            My Entries {{ publicKey }}
-          </router-link>
+          <router-link to="/survivor-pool/my-entries"> My Entries </router-link>
           <router-link to="/survivor-pool/all-entries">
             View All Entries
           </router-link>
@@ -67,7 +65,9 @@
                 :currentWeek="survivorPool.currentWeek"
                 :weekNumber="week"
                 :selection="findSelectionForWeek(week)"
+                :is-dead="ticket.status === 'dead'"
                 @selectWeekToPick="selectWeekToPick"
+                @editSelection="editSelection"
               />
             </div>
           </div>
@@ -76,6 +76,10 @@
       <teams-modal
         v-if="teamsModalShown"
         :selectedWeek="selectedWeek"
+        :selectedTeams="ticket.selectedTeams"
+        :selection="findSelectionForWeek(selectedWeek)"
+        @selectTeam="selectTeam"
+        @editSelection="editSelection"
         @closeModal="closeModal"
       />
       <div v-else-if="mode === 'all-entries'" class="col-10 mt-2">
@@ -134,9 +138,7 @@ export default {
   created() {
     this.setMode();
     api.request("survivorPool/getSurvivorPool").then((res) => {
-      this.survivorPool = res.survivorPool;
-      [this.ticket] = res.tickets;
-      this.loading = false;
+      this.handleSurvivorPoolResponse(res);
     });
   },
   methods: {
@@ -144,17 +146,56 @@ export default {
       this.teamsModalShown = false;
       this.selectedWeek = null;
     },
+    editSelection({
+      gameID,
+      oldParticipantID,
+      participantID,
+      selectedWeek,
+      selectionID,
+    }) {
+      this.closeModal();
+      this.loading = true;
+      const data = {
+        ticketID: this.ticket.id,
+        gameID,
+        oldParticipantID,
+        participantID,
+        weekNumber: selectedWeek,
+        selectionID,
+      };
+      api.request("survivorPool/editSelection", data).then((res) => {
+        this.handleSurvivorPoolResponse(res);
+      });
+    },
+    findSelectionForWeek(weekNumber) {
+      return this.ticket.selections.find(
+        (selection) => selection.weekNumber === weekNumber
+      );
+    },
+    handleSurvivorPoolResponse(res) {
+      this.survivorPool = res.survivorPool;
+      [this.ticket] = res.tickets;
+      this.loading = false;
+    },
+    selectTeam({ selectedWeek, participantID, gameID }) {
+      this.closeModal();
+      this.loading = true;
+      const data = {
+        gameID,
+        participantID,
+        ticketID: this.ticket.id,
+        weekNumber: selectedWeek,
+      };
+      api.request("survivorPool/createSelection", data).then((res) => {
+        this.handleSurvivorPoolResponse(res);
+      });
+    },
     selectWeekToPick({ weekNumber }) {
       this.selectedWeek = weekNumber;
       this.teamsModalShown = true;
     },
     setMode() {
       this.mode = this.$route.params.mode;
-    },
-    findSelectionForWeek(weekNumber) {
-      return this.ticket.selections.find(
-        (selection) => selection.weekNumber === weekNumber
-      );
     },
   },
 };

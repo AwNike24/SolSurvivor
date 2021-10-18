@@ -9,16 +9,23 @@
       align-items-center
       live
     "
+    :class="{
+      winner: this.selection && this.selection.outcome === 'winner',
+      loser: this.selection && this.selection.outcome === 'loser',
+    }"
   >
-    <div v-if="weekNumber > currentWeek + 1">🔒</div>
+    <div v-if="showLocks()">🔒</div>
     <div
       v-else-if="Object.keys(selection).length === 0"
       @click="$emit('selectWeekToPick', { weekNumber })"
     >
       Select
     </div>
-    <div v-else>
-      <img :src="getSelectedTeam" class="logo-team-img" />
+    <div
+      v-else
+      @click="!isDead ? $emit('selectWeekToPick', { weekNumber }) : ''"
+    >
+      <img :src="getImage()" class="logo-team-img" />
     </div>
   </div>
 </template>
@@ -39,17 +46,29 @@ export default {
       type: Number,
       required: true,
     },
+    isDead: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
   },
   methods: {
     getSelectedTeam() {
-      const { selection } = this.selection.selections[0];
-      if (!selection) {
-        return "";
-      }
+      const { selection } = this.selection.selection;
+      return selection;
+    },
+    getImage() {
+      const selection = this.getSelectedTeam();
       return `/images/team-logos/FOOTBALL/${selection.longName
         .toLowerCase()
         .split(" ")
         .join("")}.png`;
+    },
+    showLocks() {
+      return (
+        this.weekNumber > this.currentWeek ||
+        (this.weekNumber === this.currentWeek && this.isDead)
+      );
     },
   },
 };
@@ -73,4 +92,10 @@ export default {
 
 .logo-team-img
   max-width: 36px
+
+
+.winner
+  background: rgba(72, 226, 37, 0.4)
+.loser
+  background: $color-secondary
 </style>
