@@ -31,15 +31,15 @@
 </template>
 
 <script>
-import api from "@/core/api";
+// import api from "@/core/api";
 import { mapMutations, mapState } from "vuex";
 import Spinner from "@/components/other/Spinner.vue";
 import ContestRules from "@/components/survivor/ContestRules.vue";
 import AllEntry from "@/components/survivor/AllEntry.vue";
-import { initWallet, useWallet } from "../useWallet";
-import { getPhantomWallet } from "@solana/wallet-adapter-wallets";
+// import { initWallet, useWallet } from "../useWallet";
+// import { getPhantomWallet } from "@solana/wallet-adapter-wallets";
 // import { Connection, clusterApiUrl } from "@solana/web3.js";
-const wallets = [getPhantomWallet()];
+// const wallets = [getPhantomWallet()];
 
 export default {
   name: "SurvivorPool",
@@ -59,64 +59,12 @@ export default {
       this.setMode();
     },
   },
-  setup() {
-    // localStorage.setItem('solana-wallet-provider', JSON.stringify('Phantom'));
-    initWallet(wallets);
-    const {
-      wallet,
-      walletProvider,
-      connect,
-      disconnect,
-      connected,
-      select,
-      publicKey,
-    } = useWallet();
-
-    const connectToPhantom = async () => {
-      await select("Phantom");
-      await connect();
-
-      // const connection = new Connection(
-      //   clusterApiUrl('mainnet-beta'),
-      //   'confirmed'
-      // );
-      //
-      // let account = await connection.getAccountInfo(
-      //   publicKey.value,
-      //   'confirmed'
-      // );
-      //
-      // console.log('account', account);
-      // console.log('connection', connection);
-    };
-
-    return {
-      walletProvider,
-      wallet,
-      disconnect,
-      connected,
-      connect,
-      connectToPhantom,
-      publicKey,
-    };
-  },
   computed: {
     ...mapState({
-      publicKey: state => state.publicKey,
+      publicKey: (state) => state.publicKey,
     }),
   },
-  created() {
-    this.loading = true;
-    this.setPublicKey(this.publicKey);
-    this.setMode();
-    if (!this.connected) {
-      this.loading = true;
-    } else {
-      api.request("survivorPool/getSurvivorPool").then(() => {
-        this.loading = false;
-      });
-    }
-  },
+  created() {},
   methods: {
     ...mapMutations(["setPublicKey"]),
     setMode() {
