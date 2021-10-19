@@ -5,7 +5,6 @@
     <video-section />
     <!--<faq-section />-->
     <!--<calculator-section />-->
-    <footer-section />
   </main>
 </template>
 
@@ -15,12 +14,10 @@
 import VideoSection from "4caster-landing/src/components/VideoSection.vue";
 // import FaqSection from "4caster-landing/src/components/FaQSection.vue";
 // import CalculatorSection from "4caster-landing/src/components/CalculatorSection.vue";
-import FooterSection from "4caster-landing/src/components/FooterSection";
 
 export default {
   name: "Landing",
   components: {
-    FooterSection,
     // FeaturesSection,
     // HeaderSection,
     VideoSection,

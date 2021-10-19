@@ -14,7 +14,9 @@
       loser: this.selection && this.selection.outcome === 'loser',
     }"
   >
-    <div v-if="showLocks()">🔒</div>
+    <div v-if="showLocks()">
+      <img src="../../../public/icons/solsulvivor/Icon-ionic-ios-lock.svg" />
+    </div>
     <div
       v-else-if="Object.keys(selection).length === 0"
       @click="$emit('selectWeekToPick', { weekNumber })"

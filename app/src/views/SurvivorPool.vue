@@ -1,74 +1,107 @@
 <template>
-  <main className="container py-md-2">
-    <div class="row">
-      <div class="col-12 col-md-2 mt-3">
-        <nav>
-          <router-link to="/survivor-pool/my-entries"> My Entries </router-link>
-          <router-link to="/survivor-pool/all-entries">
-            View All Entries
+  <main class="container-fluid bg-body">
+    <div class="row no-gutters">
+      <div class="col-12 col-md-2">
+        <nav class="left-sidebar p-4">
+          <router-link
+            to="/survivor-pool/my-entries"
+            class="d-flex align-items-center"
+          >
+            <img
+              src="../../public/icons/solsulvivor/Icon-awesome-external-link-square-alt.svg"
+            />
+            <span class="ml-3"> My Entries </span>
           </router-link>
-          <router-link to="/survivor-pool/rules"> Rules </router-link>
+          <router-link
+            to="/survivor-pool/all-entries"
+            class="d-flex align-items-center"
+          >
+            <img
+              src="../../public/icons/solsulvivor/Icon-material-pageview.svg"
+            />
+            <span class="ml-3"> View All Entries </span>
+          </router-link>
+          <router-link
+            to="/survivor-pool/rules"
+            class="d-flex align-items-center"
+          >
+            <img
+              src="../../public/icons/solsulvivor/Icon-awesome-list-alt.svg"
+            />
+            <span class="ml-3"> Rules </span>
+          </router-link>
         </nav>
       </div>
       <div v-if="loading" class="col-10">
         <spinner />
       </div>
       <div v-else-if="mode === 'my-entries'" class="col-10 mt-4">
-        <div class="card div-summary">
-          <div class="card-header font-weight-bold">Contest Information</div>
-          <div class="card-body">
-            <div class="d-flex justify-content-center">
-              <div class="abstract">
-                <span class="font-weight-light"> Entries Remaning </span>
-                <br />
-                1111
-              </div>
-              <div class="abstract">
-                <span class="font-weight-light"> Current Selection </span>
-                <br />
-                Week {{ survivorPool.currentWeek }}
-              </div>
-              <div class="abstract">
-                <span class="font-weight-light"> Teams Selected </span>
-                <br />
-                {{ ticket.selectedTeams.length }}
-              </div>
-              <div class="abstract">
-                <span class="font-weight-light"> Status </span>
-                <br />
-                {{ capitalize(ticket.status) }}
-              </div>
-            </div>
-          </div>
-          <div class="col-12 week-header card-header mt-4">
-            <div class="row">
-              <div
-                v-for="week in weeks"
-                :key="week"
-                class="
-                  col-1
-                  d-flex
-                  justify-content-center
-                  flex-nowrap
-                  align-items-center
-                "
-              >
-                {{ week }}
+        <div class="container">
+          <div class="card div-summary">
+            <div class="card-header font-weight-bold">Contest Summary</div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center">
+                <div class="abstract">
+                  <span class="font-summary"> Entries Remaining </span>
+                  <br />
+                  <span class="font-weight-bold">1111</span>
+                </div>
+                <div class="abstract">
+                  <span class="font-summary"> Current Selection </span>
+                  <br />
+                  <span class="font-weight-bold"
+                    >Week {{ survivorPool.currentWeek }}</span
+                  >
+                </div>
+                <div class="abstract">
+                  <span class="font-summary"> Teams Selected </span>
+                  <br />
+                  <span class="font-weight-bold">{{
+                    ticket.selectedTeams.length
+                  }}</span>
+                </div>
+                <div class="abstract">
+                  <span class="font-summary"> Status </span>
+                  <br />
+                  <span class="font-weight-bold">{{
+                    capitalize(ticket.status)
+                  }}</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12">
-            <div class="row mb-3">
-              <pick-section
-                v-for="week in weeks"
-                :key="week"
-                :currentWeek="survivorPool.currentWeek"
-                :weekNumber="week"
-                :selection="findSelectionForWeek(week)"
-                :is-dead="ticket.status === 'dead'"
-                @selectWeekToPick="selectWeekToPick"
-                @editSelection="editSelection"
-              />
+            <div class="card mt-3">
+              <div class="col-12 week-header card-header">
+                <div class="row">
+                  <div
+                    v-for="week in weeks"
+                    :key="week"
+                    class="
+                      col-1
+                      d-flex
+                      justify-content-center
+                      flex-nowrap
+                      align-items-center
+                      my-2
+                    "
+                  >
+                    {{ week }}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <pick-section
+                  v-for="week in weeks"
+                  :key="week"
+                  :currentWeek="survivorPool.currentWeek"
+                  :weekNumber="week"
+                  :selection="findSelectionForWeek(week)"
+                  :is-dead="ticket.status === 'dead'"
+                  @selectWeekToPick="selectWeekToPick"
+                  @editSelection="editSelection"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -102,10 +135,6 @@ import ContestRules from "@/components/survivor/ContestRules.vue";
 import AllEntry from "@/components/survivor/AllEntry.vue";
 import PickSection from "../components/survivor/PickSection";
 import TeamsModal from "../components/survivor/modals/TeamsModal";
-// import { initWallet, useWallet } from "../useWallet";
-// import { getPhantomWallet } from "@solana/wallet-adapter-wallets";
-// import { Connection, clusterApiUrl } from "@solana/web3.js";
-// const wallets = [getPhantomWallet()];
 
 export default {
   name: "SurvivorPool",
@@ -224,6 +253,9 @@ export default {
 <style lang="sass">
 @import "../assets/styles/variables"
 
+.bg-body
+  background-color: rgba(242, 242, 246, 1)
+
 .pickSection
   padding: 1.35rem 1rem
   box-shadow: 0 2px 4px 0 rgba(78, 103, 223, 0.15)
@@ -258,12 +290,16 @@ export default {
   width: 100%
   @media screen and (max-width: map_get($grid-breakpoints, sm))
     display: none
-
+.left-sidebar
+  box-shadow: 0px 3px 6px #00000029
+  height: 100vh
+  background-color: #ffffff
 nav
   margin-left: -1rem
   border-right: 1px solid rgba(150, 156, 203, 0.3)
-  min-height: 400px
-  cursor: pointer
+  min-height: 100%
+  height: 100%
+  // cursor: pointer
 
   @media screen and (max-width: map_get($grid-breakpoints, md))
     min-height: 0
@@ -276,11 +312,11 @@ nav
 
   a, div
     font-size: $font-size-sm
-    font-weight: $font-weight-light
+    font-weight: normal
     display: block
     width: 100%
     padding: .75rem 1rem
-    color: $color-primary
+    color: #0A0A0A!important
     border-top-left-radius: 6px
     border-bottom-left-radius: 6px
 
@@ -288,8 +324,18 @@ nav
       margin-bottom: .5rem
 
     &:hover, &.router-link-active
-      background: rgba(150, 156, 203, 0.3)
+      background: none
       text-decoration: none
+
+  button.connect-wallet
+    border-radius: 35px
+    padding-right: 37px
+    padding-left: 37px
+    padding-top: 11px
+    padding-bottom: 11px
+    background-color: #FF443C!important
+    font-size: 12px
+    width: 100%
 
 .not-active
   background-color: #f8f8f8
@@ -313,6 +359,10 @@ h3
   border-radius: 4px
   cursor: pointer
 
+.font-summary
+  color: #343b86
+  font-weight: bold
+
 .abstract
   border-radius: 7px
   background: #fff
@@ -321,10 +371,11 @@ h3
   margin-left: 9px
   text-align: center
   color: #343b86
-  font-weight: bold
+  box-shadow: 0 2px 4px 0 rgba(78, 103, 223, 0.15)
+  // font-weight: bold
   font-size: 12px
   cursor: pointer
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important
+// box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important
 
 .player-chart-header
   background: #343b86
@@ -351,19 +402,28 @@ h3
   background-color: #fff
   background-clip: border-box
   border-radius: .25rem
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15)
+  border-bottom-left-radius: 10px
+  border-bottom-right-radius: 10px
+  border-top-left-radius: 10px
+  border-top-right-radius: 10px
 .card-header:first-child
-  border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0
+// border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0
 .card-header
   padding: 0.35rem 1.25rem
   margin-bottom: 0
   background-color: rgb(52, 59, 134)
   color: #fff
+  border-top-left-radius: 10px
+  border-top-right-radius: 10px
 .card-body
   -webkit-box-flex: 1
   -ms-flex: 1 1 auto
   flex: 1 1 auto
   padding: 1.25rem
-  background: #f8f8f8
+  background: #ffffff
+  border-bottom-left-radius: 10px
+  border-bottom-right-radius: 10px
 
   @media screen and (max-width: map_get($grid-breakpoints, md))
     padding: 1rem
