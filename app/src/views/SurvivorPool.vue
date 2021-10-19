@@ -61,7 +61,7 @@
                   <span class="font-summary"> Teams Selected </span>
                   <br />
                   <span class="font-weight-bold">{{
-                    ticket.selectedTeams.length
+                    numberOfSelectedTeams
                   }}</span>
                 </div>
                 <div class="abstract">
@@ -98,7 +98,7 @@
                 <pick-section
                   v-for="week in weeks"
                   :key="week"
-                  :currentWeek="survivorPool.currentWeek"
+                  :currentWeek="survivorPool.currentWeek || 0"
                   :weekNumber="week"
                   :selection="findSelectionForWeek(week)"
                   :is-dead="ticket.status === 'dead'"
@@ -156,7 +156,6 @@ export default {
   data() {
     return {
       loading: true,
-      mode: "",
       selectedWeek: null,
       survivorPool: {},
       teamsModalShown: false,
@@ -171,7 +170,7 @@ export default {
   },
   watch: {
     $route() {
-      this.setMode();
+      this.loading = true;
       this.getSurvivorPool();
     },
   },
@@ -192,9 +191,17 @@ export default {
       }
       return mostRecentSelection.selection.selection.longName;
     },
+    mode() {
+      return this.$route.params.mode;
+    },
+    numberOfSelectedTeams() {
+      if (!this.ticket || !this.ticket.selectedTeams) {
+        return 0;
+      }
+      return this.ticket.selectedTeams.length;
+    },
   },
   created() {
-    this.setMode();
     this.getSurvivorPool();
   },
   methods: {
@@ -224,18 +231,24 @@ export default {
       });
     },
     findSelectionForWeek(weekNumber) {
+      if (!this.ticket || !this.ticket.selections) {
+        return;
+      }
       return this.ticket.selections.find(
         (selection) => selection.weekNumber === weekNumber
       );
     },
     getSurvivorPool() {
-      if (!this.walletConnected) {
+      if (this.mode === "not-connected") {
+        this.loading = false;
+      } else if (!this.walletConnected) {
         this.$router.push("/survivor-pool/not-connected");
       } else if (this.mode === "my-entries" && this.walletConnected) {
         api.request("survivorPool/getSurvivorPool").then((res) => {
           this.handleSurvivorPoolResponse(res);
         });
       }
+      this.loading = false;
     },
     handleSurvivorPoolResponse(res) {
       this.survivorPool = res.survivorPool;
@@ -271,12 +284,6 @@ export default {
     selectWeekToPick({ weekNumber }) {
       this.selectedWeek = weekNumber;
       this.teamsModalShown = true;
-    },
-    setMode() {
-      this.mode = this.$route.params.mode;
-      if (this.mode === "not-connected") {
-        this.loading = false;
-      }
     },
   },
 };
