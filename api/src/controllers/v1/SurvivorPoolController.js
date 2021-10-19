@@ -1,6 +1,5 @@
 import GetSurvivorPool from '../../services/survivorPools/getSurvivorPool'
 import GetGamesByWeek from '../../services/survivorPools/getGamesByWeek'
-import CreateBlankEntry from '../../services/survivorPools/createBlankEntry'
 import CreateSelection from '../../services/survivorPools/createSelection'
 import EditSelection from '../../services/survivorPools/editSelection'
 import RemoveSelection from '../../services/survivorPools/removeSelection'
@@ -24,15 +23,6 @@ export default class SurvivorPoolController {
     ctx.body = {
       data: serviceResult.result
     }
-  }
-
-  static async createBlankEntry (ctx) {
-    const { user } = ctx.state
-    const { entryName } = ctx.request.body
-
-    await CreateBlankEntry.execute({ user, entryName })
-
-    await SurvivorPoolController.getSurvivorPool(ctx)
   }
 
   static async createSelection (ctx) {

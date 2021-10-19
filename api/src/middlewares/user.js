@@ -1,7 +1,7 @@
 import { getUserByPublicKey } from '../db/models/user'
 
 export default {
-  auth: (adminOnly = false) => async (ctx, next) => {
+  publicKeyAuth: (adminOnly = false) => async (ctx, next) => {
     const { publicKey } = ctx.request.body
 
     const user = await getUserByPublicKey(publicKey)
