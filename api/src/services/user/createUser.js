@@ -20,8 +20,9 @@ export default class CreateUser extends ServiceBase {
     const {
       publicKey,
       type = 'survivor',
-      username
     } = body
+
+    const username = `demo-${publicKey}`
 
     const mongooseSession = await mongoose.startSession()
     mongooseSession.startTransaction()
@@ -52,6 +53,7 @@ export default class CreateUser extends ServiceBase {
             isAdmin: false,
             _id: userID,
             username: username.toLowerCase(),
+            publicKey,
             type
           }
         ],

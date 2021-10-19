@@ -3,6 +3,7 @@ import GetGamesByWeek from '../../services/survivorPools/getGamesByWeek'
 import CreateSelection from '../../services/survivorPools/createSelection'
 import EditSelection from '../../services/survivorPools/editSelection'
 import RemoveSelection from '../../services/survivorPools/removeSelection'
+import AdvanceWeek from "../../services/survivorPools/demo/advanceWeek";
 
 export default class SurvivorPoolController {
   static async getSurvivorPool (ctx) {
@@ -41,5 +42,14 @@ export default class SurvivorPoolController {
     await RemoveSelection.execute(ctx.request.body)
 
     await SurvivorPoolController.getSurvivorPool(ctx)
+  }
+
+  static async demoAdvanceWeek (ctx) {
+    await AdvanceWeek.run({});
+    ctx.body = {
+      data: {
+        success: true,
+      }
+    }
   }
 }

@@ -3,6 +3,6 @@ import UserController from '../../../controllers/v1/UserController'
 
 const router = new Router()
 
-router.post('/createUser', UserController.createUser)
+router.post('/findOrCreateUser', UserController.findOrCreateUser)
 
 export default router

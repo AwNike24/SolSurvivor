@@ -11,5 +11,6 @@ router
   .post('/createSelection', SurvivorPoolController.createSelection)
   .post('/editSelection', SurvivorPoolController.editSelection)
   .post('/removeSelection', SurvivorPoolController.removeSelection)
+  .post('/demoAdvanceWeek', SurvivorPoolController.demoAdvanceWeek)
 
 export default router

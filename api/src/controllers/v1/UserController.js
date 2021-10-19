@@ -1,13 +1,18 @@
 import CreateUser from '../../services/user/createUser'
+import { getUserByPublicKey } from '../../db/models/user'
 
 export default class UserController {
-  static async createUser (ctx) {
-    const serviceResult = await CreateUser.execute(ctx.request)
-    const { user, ticket } = serviceResult.result
+  static async findOrCreateUser (ctx) {
+    const { publicKey } = ctx.request.body
+    let user = await getUserByPublicKey(publicKey)
+    if (!user) {
+      const serviceResult = await CreateUser.execute(ctx.request)
+      user = serviceResult.result.user
+    }
+    console.log(user)
     ctx.body = {
       data: {
         user,
-        ticket,
       }
     }
   }
