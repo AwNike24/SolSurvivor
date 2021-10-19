@@ -13,7 +13,7 @@
       :key="gameIx"
       :class="{
         selected: isSelected(game.participantID),
-        strikeThrough: alreadySelected.indexOf(game.participantID) !== -1,
+        strikeThrough: alreadySelected.indexOf(game.participantID) !== -1
       }"
       class="col-12 outline d-inline-flex"
     >
@@ -32,8 +32,9 @@
           {{ dayjs(game.start).format("hh:mm A DD MMM") }} - {{ game.opponent }}
         </div>
       </h4>
-      <div class="col-1 my-2">
+      <div class="my-2">
         <button
+          v-if="alreadySelected.indexOf(game.participantID) === -1"
           class="d-inline-flex"
           @click="
             handleSelectTeam(selectedWeek, game.participantID, game.gameID)
@@ -186,7 +187,6 @@ export default {
 @import "../../../assets/styles/variables"
 
 .outline
-  border-bottom: 1px solid #969ccb
   margin: 0
   max-width: 780px
   box-shadow: 0 2px 4px 0 rgba(78, 103, 223, 0.15)
@@ -202,4 +202,8 @@ button
   background: rgba(72, 226, 37, 0.4)
 .strikeThrough
   text-decoration: line-through
+
+.input
+  background: none
+  box-shadow: 0 2px 4px 0 rgba(78, 103, 223, 0.15)
 </style>

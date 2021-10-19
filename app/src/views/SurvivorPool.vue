@@ -10,7 +10,7 @@
             <img
               src="../../public/icons/solsulvivor/Icon-awesome-external-link-square-alt.svg"
             />
-            <span class="ml-3"> My Entries </span>
+            <h4 class="ml-3 my-0"> My Entry </h4>
           </router-link>
           <router-link
             to="/survivor-pool/all-entries"
@@ -19,7 +19,7 @@
             <img
               src="../../public/icons/solsulvivor/Icon-material-pageview.svg"
             />
-            <span class="ml-3"> View All Entries </span>
+            <h4 class="ml-3 my-0"> View All Entries </h4>
           </router-link>
           <router-link
             to="/survivor-pool/rules"
@@ -28,7 +28,7 @@
             <img
               src="../../public/icons/solsulvivor/Icon-awesome-list-alt.svg"
             />
-            <span class="ml-3"> Rules </span>
+            <h4 class="ml-3 my-0"> Rules </h4>
           </router-link>
         </nav>
       </div>
@@ -69,6 +69,7 @@
                 </div>
               </div>
             </div>
+          </div>
             <div class="card mt-3">
               <div class="col-12 week-header card-header">
                 <div class="row">
@@ -81,14 +82,13 @@
                       justify-content-center
                       flex-nowrap
                       align-items-center
-                      my-2
+                      my-1
                     "
                   >
                     {{ week }}
                   </div>
                 </div>
               </div>
-            </div>
             <div class="col-12">
               <div class="row">
                 <pick-section
@@ -253,6 +253,10 @@ export default {
 <style lang="sass">
 @import "../assets/styles/variables"
 
+h4
+  font-weight: normal
+  color: #272d58
+
 .bg-body
   background-color: rgba(242, 242, 246, 1)
 
@@ -361,7 +365,7 @@ h3
 
 .font-summary
   color: #343b86
-  font-weight: bold
+  font-weight: lighter
 
 .abstract
   border-radius: 7px
@@ -421,7 +425,7 @@ h3
   -ms-flex: 1 1 auto
   flex: 1 1 auto
   padding: 1.25rem
-  background: #ffffff
+  background: #f8f8f8
   border-bottom-left-radius: 10px
   border-bottom-right-radius: 10px
 

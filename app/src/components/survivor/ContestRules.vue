@@ -1,6 +1,5 @@
 <template>
   <main class="container py-md-2">
-    <h3 class="text-center">4casters March Madness Survivor Pool</h3>
     <div class="questions-container">
       <FAQuestion
         id="how-to-play"
