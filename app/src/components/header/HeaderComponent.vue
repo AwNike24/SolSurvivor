@@ -10,7 +10,6 @@
               alt="4castersports Logo"
             />
           </router-link>
-          <connect-to-wallet />
         </div>
       </div>
     </div>
@@ -18,10 +17,8 @@
 </template>
 
 <script>
-import ConnectToWallet from "./ConnectToWallet";
 export default {
   name: "HeaderComponent",
-  components: { ConnectToWallet },
 };
 </script>
 

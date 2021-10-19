@@ -2,6 +2,7 @@
   <main>
     <!--<header-section />-->
     <!--<features-section />-->
+    <router-link to="/survivor-pool/my-entries">DEMO</router-link>
     <video-section />
     <!--<faq-section />-->
     <!--<calculator-section />-->

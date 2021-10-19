@@ -3,7 +3,7 @@
     <div class="row no-gutters">
       <div class="col-12 col-md-2">
         <nav class="left-sidebar p-4">
-          <button class="mt-2 mb-3 connect-wallet">CONNECT WALLET</button>
+          <connect-to-wallet />
           <router-link
             to="/survivor-pool/my-entries"
             class="d-flex align-items-center"
@@ -35,6 +35,9 @@
       </div>
       <div v-if="loading" class="col-10">
         <spinner />
+      </div>
+      <div v-else-if="mode === 'not-connected'" class="col-10 mt-2">
+        <not-connected />
       </div>
       <div v-else-if="mode === 'my-entries'" class="col-10 mt-4">
         <div class="container">
@@ -131,19 +134,23 @@
 <script>
 import api from "@/core/api";
 import { mapState } from "vuex";
-import Spinner from "@/components/other/Spinner.vue";
-import ContestRules from "@/components/survivor/ContestRules.vue";
 import AllEntry from "@/components/survivor/AllEntry.vue";
+import ConnectToWallet from "@/components/survivor/ConnectToWallet.vue";
+import ContestRules from "@/components/survivor/ContestRules.vue";
+import NotConnected from "@/components/survivor/NotConnected.vue";
 import PickSection from "../components/survivor/PickSection";
 import TeamsModal from "../components/survivor/modals/TeamsModal";
+import Spinner from "@/components/other/Spinner.vue";
 
 export default {
   name: "SurvivorPool",
   components: {
+    AllEntry,
+    ConnectToWallet,
+    ContestRules,
+    NotConnected,
     PickSection,
     Spinner,
-    AllEntry,
-    ContestRules,
     TeamsModal,
   },
   data() {
@@ -165,6 +172,7 @@ export default {
   watch: {
     $route() {
       this.setMode();
+      this.getSurvivorPool();
     },
   },
   computed: {
@@ -186,9 +194,7 @@ export default {
   },
   created() {
     this.setMode();
-    api.request("survivorPool/getSurvivorPool").then((res) => {
-      this.handleSurvivorPoolResponse(res);
-    });
+    this.getSurvivorPool();
   },
   methods: {
     closeModal() {
@@ -220,6 +226,15 @@ export default {
       return this.ticket.selections.find(
         (selection) => selection.weekNumber === weekNumber
       );
+    },
+    getSurvivorPool() {
+      if (!this.publicKey) {
+        this.$router.push('/survivor-pool/not-connected');
+      } else if (this.mode === 'my-entries') {
+        api.request("survivorPool/getSurvivorPool").then((res) => {
+          this.handleSurvivorPoolResponse(res);
+        });
+      }
     },
     handleSurvivorPoolResponse(res) {
       this.survivorPool = res.survivorPool;
@@ -258,6 +273,9 @@ export default {
     },
     setMode() {
       this.mode = this.$route.params.mode;
+      if (this.mode === 'not-connected') {
+        this.loading = false;
+      }
     },
   },
 };
