@@ -6,7 +6,6 @@ import api from "./core/api";
 const initialState = () => ({
   id: "",
   isAdmin: false,
-  isLoggedIn: false,
   publicKey: null,
   survivorBalance: 0,
   type: "",
@@ -29,7 +28,6 @@ export default createStore({
     logIn(state, payload) {
       state.id = payload.id;
       state.isAdmin = payload.isAdmin;
-      state.isLoggedIn = true;
       state.survivorBalance = payload.survivorBalance;
       state.type = payload.type;
       state.username = payload.username;

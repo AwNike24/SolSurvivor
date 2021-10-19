@@ -181,7 +181,7 @@ export default {
       walletConnected: (state) => state.walletConnected,
     }),
     currentSelectedTeam() {
-      if (!this.ticket) {
+      if (!this.ticket || !this.ticket.selections) {
         return "None";
       }
       const mostRecentSelection = this.ticket.selections.find(
