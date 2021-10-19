@@ -178,6 +178,7 @@ export default {
   computed: {
     ...mapState({
       publicKey: (state) => state.publicKey,
+      walletConnected: (state) => state.walletConnected,
     }),
     currentSelectedTeam() {
       if (!this.ticket) {
@@ -228,9 +229,9 @@ export default {
       );
     },
     getSurvivorPool() {
-      if (!this.publicKey) {
-        this.$router.push('/survivor-pool/not-connected');
-      } else if (this.mode === 'my-entries') {
+      if (!this.walletConnected) {
+        this.$router.push("/survivor-pool/not-connected");
+      } else if (this.mode === "my-entries" && this.walletConnected) {
         api.request("survivorPool/getSurvivorPool").then((res) => {
           this.handleSurvivorPoolResponse(res);
         });
@@ -273,7 +274,7 @@ export default {
     },
     setMode() {
       this.mode = this.$route.params.mode;
-      if (this.mode === 'not-connected') {
+      if (this.mode === "not-connected") {
         this.loading = false;
       }
     },

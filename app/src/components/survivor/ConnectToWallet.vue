@@ -1,16 +1,8 @@
 <template>
-  <button
-    class="mt-2 mb-3 connect-wallet"
-    v-if="connected || storedPublicKey"
-    @click="disconnect"
-  >
+  <button class="mt-2 mb-3 connect-wallet" v-if="connected" @click="disconnect">
     DISCONNECT WALLET
   </button>
-  <button
-    class="mt-2 mb-3 connect-wallet"
-    v-else
-    @click="connectToPhantom"
-  >
+  <button class="mt-2 mb-3 connect-wallet" v-else @click="connectToPhantom">
     CONNECT WALLET
   </button>
 </template>
@@ -20,7 +12,7 @@
 // @ is an alias to /src
 // import HelloWorld from "@/components/HelloWorld.vue";
 // import { ref } from 'vue';
-import { mapMutations, mapState } from "vuex";
+import { mapActions, mapMutations, mapState } from "vuex";
 import { getPhantomWallet } from '@solana/wallet-adapter-wallets';
 import { Connection, clusterApiUrl } from '@solana/web3.js';
 import { initWallet, useWallet } from '../../useWallet';
@@ -79,7 +71,9 @@ export default {
     connected () {
       if (this.connected) {
         this.setPublicKey(this.publicKey.toString());
-        this.$router.push('/survivor-pool/my-entries');
+        this.findOrCreate().then(() => {
+          this.$router.push('/survivor-pool/my-entries');
+        })
       } else {
         this.setPublicKey(null);
         this.$router.push('/');
@@ -89,6 +83,9 @@ export default {
   methods: {
     ...mapMutations([
       'setPublicKey'
+    ]),
+    ...mapActions([
+      'findOrCreate',
     ]),
   }
 };

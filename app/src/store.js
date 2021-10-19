@@ -26,15 +26,6 @@ export default createStore({
       }
       state.publicKey = publicKey;
     },
-    getMe(state, payload) {
-      state.id = payload.id;
-      state.isAdmin = payload.isAdmin;
-      state.isLoggedIn = true;
-      state.survivorBalance = payload.survivorBalance;
-      state.type = payload.type;
-      state.username = payload.username;
-      state.userToken = payload.auth;
-    },
     logIn(state, payload) {
       state.id = payload.id;
       state.isAdmin = payload.isAdmin;
@@ -42,7 +33,7 @@ export default createStore({
       state.survivorBalance = payload.survivorBalance;
       state.type = payload.type;
       state.username = payload.username;
-      state.userToken = payload.auth;
+      state.publicKey = payload.publicKey;
     },
     logOut(state) {
       const s = initialState();
@@ -52,6 +43,11 @@ export default createStore({
     },
   },
   actions: {
+    findOrCreate: (context) =>
+      api.request('user/findOrCreateUser')
+        .then((response) => {
+        context.commit("logIn", response.user);
+      }),
     signUp: (context, payload) =>
       api
         .request("user/create/", {
@@ -64,24 +60,6 @@ export default createStore({
           context.commit("makeJustSignedUpTruthy");
           context.commit("logIn", response.user);
         }),
-
-    logIn: (context, payload) =>
-      api
-        .request("user/login/", {
-          username: payload.username,
-          password: payload.password,
-        })
-        .then((response) => {
-          context.commit("logIn", response.user);
-        }),
-
-    getMe: (context) =>
-      api.request("user/getMe/").then((response) => {
-        if (Object.keys(response).length === 0) context.commit("logOut");
-        else {
-          context.commit("getMe", response.user);
-        }
-      }),
   },
   strict: process.env.NODE_ENV !== "production",
   plugins: [createPersistedState({ storage: window.localStorage })],
