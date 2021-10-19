@@ -13,7 +13,7 @@
       :key="gameIx"
       :class="{
         selected: isSelected(game.participantID),
-        strikeThrough: alreadySelected.indexOf(game.participantID) !== -1
+        strikeThrough: alreadySelected.indexOf(game.participantID) !== -1,
       }"
       class="col-12 outline d-inline-flex"
     >

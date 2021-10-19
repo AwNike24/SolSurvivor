@@ -10,7 +10,7 @@
             <img
               src="../../public/icons/solsulvivor/Icon-awesome-external-link-square-alt.svg"
             />
-            <h4 class="ml-3 my-0"> My Entry </h4>
+            <h4 class="ml-3 my-0">My Entry</h4>
           </router-link>
           <router-link
             to="/survivor-pool/all-entries"
@@ -19,7 +19,7 @@
             <img
               src="../../public/icons/solsulvivor/Icon-material-pageview.svg"
             />
-            <h4 class="ml-3 my-0"> View All Entries </h4>
+            <h4 class="ml-3 my-0">View All Entries</h4>
           </router-link>
           <router-link
             to="/survivor-pool/rules"
@@ -28,7 +28,7 @@
             <img
               src="../../public/icons/solsulvivor/Icon-awesome-list-alt.svg"
             />
-            <h4 class="ml-3 my-0"> Rules </h4>
+            <h4 class="ml-3 my-0">Rules</h4>
           </router-link>
         </nav>
       </div>
@@ -49,9 +49,9 @@
                 <div class="abstract">
                   <span class="font-summary"> Current Selection </span>
                   <br />
-                  <span class="font-weight-bold"
-                    >Week {{ survivorPool.currentWeek }}</span
-                  >
+                  <span class="font-weight-bold">{{
+                    currentSelectedTeam
+                  }}</span>
                 </div>
                 <div class="abstract">
                   <span class="font-summary"> Teams Selected </span>
@@ -70,25 +70,25 @@
               </div>
             </div>
           </div>
-            <div class="card mt-3">
-              <div class="col-12 week-header card-header">
-                <div class="row">
-                  <div
-                    v-for="week in weeks"
-                    :key="week"
-                    class="
-                      col-1
-                      d-flex
-                      justify-content-center
-                      flex-nowrap
-                      align-items-center
-                      my-1
-                    "
-                  >
-                    {{ week }}
-                  </div>
+          <div class="card mt-3">
+            <div class="col-12 week-header card-header">
+              <div class="row">
+                <div
+                  v-for="week in weeks"
+                  :key="week"
+                  class="
+                    col-1
+                    d-flex
+                    justify-content-center
+                    flex-nowrap
+                    align-items-center
+                    my-1
+                  "
+                >
+                  {{ week }}
                 </div>
               </div>
+            </div>
             <div class="col-12">
               <div class="row">
                 <pick-section
@@ -170,6 +170,18 @@ export default {
     ...mapState({
       publicKey: (state) => state.publicKey,
     }),
+    currentSelectedTeam() {
+      if (!this.ticket) {
+        return "None";
+      }
+      const mostRecentSelection = this.ticket.selections.find(
+        (selection) => selection.weekNumber === this.survivorPool.currentWeek
+      );
+      if (!mostRecentSelection) {
+        return "None";
+      }
+      return mostRecentSelection.selection.selection.longName;
+    },
   },
   created() {
     this.setMode();
