@@ -1,38 +1,37 @@
 <template>
-  <main>
-    <!--<header-section />-->
-    <!--<features-section />-->
+  <div>
+    <header-section />
+    <features-section />
     <video-section />
-    <!--<faq-section />-->
-    <!--<calculator-section />-->
+    <faq-section />
+    <calculator-section />
     <footer-section />
-  </main>
+  </div>
 </template>
-
 <script>
-// import HeaderSection from "4caster-landing/src/components/HeaderSection";
-// import FeaturesSection from "4caster-landing/src/components/FeaturesSection.vue";
-import VideoSection from "4caster-landing/src/components/VideoSection.vue";
-// import FaqSection from "4caster-landing/src/components/FaQSection.vue";
-// import CalculatorSection from "4caster-landing/src/components/CalculatorSection.vue";
-import FooterSection from "4caster-landing/src/components/FooterSection";
+import HeaderSection from "@/components/landing/HeaderSection.vue";
+import FeaturesSection from "@/components/landing/FeaturesSection.vue";
+import FooterSection from "@/components/landing/FooterSection.vue";
+import VideoSection from "@/components/landing/VideoSection.vue";
+import FaqSection from "@/components/landing/FaQSection.vue";
+import CalculatorSection from "@/components/landing/CalculatorSection.vue";
 
 export default {
   name: "Landing",
   components: {
     FooterSection,
-    // FeaturesSection,
-    // HeaderSection,
+    FeaturesSection,
+    HeaderSection,
     VideoSection,
-    // FaqSection,
-    // CalculatorSection,
+    FaqSection,
+    CalculatorSection,
   },
 };
 </script>
 
 <style lang="sass">
-@import "../assets/styles/main"
-@import "../assets/styles/fonts"
+@import "@/assets/styles/main"
+@import "@/assets/styles/fonts"
 
 .font
   font-size: 2.95rem !important

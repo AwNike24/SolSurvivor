@@ -3,11 +3,11 @@
     <div class="container py-5 margin text-center">
       <h1>Rarity</h1>
       <h3 class="my-4">
-        Unlike other NFTS, the rarity of your
+        Unlike other NFTs, the rarity of your
         <span style="color: #a7c6ff; font-weight: 600"> SolSurvivor </span> NFT
         depends only on your skill predicting the NFL. Pick teams that others
-        don't to get rare traits. Everyone starts with the same NFT, the rest is
-        up to you.
+        don't to get more rare traits. Everyone starts with the same NFT, the
+        rest is up to you.
       </h3>
       <div class="row justify-content-center">
         <div
@@ -139,16 +139,16 @@ export default {
 };
 </script>
 <style lang="sass" scoped>
-@import "~bootstrap/scss/functions"
-@import "~bootstrap/scss/variables"
+@import "@/assets/styles/variables"
+
 h1
-  font-family: 'poppins-bold'
+  font-family: $font-poppins-bold
   font-weight: bolder
   font-size: 2rem
   color: #A7C6FF
 
 h3
-  font-family: 'poppins-regular'
+  font-family: $font-poppins
   font-size: 14px
   font-weight : 400
   color: white
@@ -235,12 +235,12 @@ button
 .card-body
   padding:(10px)
 .card-title
-  font-family: 'poppins-bold'
-  font-size: 0.9rem;
+  font-family: $font-poppins-bold
+  font-size: 0.9rem
   color: #0A0A0A
 .card-subtitle
-  font-family: 'poppins-regular'
-  font-size: 0.9rem;
+  font-family: $font-poppins
+  font-size: 0.9rem
   color: #0A0A0A
 .imagen-card
   border-top-right-radius:(20px)
@@ -257,7 +257,7 @@ button
     white-space: nowrap
     vertical-align: baseline
     border-radius: .25rem
-    font-family: 'poppins-regular'
+    font-family: $font-poppins
     padding: .8rem .75rem
 .badge-middle
   background-color: #757DCE
