@@ -1,57 +1,57 @@
 <template>
-  <footer class="py-5">
-    <div class="container-fluid">
-      <div style="width: 100%" class="row justify-content-center">
-        <div class="col-12 d-flex d-lg-none justify-content-start mb-4">
-          <div class="row px-5">
-            <div class="col-12">
-              <img src="/images/solsurvivor-color@2x.png" />
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-12">
-          <div class="row px-5">
-            <div class="col-12 email-link">info@4castersports.com</div>
-            <div class="col-12 address">
-              2100 S Oak St., Champaign, Illinois, 61820 © Fourcaster LLC, 2019
-            </div>
-          </div>
-        </div>
-        <div class="col-3 d-none d-lg-flex align-self-center">
-          <img class="mx-auto d-block" src="/images/solsurvivor-color@2x.png" />
-        </div>
-        <div class="col-lg-3 col-12 py-3 py-lg-0">
-          <div class="row justify-content-center">
-            <div class="col-2">
-              <img
-                class="mx-auto d-block social-link"
-                src="/images/Facebook@2x.png"
-              />
-            </div>
-            <div class="col-2">
-              <img
-                class="mx-auto d-block social-link"
-                src="/images/Twitter@2x.png"
-              />
-            </div>
-            <div class="col-2">
-              <img
-                class="mx-auto d-block social-link"
-                src="/images/Youtube@2x.png"
-              />
-            </div>
-            <div class="col-2">
-              <img
-                class="mx-auto d-block social-link"
-                src="/images/Instagram@2x.png"
-              />
-            </div>
-            <div class="col-2">
-              <img class="mx-auto d-block social-link" src="/images/M@2x.png" />
-            </div>
-          </div>
-        </div>
+  <footer class="container py-5">
+    <div class="row align-items-center flex-column-reverse flex-md-row">
+      <div class="col-12 col-md-6 text-center text-md-left mt-4 mt-md-0">
+        <a href="mailto:info@4castersports.com" class="email-link"
+          >hello@solanasurvivor.com</a
+        >
+        <br />
+        <span>© FOURCASTER LIMITADA, 2021</span>
       </div>
+      <div
+        class="
+          col-12 col-md-6
+          d-flex
+          justify-content-center justify-content-md-end
+        "
+      >
+        <a
+          href="https://twitter.com/solanasurvivor"
+          target="_blank"
+          rel="noopener"
+          class="social-link"
+        >
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE4LjUyNiAyLjg0NkE0LjUxIDQuNTEgMCAwIDAgMjAuNDIuMzMzYTguMzU1IDguMzU1IDAgMCAxLTIuNzM2IDEuMTAyQTQuMTk0IDQuMTk0IDAgMCAwIDE0LjUzOSAwYy0yLjM4IDAtNC4zMDcgMi4wMzUtNC4zMDcgNC41NDQgMCAuMzU2LjAzNi43MDMuMTEgMS4wMzQtMy41OC0uMTktNi43NTQtMS45OTYtOC44OC00Ljc0N2E0LjcyNCA0LjcyNCAwIDAgMC0uNTgzIDIuMjg1YzAgMS41NzYuNzYgMi45NjcgMS45MTcgMy43ODNhNC4xNTQgNC4xNTQgMCAwIDEtMS45NTMtLjU2OHYuMDU2YzAgMi4yMDIgMS40ODQgNC4wNCAzLjQ1OCA0LjQ1NWE0LjAxIDQuMDEgMCAwIDEtMS4xMzcuMTZjLS4yNzcgMC0uNTQ4LS4wMjctLjgxLS4wOC41NDggMS44MDQgMi4xMzkgMy4xMiA0LjAyNSAzLjE1NS0xLjQ3NiAxLjIxOS0zLjMzMyAxLjk0NC01LjM1MSAxLjk0NC0uMzQ4IDAtLjY5MS0uMDItMS4wMjgtLjA2MkExMS43NDcgMTEuNzQ3IDAgMCAwIDYuNjA0IDE4YzcuOTI2IDAgMTIuMjU3LTYuOTI0IDEyLjI1Ny0xMi45MjkgMC0uMTk3LS4wMDItLjM5NC0uMDEtLjU4N0E5LjAwNiA5LjAwNiAwIDAgMCAyMSAyLjEzYTguMjU3IDguMjU3IDAgMCAxLTIuNDc0LjcxNXoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg=="
+            alt="Twitter"
+          />
+        </a>
+        <a
+          href="https://discord.gg/STMwQynkFJ"
+          target="_blank"
+          rel="noopener"
+          class="social-link"
+        >
+          <img
+            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMnB0IiBoZWlnaHQ9IjIycHQiIHZpZXdCb3g9IjAgMCAyMiAyMiIgdmVyc2lvbj0iMS4xIj48ZyBpZD0ic3VyZmFjZTUzODkyNTIiPjxwYXRoIHN0eWxlPSIgc3Ryb2tlOm5vbmU7ZmlsbC1ydWxlOm5vbnplcm87ZmlsbDpyZ2IoMTAwJSwxMDAlLDEwMCUpO2ZpbGwtb3BhY2l0eToxOyIgZD0iTSAxOC4zMTY0MDYgNC43MzgyODEgQyAxNi41NjI1IDMuMzI4MTI1IDEzLjc5Mjk2OSAzLjA4OTg0NCAxMy42NzU3ODEgMy4wODIwMzEgQyAxMy40OTIxODggMy4wNjY0MDYgMTMuMzE2NDA2IDMuMTY3OTY5IDEzLjIzODI4MSAzLjMzOTg0NCBDIDEzLjIzNDM3NSAzLjM1MTU2MiAxMy4xNzE4NzUgMy40ODgyODEgMTMuMTA1NDY5IDMuNzA3MDMxIEMgMTQuMjY1NjI1IDMuOTAyMzQ0IDE1LjY4NzUgNC4yOTY4NzUgMTYuOTcyNjU2IDUuMDkzNzUgQyAxNy4xNzk2ODggNS4yMjI2NTYgMTcuMjQ2MDk0IDUuNDkyMTg4IDE3LjExNzE4OCA1LjY5OTIxOSBDIDE3LjAzMTI1IDUuODM1OTM4IDE2Ljg5MDYyNSA1LjkxMDE1NiAxNi43NDIxODggNS45MTAxNTYgQyAxNi42NjQwNjIgNS45MTAxNTYgMTYuNTgyMDMxIDUuODg2NzE5IDE2LjUxMTcxOSA1Ljg0Mzc1IEMgMTQuMjk2ODc1IDQuNDY4NzUgMTEuNTMxMjUgNC4zOTg0MzggMTEgNC4zOTg0MzggQyAxMC40Njg3NSA0LjM5ODQzOCA3LjcwMzEyNSA0LjQ2ODc1IDUuNDg4MjgxIDUuODQzNzUgQyA1LjI4NTE1NiA1Ljk3MjY1NiA1LjAxMTcxOSA1LjkwNjI1IDQuODgyODEyIDUuNjk5MjE5IEMgNC43NTM5MDYgNS40OTIxODggNC44MjAzMTIgNS4yMjI2NTYgNS4wMjczNDQgNS4wOTM3NSBDIDYuMzEyNSA0LjI5Njg3NSA3LjczNDM3NSAzLjkwMjM0NCA4Ljg5NDUzMSAzLjcwNzAzMSBDIDguODI4MTI1IDMuNDg4MjgxIDguNzY1NjI1IDMuMzUxNTYyIDguNzYxNzE5IDMuMzM5ODQ0IEMgOC42ODM1OTQgMy4xNjc5NjkgOC41MTE3MTkgMy4wNjI1IDguMzI0MjE5IDMuMDgyMDMxIEMgOC4yMDcwMzEgMy4wODk4NDQgNS40Mzc1IDMuMzI4MTI1IDMuNjYwMTU2IDQuNzU3ODEyIEMgMi43MzQzNzUgNS42MTMyODEgMC44Nzg5MDYgMTAuNjI4OTA2IDAuODc4OTA2IDE0Ljk2MDkzOCBDIDAuODc4OTA2IDE1LjAzOTA2MiAwLjkwMjM0NCAxNS4xMDkzNzUgMC45Mzc1IDE1LjE3OTY4OCBDIDIuMjE4NzUgMTcuNDI1NzgxIDUuNzA3MDMxIDE4LjAxNTYyNSA2LjUwMzkwNiAxOC4wMzkwNjIgQyA2LjUwNzgxMiAxOC4wMzkwNjIgNi41MTE3MTkgMTguMDM5MDYyIDYuNTE1NjI1IDE4LjAzOTA2MiBDIDYuNjYwMTU2IDE4LjAzOTA2MiA2Ljc4OTA2MiAxNy45NzI2NTYgNi44NzUgMTcuODU5Mzc1IEwgNy42NzU3ODEgMTYuNzUzOTA2IEMgNS41MDc4MTIgMTYuMTkxNDA2IDQuMzk4NDM4IDE1LjIzODI4MSA0LjMzNTkzOCAxNS4xODM1OTQgQyA0LjE1MjM0NCAxNS4wMjM0MzggNC4xMzY3MTkgMTQuNzQ2MDk0IDQuMjk2ODc1IDE0LjU2MjUgQyA0LjQ1NzAzMSAxNC4zNzg5MDYgNC43MzQzNzUgMTQuMzYzMjgxIDQuOTE3OTY5IDE0LjUyMzQzOCBDIDQuOTQxNDA2IDE0LjU0Njg3NSA2Ljk4NDM3NSAxNi4yODEyNSAxMSAxNi4yODEyNSBDIDE1LjAyMzQzOCAxNi4yODEyNSAxNy4wNjI1IDE0LjUzOTA2MiAxNy4wODU5MzggMTQuNTIzNDM4IEMgMTcuMjY1NjI1IDE0LjM2NzE4OCAxNy41NDI5NjkgMTQuMzc4OTA2IDE3LjcwMzEyNSAxNC41NjY0MDYgQyAxNy44NjMyODEgMTQuNzQ2MDk0IDE3Ljg0NzY1NiAxNS4wMjM0MzggMTcuNjY0MDYyIDE1LjE4MzU5NCBDIDE3LjYwMTU2MiAxNS4yMzgyODEgMTYuNDkyMTg4IDE2LjE5MTQwNiAxNC4zMjQyMTkgMTYuNzUzOTA2IEwgMTUuMTI1IDE3Ljg1OTM3NSBDIDE1LjIxMDkzOCAxNy45NzI2NTYgMTUuMzM5ODQ0IDE4LjAzOTA2MiAxNS40ODQzNzUgMTguMDM5MDYyIEMgMTUuNDg4MjgxIDE4LjAzOTA2MiAxNS40OTIxODggMTguMDM5MDYyIDE1LjQ5NjA5NCAxOC4wMzkwNjIgQyAxNi4yOTI5NjkgMTguMDE1NjI1IDE5Ljc4MTI1IDE3LjQyNTc4MSAyMS4wNjI1IDE1LjE3OTY4OCBDIDIxLjA5NzY1NiAxNS4xMDkzNzUgMjEuMTIxMDk0IDE1LjAzOTA2MiAyMS4xMjEwOTQgMTQuOTYwOTM4IEMgMjEuMTIxMDk0IDEwLjYyODkwNiAxOS4yNjU2MjUgNS42MTMyODEgMTguMzE2NDA2IDQuNzM4MjgxIFogTSA4LjE0MDYyNSAxMy4xOTkyMTkgQyA3LjI4OTA2MiAxMy4xOTkyMTkgNi42MDE1NjIgMTIuNDE0MDYyIDYuNjAxNTYyIDExLjQ0MTQwNiBDIDYuNjAxNTYyIDEwLjQ2ODc1IDcuMjg5MDYyIDkuNjc5Njg4IDguMTQwNjI1IDkuNjc5Njg4IEMgOC45OTIxODggOS42Nzk2ODggOS42Nzk2ODggMTAuNDY4NzUgOS42Nzk2ODggMTEuNDQxNDA2IEMgOS42Nzk2ODggMTIuNDE0MDYyIDguOTkyMTg4IDEzLjE5OTIxOSA4LjE0MDYyNSAxMy4xOTkyMTkgWiBNIDEzLjg1OTM3NSAxMy4xOTkyMTkgQyAxMy4wMDc4MTIgMTMuMTk5MjE5IDEyLjMyMDMxMiAxMi40MTQwNjIgMTIuMzIwMzEyIDExLjQ0MTQwNiBDIDEyLjMyMDMxMiAxMC40Njg3NSAxMy4wMDc4MTIgOS42Nzk2ODggMTMuODU5Mzc1IDkuNjc5Njg4IEMgMTQuNzEwOTM4IDkuNjc5Njg4IDE1LjM5ODQzOCAxMC40Njg3NSAxNS4zOTg0MzggMTEuNDQxNDA2IEMgMTUuMzk4NDM4IDEyLjQxNDA2MiAxNC43MTA5MzggMTMuMTk5MjE5IDEzLjg1OTM3NSAxMy4xOTkyMTkgWiBNIDEzLjg1OTM3NSAxMy4xOTkyMTkgIi8+PC9nPjwvc3ZnPg=="
+            alt="Discord"
+          />
+        </a>
+      </div>
+      <!--
+        <a
+          href="https://instagram.com/4castersports/"
+          target="_blank"
+          rel="noopener"
+          class="social-link"
+        >
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExIDEuOTgyYzIuOTM3IDAgMy4yODUuMDExIDQuNDQ1LjA2NCAxLjA3Mi4wNSAxLjY1NS4yMjggMi4wNDIuMzc5LjUxNC4yLjg4LjQzOCAxLjI2NS44MjMuMzg1LjM4NS42MjQuNzUxLjgyMyAxLjI2NS4xNS4zODcuMzMuOTcuMzc5IDIuMDQyLjA1MyAxLjE2LjA2NCAxLjUwOC4wNjQgNC40NDUgMCAyLjkzNy0uMDExIDMuMjg1LS4wNjQgNC40NDUtLjA1IDEuMDcyLS4yMjggMS42NTUtLjM3OSAyLjA0My0uMi41MTMtLjQzOC44OC0uODIzIDEuMjY0YTMuNDA4IDMuNDA4IDAgMCAxLTEuMjY1LjgyM2MtLjM4Ny4xNS0uOTcuMzMtMi4wNDIuMzc5LTEuMTYuMDUzLTEuNTA4LjA2NC00LjQ0NS4wNjQtMi45MzcgMC0zLjI4NS0uMDExLTQuNDQ1LS4wNjQtMS4wNzItLjA0OS0xLjY1NS0uMjI4LTIuMDQyLS4zNzktLjUxNC0uMi0uODgtLjQzOC0xLjI2NS0uODIzYTMuNDA4IDMuNDA4IDAgMCAxLS44MjMtMS4yNjRjLS4xNS0uMzg4LS4zMy0uOTctLjM3OS0yLjA0My0uMDUzLTEuMTYtLjA2NC0xLjUwOC0uMDY0LTQuNDQ1IDAtMi45MzcuMDExLTMuMjg1LjA2NC00LjQ0NS4wNDktMS4wNzIuMjI4LTEuNjU1LjM3OS0yLjA0Mi4yLS41MTQuNDM4LS44OC44MjMtMS4yNjVhMy40MDggMy40MDggMCAwIDEgMS4yNjUtLjgyM2MuMzg3LS4xNS45Ny0uMzMgMi4wNDItLjM3OSAxLjE2LS4wNTMgMS41MDgtLjA2NCA0LjQ0NS0uMDY0TTExIDBjMi45ODcgMCAzLjM2Mi4wMTMgNC41MzUuMDY2IDEuMTcxLjA1NCAxLjk3LjI0IDIuNjcuNTEyYTUuMzkyIDUuMzkyIDAgMCAxIDEuOTQ5IDEuMjY4IDUuMzkyIDUuMzkyIDAgMCAxIDEuMjY4IDEuOTQ5Yy4yNzIuNy40NTggMS40OTkuNTEyIDIuNjdDMjEuOTg3IDcuNjM4IDIyIDguMDEzIDIyIDExcy0uMDEzIDMuMzYyLS4wNjYgNC41MzVjLS4wNTQgMS4xNzEtLjI0IDEuOTctLjUxMiAyLjY3YTUuMzkyIDUuMzkyIDAgMCAxLTEuMjY4IDEuOTQ5IDUuMzkyIDUuMzkyIDAgMCAxLTEuOTQ5IDEuMjY5Yy0uNy4yNzEtMS40OTkuNDU3LTIuNjcuNTEtMS4xNzMuMDU0LTEuNTQ4LjA2Ny00LjUzNS4wNjdzLTMuMzYyLS4wMTMtNC41MzUtLjA2NmMtMS4xNzEtLjA1NC0xLjk3LS4yNC0yLjY3LS41MTFhNS4zOTIgNS4zOTIgMCAwIDEtMS45NDktMS4yNyA1LjM5MiA1LjM5MiAwIDAgMS0xLjI2OS0xLjk0OGMtLjI3MS0uNy0uNDU3LTEuNDk5LS41MS0yLjY3Qy4wMTIgMTQuMzYyIDAgMTMuOTg3IDAgMTFzLjAxMy0zLjM2Mi4wNjYtNC41MzVjLjA1NC0xLjE3MS4yNC0xLjk3LjUxMS0yLjY3YTUuMzkyIDUuMzkyIDAgMCAxIDEuMjctMS45NDlBNS4zOTIgNS4zOTIgMCAwIDEgMy43OTQuNTc4Yy43LS4yNzIgMS40OTktLjQ1OCAyLjY3LS41MTJDNy42MzguMDEzIDguMDEzIDAgMTEgMHptLjAyMiA1LjM2OWE1LjY1MyA1LjY1MyAwIDEgMCAwIDExLjMwNiA1LjY1MyA1LjY1MyAwIDAgMCAwLTExLjMwNnptMCA5LjMyMmEzLjY3IDMuNjcgMCAxIDEgMC03LjMzOSAzLjY3IDMuNjcgMCAwIDEgMCA3LjM0em03LjEzNy05LjU4NGExLjMxIDEuMzEgMCAxIDAtMi42MiAwIDEuMzEgMS4zMSAwIDAgMCAyLjYyIDB6IiBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4="
+            alt="Instagram"
+          >
+        </a>
+      </div>
+      !-->
     </div>
   </footer>
 </template>
@@ -62,10 +62,14 @@ export default {
 </script>
 <style lang="sass">
 footer
-  border-top: 10px solid #343B86
   color: #343B86
+  a.email-link
+    color: #343B86
+    font-weight: bold
+    &:hover
+      color: #343B86
 
-.social-link
+  a.social-link
     width: 44px
     height: 44px
     display: flex
@@ -77,17 +81,4 @@ footer
     border-radius: 50%
     &:not(:last-child)
       margin-right: 1rem
-
-.email-link
-  font-family: 'Poppins-regular'
-  color: #343B86
-  font-weight: bold
-  font-size: 13px
-  &:hover
-    color: #343B86
-
-.address
-  font-family: 'Poppins-regular'
-  color: #141414
-  font-size: 10px
 </style>
