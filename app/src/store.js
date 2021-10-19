@@ -44,8 +44,7 @@ export default createStore({
   },
   actions: {
     findOrCreate: (context) =>
-      api.request('user/findOrCreateUser')
-        .then((response) => {
+      api.request("user/findOrCreateUser").then((response) => {
         context.commit("logIn", response.user);
       }),
     signUp: (context, payload) =>

@@ -75,8 +75,7 @@ export default {
           this.$router.push('/survivor-pool/my-entries');
         })
       } else {
-        this.setPublicKey(null);
-        this.$router.push('/');
+        this.setNullPubKeyAndRedirect();
       }
     },
   },
@@ -87,6 +86,10 @@ export default {
     ...mapActions([
       'findOrCreate',
     ]),
+    setNullPubKeyAndRedirect () {
+      this.setPublicKey(null);
+      this.$router.push('/');
+    }
   }
 };
 </script>
