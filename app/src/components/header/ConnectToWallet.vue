@@ -80,6 +80,7 @@ export default {
         this.setPublicKey(this.publicKey.toString());
         this.$router.push('/survivor-pool/my-entries');
       } else {
+        this.setPublicKey(null);
         this.$router.push('/');
       }
     },

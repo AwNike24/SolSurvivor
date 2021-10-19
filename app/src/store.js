@@ -12,12 +12,18 @@ const initialState = () => ({
   type: "",
   username: "",
   userToken: "",
+  walletConnected: false,
 });
 
 export default createStore({
   state: initialState(),
   mutations: {
     setPublicKey(state, publicKey) {
+      if (publicKey) {
+        state.walletConnected = true;
+      } else {
+        state.walletConnected = false;
+      }
       state.publicKey = publicKey;
     },
     getMe(state, payload) {

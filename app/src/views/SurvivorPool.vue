@@ -3,6 +3,7 @@
     <div class="row no-gutters">
       <div class="col-12 col-md-2">
         <nav class="left-sidebar p-4">
+          <button class="mt-2 mb-3 connect-wallet">CONNECT WALLET</button>
           <router-link
             to="/survivor-pool/my-entries"
             class="d-flex align-items-center"
@@ -284,6 +285,16 @@ h4
   &:hover
     transform: scale(1.025)
     transition: transform 0.3s
+
+button.connect-wallet
+  border-radius: 35px
+  padding-right: 37px
+  padding-left: 37px
+  padding-top: 11px
+  padding-bottom: 11px
+  background-color: #FF443C!important
+  font-size: 12px
+  width: 100%
 
 .usernameSection
   padding: 1.35rem 1rem
