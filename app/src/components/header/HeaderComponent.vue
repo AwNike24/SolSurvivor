@@ -3,7 +3,7 @@
     <div class="row d-flex d-lg-none">
       <div class="col-3 offset-1 float-left p-0" @click.stop="toggle()">
         <img
-          src="/icons/three-horizontal-lines.svg"
+          src="/images/three-horizontal-lines.svg"
           class="d-block icon-menu"
         />
         <div v-if="active" class="dropdown">
@@ -49,7 +49,7 @@
         <img
           src="/images/solsurvivor.png"
           alt="SolSurvivorLogo"
-          class="mx-md-auto text-sm-center d-block"
+          class="mx-lg-auto text-sm-center d-block"
         />
       </div>
     </div>
@@ -130,11 +130,6 @@ header
   padding-top: 20px
   color: white
   min-height: 60px
-  @media screen and (max-width: map_get($grid-breakpoints, md))
-    padding-top: 40px
-  @media screen and (max-width: map_get($grid-breakpoints, sm))
-    background-size: 100% 100%
-    padding-top: 20px
 
   .container-header
     @media screen and (max-width: 1350px)

@@ -201,8 +201,9 @@ export default {
 <style lang="sass" scoped>
 @import "@/assets/styles/variables"
 
-/*.container
-  max-width: 1400px*/
+#how-it-works
+  @media screen and (max-width: map_get($grid-breakpoints, lg))
+    padding-top: 0 !important
 
 h3
   font-size: 2.5rem

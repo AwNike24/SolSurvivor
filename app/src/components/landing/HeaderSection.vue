@@ -1,6 +1,5 @@
 <template>
   <div class="header" @click="active = false">
-    <div class="offset-lg-1 col-4 d-lg-none" style="max-width: 150px" />
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-6 title-container">
@@ -27,7 +26,6 @@
         </div>
       </div>
     </div>
-    <div class="clearfix" />
   </div>
 </template>
 <script>
@@ -56,15 +54,21 @@ div.header
   padding-top: 20px
   color: white
   min-height: 750px
+  @media screen and (max-width: 1200px)
+    min-height: 585px
   @media screen and (max-width: map_get($grid-breakpoints, lg))
-    background-size: 100% 80%
+    min-height: 1100px
   @media screen and (max-width: map_get($grid-breakpoints, md))
-    padding-top: 40px
+    min-height: 930px
   @media screen and (max-width: map_get($grid-breakpoints, sm))
-    background-image: url('/images/Background-responsive.png')
+    background-image: url('/images/Background-responsive_.png')
     background-repeat: no-repeat
     background-size: 100% 100%
-    padding-top: 20px
+    min-height: 870px
+  @media screen and (max-width: 480px)
+    min-height: 800px
+  @media screen and (max-width: 360px)
+    min-height: 750px
 
   .container-header
     @media screen and (max-width: 1350px)
@@ -110,14 +114,14 @@ div.header
 
   .title-container
     margin-top: 150px
+    @media screen and (max-width: map_get($grid-breakpoints, lg))
+      margin-top: 100px
+
     img
       margin-top: 10px
       transform: translateY(7.4%)
       width: 100%
       height: auto
-
-    @media screen and (max-width: map_get($grid-breakpoints, md))
-      margin-top: 70px
 
   .title-container-img
     margin-top: 0px
