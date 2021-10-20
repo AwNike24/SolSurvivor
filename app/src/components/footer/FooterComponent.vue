@@ -60,7 +60,7 @@ export default {
   methods: {},
 };
 </script>
-<style lang="sass">
+<style scoped lang="sass">
 @import "../../assets/styles/variables"
 
 .footer-link
