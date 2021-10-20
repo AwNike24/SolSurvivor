@@ -123,7 +123,7 @@ export default {
 @import "../../assets/styles/variables"
 
 header
-  background-image: url('/images/Background-header@2x.png')
+  background-image: url('/images/Background-header@2x_.png')
   background-repeat: no-repeat
   background-size: 100% 100%
   background-color: $color-primary
