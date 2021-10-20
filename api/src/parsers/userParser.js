@@ -6,7 +6,8 @@ function parseUserDoc (userDoc, token) {
     id: userDoc._id,
     survivorBalance: userDoc.survivorBalance,
     type: userDoc.type,
-    username: userDoc.username
+    username: userDoc.username,
+    publicKey: userDoc.publicKey
   }
 }
 
