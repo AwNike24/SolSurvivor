@@ -50,7 +50,7 @@ export default {
 @import "@/assets/styles/variables"
 
 div.header
-  background-image: url('/images/background@2x.png')
+  background-image: url('/images/Background-slideprincipal@2x.png')
   background-repeat: no-repeat
   background-size: 100% 100%
   padding-top: 90px
