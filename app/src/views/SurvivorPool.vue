@@ -238,6 +238,8 @@ export default {
         (selection) => selection.weekNumber === weekNumber
       );
     },
+    // requests getSurvivorPool from API
+    // this endpoint returns the contest and
     getSurvivorPool() {
       if (this.mode === "not-connected") {
         this.loading = false;
@@ -250,11 +252,13 @@ export default {
       }
       this.loading = false;
     },
+    // generic handler called every time /getSurvivorPool is called from the api
     handleSurvivorPoolResponse(res) {
       this.survivorPool = res.survivorPool;
       [this.ticket] = res.tickets;
       this.loading = false;
     },
+    // adds a new selection to the users survivor pool ticket
     selectTeam({ selectedWeek, participantID, gameID }) {
       this.closeModal();
       this.loading = true;
@@ -268,6 +272,7 @@ export default {
         this.handleSurvivorPoolResponse(res);
       });
     },
+    // removes an already selected team from that week
     removeSelection({ gameID, oldParticipantID, selectionID }) {
       this.closeModal();
       this.loading = true;
@@ -281,6 +286,7 @@ export default {
         this.handleSurvivorPoolResponse(res);
       });
     },
+    // initialize select teams modal
     selectWeekToPick({ weekNumber }) {
       this.selectedWeek = weekNumber;
       this.teamsModalShown = true;
