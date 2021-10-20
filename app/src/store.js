@@ -1,5 +1,7 @@
 import { createStore } from "vuex";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
 import api from "./core/api";
 
 const initialState = () => ({

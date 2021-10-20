@@ -24,6 +24,7 @@
                   feature-main-content
                   py-3
                   px-2
+                  position-relative
                 "
               >
                 <img
