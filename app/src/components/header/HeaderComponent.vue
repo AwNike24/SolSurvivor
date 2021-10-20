@@ -126,7 +126,7 @@ header
   background-color: $color-primary
   padding-top: 20px
   color: white
-  min-height: 750px
+  min-height: 60px
   @media screen and (max-width: map_get($grid-breakpoints, md))
     padding-top: 40px
   @media screen and (max-width: map_get($grid-breakpoints, sm))
