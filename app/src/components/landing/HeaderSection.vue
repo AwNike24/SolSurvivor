@@ -62,16 +62,16 @@
         <nav class="col-lg-6 col-12">
           <div class="row">
             <div class="col-2 text-center">
-              <a v-scroll-to="'#how-it-works'" href="#how-it-works">About</a>
+              <a href="#how-it-works">About</a>
             </div>
             <div class="col-2 text-center">
-              <a v-scroll-to="'#about'" href="#about">Demo</a>
+              <a href="#about">Demo</a>
             </div>
             <div class="col-2 text-center">
-              <a v-scroll-to="'#save-money'" href="#save-money">Roadmap</a>
+              <a href="#save-money">Roadmap</a>
             </div>
             <div class="col-2 text-center">
-              <a v-scroll-to="'#faquestions'" href="#faquestions">Faq</a>
+              <a href="#faquestions">Faq</a>
             </div>
             <div class="col-2 text-center">
               <a
