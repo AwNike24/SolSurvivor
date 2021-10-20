@@ -142,6 +142,9 @@ export default {
 =======
 
 header
+  background-image: url('/images/Background-header@2x.png')
+  background-repeat: no-repeat
+  background-size: 100% 100%
   background-color: $color-primary
   padding-top: 20px
   color: white
