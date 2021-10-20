@@ -48,7 +48,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-6 position-relative">
         <div class="circle position-absolute" />
         <img
           class="feature-principal d-block d-lg-inline mx-auto mx-lg-0"
