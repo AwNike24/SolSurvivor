@@ -5,13 +5,11 @@
     <video-section />
     <faq-section />
     <calculator-section />
-    <footer-section />
   </div>
 </template>
 <script>
 import HeaderSection from "@/components/landing/HeaderSection.vue";
 import FeaturesSection from "@/components/landing/FeaturesSection.vue";
-import FooterSection from "@/components/landing/FooterSection.vue";
 import VideoSection from "@/components/landing/VideoSection.vue";
 import FaqSection from "@/components/landing/FaQSection.vue";
 import CalculatorSection from "@/components/landing/CalculatorSection.vue";
@@ -19,7 +17,6 @@ import CalculatorSection from "@/components/landing/CalculatorSection.vue";
 export default {
   name: "Landing",
   components: {
-    FooterSection,
     FeaturesSection,
     HeaderSection,
     VideoSection,
