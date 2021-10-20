@@ -11,7 +11,13 @@
             widthResp < 768 ? 'justify-content-start' : 'justify-content-center'
           "
         >
-          <h1 class="mt-md-3 mb-5 w-100 text-center">Roadmap</h1>
+          <h1 class="mt-md-3 mb-5 w-100 text-center">
+            <img
+              src="/images/Icon-roadmap.png"
+              style="margin-right: 20px; margin-top: -6px"
+            />
+            <span>Roadmap</span>
+          </h1>
           <div v-if="widthResp >= 768" class="w-100 mt-4">
             <transition-group ame="flip-list" tag="div">
               <div
