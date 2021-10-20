@@ -8,8 +8,8 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 // Font awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-library.add(faPhone);
+import { faPhone, faAngleUp, faAngleDown} from "@fortawesome/free-solid-svg-icons";
+library.add(faPhone, faAngleUp, faAngleDown);
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 
