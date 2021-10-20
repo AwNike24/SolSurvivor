@@ -3,5 +3,5 @@
 </template>
 
 <style lang="sass">
-@import "assets/styles/main"
+@import "@/assets/styles/main"
 </style>

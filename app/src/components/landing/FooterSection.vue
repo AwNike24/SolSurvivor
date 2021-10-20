@@ -60,7 +60,7 @@ export default {
   name: "FooterSection",
 };
 </script>
-<style lang="sass">
+<style scoped lang="sass">
 footer
   color: #343B86
   a.email-link
