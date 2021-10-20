@@ -1,5 +1,5 @@
 <template>
-  <header class="container-fluid" @click="active = false">
+  <header class="container-fluid pb-3" @click="active = false">
     <div class="row d-flex d-lg-none">
       <div class="col-3 offset-1 float-left p-0" @click.stop="toggle()">
         <img
