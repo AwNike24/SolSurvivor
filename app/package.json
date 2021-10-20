@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "4caster-landing": "git+https://gitlab+deploy-token-58804:kz5PH8J8u17mTdazKyNp@gitlab.com/4Caster/landing.git#GamblingGoats",
+    "@popperjs/core": "^2.10.2",
     "@solana/wallet-adapter-base": "^0.6.0",
     "@solana/wallet-adapter-wallets": "^0.10.1",
     "@solana/web3.js": "^1.29.2",

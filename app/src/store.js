@@ -1,6 +1,7 @@
 import { createStore } from "vuex";
 import createPersistedState from "vuex-persistedstate";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
 import api from "./core/api";
 
 const initialState = () => ({
