@@ -1,5 +1,5 @@
 <template>
-  <div @click="active = false">
+  <div class="header" @click="active = false">
     <div class="offset-lg-1 col-4 d-lg-none" style="max-width: 150px" />
     <div class="container">
       <div class="row justify-content-center">
@@ -49,7 +49,7 @@ export default {
 
 @import "@/assets/styles/variables"
 
-header
+div.header
   background-image: url('/images/background@2x.png')
   background-repeat: no-repeat
   background-size: 100% 100%
