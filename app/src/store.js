@@ -1,5 +1,4 @@
 import { createStore } from "vuex";
-import createPersistedState from "vuex-persistedstate";
 
 import api from "./core/api";
 
@@ -59,5 +58,4 @@ export default createStore({
         }),
   },
   strict: process.env.NODE_ENV !== "production",
-  plugins: [createPersistedState({ storage: window.localStorage })],
 });
