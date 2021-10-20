@@ -34,7 +34,7 @@
                   <div class="line-h" />
                 </div>
                 <div class="col-md-1 px-0" style="max-width: 6px">
-                  <div class="row h-100" style="margin-left: auto">
+                  <div class="h-100" style="margin-left: auto">
                     <div v-if="index == 0" class="circle circle-init" />
                     <div
                       class="line"
@@ -75,7 +75,7 @@
                 class="row w-100 ml-2 box-principal"
               >
                 <div class="col-1 px-0" style="max-width: 6px">
-                  <div class="row h-100" style="margin-left: auto">
+                  <div class="h-100" style="margin-left: auto">
                     <div v-if="index == 0" class="circle circle-init" />
                     <div
                       class="line"
@@ -333,18 +333,19 @@ button
 .circle.left
   margin-left: -20px
 .circle.right
-  right: -20px
-  z-index: 99
-  margin-top: -15px
+    right: -20px
+    z-index: 99
+    margin-top: -15px
+    float: right
+    position: relative
 .circle-init
   background-color: white
   margin-left: -10px
   margin-top: -23px
 .circle-end
   background-color: white
-  position: absolute
-  bottom: -20px
-  left: 10px
+  position: relative
+  margin-left: -10px
 
 .box-principal
   @media screen and (max-width: map_get($grid-breakpoints, md))
