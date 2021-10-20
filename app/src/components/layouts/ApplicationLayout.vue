@@ -7,14 +7,14 @@
 </template>
 
 <script>
-import HeaderComponent from "@/components/header/HeaderComponent.vue"
+import HeaderComponent from "@/components/header/HeaderComponent.vue";
 import FooterComponent from "@/components/footer/FooterComponent.vue";
 
 export default {
   name: "ApplicationLayout",
   components: {
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
   },
 };
 </script>
