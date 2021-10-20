@@ -8,7 +8,7 @@
           <h2 class="text-center py-0 my-0 text-lg-left font-weight-light">
             New Traits Each Week You Survive
           </h2>
-          <div class="d-flex row ml-1">
+          <div class="col-12 text-center ml-1 w-100">
             <button
               href="#how-it-works"
               class="
@@ -53,9 +53,11 @@ div.header
   background-image: url('/images/Background-slideprincipal@2x.png')
   background-repeat: no-repeat
   background-size: 100% 100%
-  padding-top: 90px
+  padding-top: 20px
   color: white
   min-height: 750px
+  @media screen and (max-width: map_get($grid-breakpoints, lg))
+    background-size: 100% 80%
   @media screen and (max-width: map_get($grid-breakpoints, md))
     padding-top: 40px
   @media screen and (max-width: map_get($grid-breakpoints, sm))
@@ -107,7 +109,7 @@ div.header
     font-weight: normal
 
   .title-container
-    margin-top: 100px
+    margin-top: 150px
     img
       margin-top: 10px
       transform: translateY(7.4%)
@@ -121,7 +123,7 @@ div.header
     margin-top: 0px
     img
       transform: translateY(7.4%)
-      width: 100%
+      width: 95%
       height: auto
 
     @media screen and (max-width: map_get($grid-breakpoints, md))
@@ -131,13 +133,14 @@ div.header
       margin-top: 20px
 
   .free-acct-info
-    padding: 12px 2rem
+    padding: 12px 3rem
     border-radius: 30px
     background-color: #F5F0F6
     color: #343B86
     font-weight: bold
     font-family: $font-roboto
     border: transparent
+    width: auto
 
     &:hover, &.router-link-active
       text-decoration: none
