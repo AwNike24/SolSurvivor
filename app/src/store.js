@@ -31,6 +31,7 @@ export default createStore({
       state.type = payload.type;
       state.username = payload.username;
       state.publicKey = payload.publicKey;
+      state.walletConnected = true;
     },
     logOut(state) {
       const s = initialState();
@@ -40,10 +41,10 @@ export default createStore({
     },
   },
   actions: {
-    findOrCreate: (context) =>
-      api.request("user/findOrCreateUser").then((response) => {
-        context.commit("logIn", response.user);
-      }),
+    findOrCreate: async (context) => {
+      const response = await api.request("user/findOrCreateUser");
+      context.commit("logIn", response.user);
+    },
     signUp: (context, payload) =>
       api
         .request("user/create/", {

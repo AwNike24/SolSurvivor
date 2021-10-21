@@ -246,6 +246,7 @@ export default {
       } else if (!this.walletConnected) {
         this.$router.push("/survivor-pool/not-connected");
       } else if (this.mode === "my-entries" && this.walletConnected) {
+        console.log(this.publicKey);
         api.request("survivorPool/getSurvivorPool").then((res) => {
           this.handleSurvivorPoolResponse(res);
         });
