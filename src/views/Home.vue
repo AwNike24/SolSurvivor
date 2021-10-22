@@ -9,7 +9,8 @@
     <h1 v-if="connected">publicKey: {{ publicKey }}</h1>
   </div>
   <div v-if="connected">
-    <h1 v-if="connected">Select NFT:</h1>
+    <h1 v-if="connected && nftsMetaInfo.length">Select NFT:</h1>
+    <h1 v-else>No NFT found</h1>
     <ul class="list-rendering">
       <li
         class="nft-item"
@@ -22,17 +23,17 @@
             <img v-bind:src="item.image" alt="loading..." />
           </div>
           <div>Description: {{ item.description }}</div>
-          <div>
+          <!-- <div>
             <input
               v-model="lamports[index]"
               placeholder="Amount"
               type="number"
             />
-          </div>
+          </div> -->
           <div>
             <button
               v-on:click.self="transferNFTToFourCasters(index)"
-              :disabled="!lamports[index]"
+              :disabled="isTransfering"
             >
               Transfer
             </button>
@@ -52,14 +53,15 @@ import { getPhantomWallet } from '@solana/wallet-adapter-wallets';
 import {
   Connection,
   PublicKey,
-  SystemProgram,
+  // SystemProgram,
   Transaction,
   clusterApiUrl,
 } from '@solana/web3.js';
-import { TOKEN_PROGRAM_ID } from '@solana/spl-token';
+import { TOKEN_PROGRAM_ID, Token } from '@solana/spl-token';
 
 import { initWallet, useWallet } from '../useWallet';
 import { decodeMetadata } from '../metaDataUtils';
+import { getOrCreateAssociatedAccountInfo } from '../Utils';
 
 const wallets = [getPhantomWallet()];
 const METADATA_PUBKEY = new PublicKey(
@@ -85,6 +87,7 @@ export default {
       nftsMetaInfo: [],
       nftAccounts: [],
       lamports: [],
+      isTransfering: false,
     };
   },
   mounted() {
@@ -121,6 +124,7 @@ export default {
       await this.disconnect();
       this.nftsMetaInfo = [];
       this.nftAccounts = [];
+      this.isTransfering = false;
     },
 
     async fetchNFTs() {
@@ -143,7 +147,7 @@ export default {
       );
 
       this.nftAccounts = nftAccounts;
-      // console.log('nftAccounts', nftAccounts);
+      console.log('nftAccounts', nftAccounts);
 
       for (let i = 0; i < nftAccounts.length; i++) {
         const mintAddress = nftAccounts[i]?.account?.data?.parsed?.info?.mint;
@@ -176,7 +180,8 @@ export default {
     },
 
     async transferNFTToFourCasters(index) {
-      const transaction = new Transaction().add(
+      this.isTransfering = true;
+      /* const transaction = new Transaction().add(
         SystemProgram.transfer({
           fromPubkey: this.publicKey,
           // fromPubkey: this.nftAccounts[index].pubkey,
@@ -188,9 +193,53 @@ export default {
       const connection = new Connection(clusterApiUrl('mainnet-beta'));
       const signature = await this.sendTransaction(transaction, connection);
 
-      await connection.confirmTransaction(signature, 'processed');
+      await connection.confirmTransaction(signature, 'processed'); */
 
-      await this.fetchNFTs();
+      const connection = new Connection(clusterApiUrl('mainnet-beta'));
+      const mintAddress =
+        this.nftAccounts[index]?.account?.data?.parsed?.info?.mint;
+
+      const fromTokenAccount = await getOrCreateAssociatedAccountInfo(
+        new PublicKey(mintAddress),
+        this.publicKey,
+        connection,
+        this.sendTransaction,
+        this.publicKey
+      );
+      // console.log('fromTokenAccount', fromTokenAccount);
+
+      const toTokenAccount = await getOrCreateAssociatedAccountInfo(
+        new PublicKey(mintAddress),
+        FOURCASTERS_PUBKEY,
+        connection,
+        this.sendTransaction,
+        this.publicKey
+      );
+      // console.log('toTokenAccount', toTokenAccount);
+
+      // console.log('this.lamports[index]', this.lamports[index]);
+      // Add token transfer instructions to transaction
+      const transaction = new Transaction().add(
+        Token.createTransferInstruction(
+          TOKEN_PROGRAM_ID,
+          fromTokenAccount,
+          toTokenAccount,
+          this.publicKey,
+          [],
+          1
+        )
+      );
+      // Sign transaction, broadcast, and confirm
+      const signature = await this.sendTransaction(transaction, connection);
+
+      // console.log('SIGNATURE', signature);
+      await connection.confirmTransaction(signature, 'processed');
+      console.log('Done');
+
+      setTimeout(async () => {
+        await this.fetchNFTs();
+        this.isTransfering = false;
+      }, 1000);
     },
   },
 };
