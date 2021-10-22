@@ -86,7 +86,7 @@
           </div>
           <div class="col-2 text-center">
             <a
-              href="https://discord.gg/STMwQynkFJ"
+              href="https://discord.gg/STMwQ ynkFJ"
               target="_blank"
               rel="noopener"
             >
