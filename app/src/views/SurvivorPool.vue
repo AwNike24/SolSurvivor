@@ -313,8 +313,7 @@ h4
   font-size: $font-size-xs
   color: #272d58
   cursor: pointer
-  width: 100%
-
+  
   &:hover
     transform: scale(1.025)
     transition: transform 0.3s
