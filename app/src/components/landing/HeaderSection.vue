@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-12 col-lg-6 title-container">
           <h1 class="text-center py-0 my-0 text-lg-left">NFT Survivor Pools</h1>
-          <h2 class="text-center py-0 my-0 text-lg-left font-weight-light">
+          <h2 class="text-center py-0 my-0 text-lg-left fw-light">
             New Traits Each Week You Survive
           </h2>
           <div class="col-12 text-center ml-1 w-100">

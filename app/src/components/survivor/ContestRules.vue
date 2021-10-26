@@ -3,7 +3,7 @@
     <div class="questions-container">
       <FAQuestion
         id="how-to-play"
-        class="font-weight-light"
+        class="fw-light"
         title="🤔 How To Play"
       >
         <p>
@@ -22,7 +22,7 @@
       </FAQuestion>
       <FAQuestion
         id="how-do-i-get-paid"
-        class="font-weight-light"
+        class="fw-light"
         title="💰 Registration Rules"
       >
         Entry fee is $100 per entry
@@ -52,7 +52,7 @@
       </FAQuestion>
       <FAQuestion
         id="more-entry"
-        class="font-weight-light"
+        class="fw-light"
         title="🌴 How Can I Get More Than 1 Entry?"
       >
         <p>
@@ -68,7 +68,7 @@
       </FAQuestion>
       <FAQuestion
         id="schedule"
-        class="font-weight-light"
+        class="fw-light"
         title="📅 Tournament Schedule"
       >
         <b> 2021 Tournament Schedule: </b>
@@ -95,7 +95,7 @@
       </FAQuestion>
       <FAQuestion
         id="tiebreaker"
-        class="font-weight-light"
+        class="fw-light"
         title="👔 Tiebreakers"
       >
         <p>
@@ -131,7 +131,7 @@
           point.
         </p>
       </FAQuestion>
-      <FAQuestion id="covid" class="font-weight-light" title="🤒 COVID RULES">
+      <FAQuestion id="covid" class="fw-light" title="🤒 COVID RULES">
         COVID RULES:
         <li>
           If a team has to forfeit OR advances as a result of a no-contest, the
@@ -154,7 +154,7 @@
       </FAQuestion>
       <FAQuestion
         id="Friends"
-        class="font-weight-light"
+        class="fw-light"
         title="👥 Inviting Friends/Captain"
       >
         <b>
@@ -170,7 +170,7 @@
       </FAQuestion>
       <FAQuestion
         id="deadline"
-        class="font-weight-light"
+        class="fw-light"
         title="⏰ Round Deadlines"
       >
         <b> IMPORTANT REMINDER!!!</b>
@@ -184,7 +184,7 @@
       </FAQuestion>
       <FAQuestion
         id="how-do-i-get-paid"
-        class="font-weight-light"
+        class="fw-light"
         title="👁️ Can I See Other People's Entries"
       >
         Yes, but you will only see their picks after each game has started. You
@@ -193,14 +193,14 @@
       </FAQuestion>
       <FAQuestion
         id="how-do-i-get-paid"
-        class="font-weight-light"
+        class="fw-light"
         title="🤑 How Will The Winners Get Paid"
       >
         All Winners will be paid with Bitcoin regardless of the method they
         chose to pay their captain.
         <p>The winner(s) will receive 90% of the prize pool.</p>
       </FAQuestion>
-      <h4 class="my-2 text-black-50 text-center font-weight-normal">
+      <h4 class="my-2 text-black-50 text-center fw-normal">
         That’s it for now. We’re sure you have a host of questions about the
         pool and we’re looking forward to helping you. Good Luck!
       </h4>
