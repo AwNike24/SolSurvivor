@@ -11,7 +11,7 @@
             <img
               src="../../public/icons/solsulvivor/Icon-awesome-external-link-square-alt.svg"
             />
-            <h4 class="ml-3 my-0">My Entry</h4>
+            <h4 class="ms-3 my-0">My Entry</h4>
           </router-link>
           <router-link
             to="/survivor-pool/all-entries"
@@ -20,7 +20,7 @@
             <img
               src="../../public/icons/solsulvivor/Icon-material-pageview.svg"
             />
-            <h4 class="ml-3 my-0">View All Entries</h4>
+            <h4 class="ms-3 my-0">View All Entries</h4>
           </router-link>
           <router-link
             to="/survivor-pool/rules"
@@ -29,7 +29,7 @@
             <img
               src="../../public/icons/solsulvivor/Icon-awesome-list-alt.svg"
             />
-            <h4 class="ml-3 my-0">Rules</h4>
+            <h4 class="ms-3 my-0">Rules</h4>
           </router-link>
         </nav>
       </div>
@@ -39,7 +39,7 @@
       <div v-else-if="mode === 'not-connected'" class="col-10 mt-2">
         <not-connected />
       </div>
-      <div v-else-if="mode === 'my-entries'" class="col-10 mt-4">
+      <div v-else-if="mode === 'my-entries'" class="col-md-10 col-lg-10 col-sm-12 mt-4">
         <div class="container">
           <div class="card div-summary">
             <div class="card-header font-weight-bold">Contest Summary</div>
@@ -75,7 +75,7 @@
             </div>
           </div>
           <div class="card mt-3">
-            <div class="col-12 week-header card-header">
+            <div class="week-header card-header">
               <div class="row">
                 <div
                   v-for="week in weeks"
@@ -93,19 +93,17 @@
                 </div>
               </div>
             </div>
-            <div class="col-12">
-              <div class="row">
-                <pick-section
-                  v-for="week in weeks"
-                  :key="week"
-                  :currentWeek="survivorPool.currentWeek || 0"
-                  :weekNumber="week"
-                  :selection="findSelectionForWeek(week)"
-                  :is-dead="ticket.status === 'dead'"
-                  @selectWeekToPick="selectWeekToPick"
-                  @editSelection="editSelection"
-                />
-              </div>
+            <div class="row g-0">
+              <pick-section
+                v-for="week in weeks"
+                :key="week"
+                :currentWeek="survivorPool.currentWeek || 0"
+                :weekNumber="week"
+                :selection="findSelectionForWeek(week)"
+                :is-dead="ticket.status === 'dead'"
+                @selectWeekToPick="selectWeekToPick"
+                @editSelection="editSelection"
+              />
             </div>
           </div>
         </div>
@@ -302,6 +300,7 @@ export default {
 h4
   font-weight: normal
   color: #272d58
+  font-size: 16px
 
 .bg-body
   background-color: rgba(242, 242, 246, 1)
@@ -313,8 +312,7 @@ h4
   font-size: $font-size-xs
   color: #272d58
   cursor: pointer
-  width: 100%
-
+  
   &:hover
     transform: scale(1.025)
     transition: transform 0.3s

@@ -1,28 +1,12 @@
 <template>
   <div
     v-if="showLocks()"
-    class="
-      col-md-1 col-3
-      pickSection
-      d-flex
-      justify-content-center
-      flex-nowrap
-      align-items-center
-      live
-    "
+    class="col-md-1 col-3 pickSection d-flex justify-content-center flex-nowrap align-items-center live"
   >
     <img src="../../../public/icons/solsulvivor/Icon-ionic-ios-lock.svg" />
   </div>
   <div
-    class="
-      col-md-1 col-3
-      pickSection
-      d-flex
-      justify-content-center
-      flex-nowrap
-      align-items-center
-      live
-    "
+    class="col-md-1 col-3 pickSection d-flex justify-content-center flex-nowrap align-items-center live"
     v-else-if="Object.keys(selection).length === 0"
     @click="$emit('selectWeekToPick', { weekNumber })"
   >
@@ -30,15 +14,7 @@
   </div>
   <div
     v-else
-    class="
-      col-md-1 col-3
-      pickSection
-      d-flex
-      justify-content-center
-      flex-nowrap
-      align-items-center
-      live
-    "
+    class="col-md-1 col-3 pickSection d-flex justify-content-center flex-nowrap align-items-center live"
     :class="{
       winner: this.selection && this.selection.outcome === 'winner',
       loser: this.selection && this.selection.outcome === 'loser',
@@ -103,8 +79,7 @@ export default {
   font-size: $font-size-xs
   color: #272d58
   cursor: pointer
-  width: 100%
-
+  
   &:hover
     transform: scale(1.025)
     transition: transform 0.3s

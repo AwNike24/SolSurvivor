@@ -11,8 +11,9 @@ import {
   faPhone,
   faAngleUp,
   faAngleDown,
+  faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
-library.add(faPhone, faAngleUp, faAngleDown);
+library.add(faPhone, faAngleUp, faAngleDown, faChevronDown);
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 createApp(App)
