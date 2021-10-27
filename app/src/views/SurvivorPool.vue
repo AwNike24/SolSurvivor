@@ -1,7 +1,7 @@
 <template>
   <main class="container-fluid bg-body">
     <div class="row no-gutters">
-      <div class="col-12 col-md-2">
+      <div class="col-xl-2 col-lg-3 col-md-3 col-sm-12">
         <nav class="left-sidebar p-4">
           <connect-to-wallet />
           <router-link
@@ -33,21 +33,24 @@
           </router-link>
         </nav>
       </div>
-      <div v-if="loading" class="col-10">
+      <div v-if="loading" class="col-xl-10 col-lg-9 col-md-9 col-sm-12">
         <spinner />
       </div>
-      <div v-else-if="mode === 'not-connected'" class="col-10 mt-2">
+      <div
+        v-else-if="mode === 'not-connected'"
+        class="col-xl-10 col-lg-9 col-md-9 col-sm-12 mt-2"
+      >
         <not-connected />
       </div>
       <div
         v-else-if="mode === 'my-entries'"
-        class="col-md-10 col-lg-10 col-sm-12 mt-4"
+        class="col-xl-10 col-lg-9 col-md-9 col-sm-12 mt-4"
       >
         <div class="container">
           <div class="card div-summary">
             <div class="card-header fw-bold">Contest Summary</div>
             <div class="card-body">
-              <div class="d-flex justify-content-center">
+              <div class="d-flex justify-content-center content-abstract">
                 <div class="abstract">
                   <span class="font-summary"> Entries Remaining </span>
                   <br />
@@ -56,23 +59,17 @@
                 <div class="abstract">
                   <span class="font-summary"> Current Selection </span>
                   <br />
-                  <span class="fw-bold">{{
-                    currentSelectedTeam
-                  }}</span>
+                  <span class="fw-bold">{{ currentSelectedTeam }}</span>
                 </div>
                 <div class="abstract">
                   <span class="font-summary"> Teams Selected </span>
                   <br />
-                  <span class="fw-bold">{{
-                    numberOfSelectedTeams
-                  }}</span>
+                  <span class="fw-bold">{{ numberOfSelectedTeams }}</span>
                 </div>
                 <div class="abstract">
                   <span class="font-summary"> Status </span>
                   <br />
-                  <span class="fw-bold">{{
-                    capitalize(ticket.status)
-                  }}</span>
+                  <span class="fw-bold">{{ capitalize(ticket.status) }}</span>
                 </div>
               </div>
             </div>
@@ -341,10 +338,13 @@ h4
   width: 100%
   @media screen and (max-width: map_get($grid-breakpoints, sm))
     display: none
+
 .left-sidebar
   box-shadow: 0px 3px 6px #00000029
   height: 100vh
   background-color: #ffffff
+  @media screen and (max-width: map_get($grid-breakpoints, md))
+    height: auto
 nav
   margin-left: -1rem
   border-right: 1px solid rgba(150, 156, 203, 0.3)
@@ -416,10 +416,10 @@ h3
   text-align: center
   color: #343b86
   box-shadow: 0 2px 4px 0 rgba(78, 103, 223, 0.15)
-  // font-weight: bold
   font-size: 12px
   cursor: pointer
-// box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important
+  @media screen and (max-width: map_get($grid-breakpoints, md))
+    width: 50%
 
 .player-chart-header
   background: #343b86
