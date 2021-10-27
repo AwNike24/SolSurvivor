@@ -42,7 +42,7 @@ export default {
       this.active = !this.active;
     },
     routeToSurvivorPool() {
-      this.$router.push('/survivor-pool/my-entries');
+      this.$router.push("/survivor-pool/my-entries");
     },
   },
 };
