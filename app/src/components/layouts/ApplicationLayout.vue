@@ -3,19 +3,19 @@
     <header-dashboar-component v-if="dashboar" />
     <header-component v-if="!dashboar" />
     <router-view />
-    <footer-component />
+    <footer-section />
   </div>
 </template>
 
 <script>
 import HeaderComponent from "@/components/header/HeaderComponent.vue";
 import HeaderDashboarComponent from "@/components/header/HeaderDashboarComponent.vue";
-import FooterComponent from "@/components/footer/FooterComponent.vue";
+import FooterSection from "@/components/landing/FooterSection.vue";
 
 export default {
   name: "ApplicationLayout",
   components: {
-    FooterComponent,
+    FooterSection,
     HeaderDashboarComponent,
     HeaderComponent,
   },
