@@ -45,32 +45,32 @@
       >
         <div class="container">
           <div class="card div-summary">
-            <div class="card-header font-weight-bold">Contest Summary</div>
+            <div class="card-header fw-bold">Contest Summary</div>
             <div class="card-body">
               <div class="d-flex justify-content-center">
                 <div class="abstract">
                   <span class="font-summary"> Entries Remaining </span>
                   <br />
-                  <span class="font-weight-bold">1111</span>
+                  <span class="fw-bold">1111</span>
                 </div>
                 <div class="abstract">
                   <span class="font-summary"> Current Selection </span>
                   <br />
-                  <span class="font-weight-bold">{{
+                  <span class="fw-bold">{{
                     currentSelectedTeam
                   }}</span>
                 </div>
                 <div class="abstract">
                   <span class="font-summary"> Teams Selected </span>
                   <br />
-                  <span class="font-weight-bold">{{
+                  <span class="fw-bold">{{
                     numberOfSelectedTeams
                   }}</span>
                 </div>
                 <div class="abstract">
                   <span class="font-summary"> Status </span>
                   <br />
-                  <span class="font-weight-bold">{{
+                  <span class="fw-bold">{{
                     capitalize(ticket.status)
                   }}</span>
                 </div>

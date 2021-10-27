@@ -3,7 +3,7 @@
     <input
       id="search"
       v-model="search"
-      class="col-12 mb-2 font-weight-light input text-center"
+      class="col-12 mb-2 fw-light input text-center"
       type="text"
       name="search"
       placeholder="search for team"
@@ -17,12 +17,12 @@
       }"
       class="col-12 outline d-inline-flex"
     >
-      <h4 class="col-9 font-weight-bold mt-2 mb-0">
+      <h4 class="col-9 fw-bold mt-2 mb-0">
         {{ game.longName }}
         <br />
         <div
           class="
-            font-weight-normal
+            fw-normal
             justify-content-center
             text-black-50
             small
