@@ -99,10 +99,7 @@ export default {
 
 button.connect-wallet
   border-radius: 35px
-  padding-right: 37px
-  padding-left: 37px
-  padding-top: 11px
-  padding-bottom: 11px
+  padding: 10px
   background-color: #FF443C!important
   font-size: 12px
   width: 100%

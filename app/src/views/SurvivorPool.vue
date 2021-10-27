@@ -39,7 +39,10 @@
       <div v-else-if="mode === 'not-connected'" class="col-10 mt-2">
         <not-connected />
       </div>
-      <div v-else-if="mode === 'my-entries'" class="col-md-10 col-lg-10 col-sm-12 mt-4">
+      <div
+        v-else-if="mode === 'my-entries'"
+        class="col-md-10 col-lg-10 col-sm-12 mt-4"
+      >
         <div class="container">
           <div class="card div-summary">
             <div class="card-header font-weight-bold">Contest Summary</div>
@@ -312,20 +315,10 @@ h4
   font-size: $font-size-xs
   color: #272d58
   cursor: pointer
-  
+
   &:hover
     transform: scale(1.025)
     transition: transform 0.3s
-
-button.connect-wallet
-  border-radius: 35px
-  padding-right: 37px
-  padding-left: 37px
-  padding-top: 11px
-  padding-bottom: 11px
-  background-color: #FF443C!important
-  font-size: 12px
-  width: 100%
 
 .usernameSection
   padding: 1.35rem 1rem
@@ -386,14 +379,7 @@ nav
       text-decoration: none
 
   button.connect-wallet
-    border-radius: 35px
-    padding-right: 37px
-    padding-left: 37px
-    padding-top: 11px
-    padding-bottom: 11px
-    background-color: #FF443C!important
-    font-size: 12px
-    width: 100%
+    padding: 10px !important
 
 .not-active
   background-color: #f8f8f8

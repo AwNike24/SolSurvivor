@@ -3,17 +3,14 @@
     <div class="header">
       <div class="container-fluid">
         <div class="row justify-content-between align-items-center">
-          <router-link
-            to="/"
-            class="header-logo-link col-8"
-          >
+          <router-link to="/" class="header-logo-link col-8">
             <img
               class="header-logo"
               src="../../../public/icons/solsulvivor/logo-solsurvivor.svg"
               alt="4castersports Logo"
-            >
+            />
           </router-link>
-         <!-- <account-info /> -->
+          <!-- <account-info /> -->
         </div>
       </div>
     </div>
@@ -25,7 +22,7 @@
 // import SportsNavigation from '@/components/header/SportsNavigation.vue';
 
 export default {
-  name: 'HeaderComponent',
+  name: "HeaderComponent",
   components: {},
 };
 </script>
@@ -120,6 +117,4 @@ export default {
 
                 @media screen and (max-width: map-get($grid-breakpoints, md))
                     font-weight: $font-weight-base
-             
-
 </style>
