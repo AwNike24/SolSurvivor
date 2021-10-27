@@ -20,15 +20,7 @@
       <h4 class="col-9 fw-bold mt-2 mb-0">
         {{ game.longName }}
         <br />
-        <div
-          class="
-            fw-normal
-            justify-content-center
-            text-black-50
-            small
-            my-0
-          "
-        >
+        <div class="fw-normal justify-content-center text-black-50 small my-0">
           {{ dayjs(game.start).format("hh:mm A DD MMM") }} - {{ game.opponent }}
         </div>
       </h4>

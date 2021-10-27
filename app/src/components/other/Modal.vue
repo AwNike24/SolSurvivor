@@ -1,6 +1,6 @@
 <template>
   <div class="modal-wrap" @click.self="close">
-    <div class="modal px-4 py-4 px-md-5 py-md-5">
+    <div class="modal d-block px-4 py-4 px-md-5 py-md-5">
       <div class="modal-close-btn" @click="close">×</div>
       <slot />
     </div>
