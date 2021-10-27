@@ -34,7 +34,7 @@
           py-0
         "
       >
-        <div class="ms-2">
+        <div class="ms-2 mt-2">
           <h4 class="font-weight-bold">
             {{ game.longName }}
             <br />
