@@ -1,39 +1,68 @@
 <template>
   <modal v-if="!loading" @closeModal="close">
-    <input
-      id="search"
-      v-model="search"
-      class="col-12 mb-2 fw-light input text-center"
-      type="text"
-      name="search"
-      placeholder="search for team"
-    />
-    <div
-      v-for="(game, gameIx) in createdGameObjects"
-      :key="gameIx"
-      :class="{
-        selected: isSelected(game.participantID),
-        strikeThrough: alreadySelected.indexOf(game.participantID) !== -1,
-      }"
-      class="col-12 outline d-inline-flex"
-    >
-      <h4 class="col-9 fw-bold mt-2 mb-0">
-        {{ game.longName }}
-        <br />
-        <div class="fw-normal justify-content-center text-black-50 small my-0">
-          {{ dayjs(game.start).format("hh:mm A DD MMM") }} - {{ game.opponent }}
+    <div class="row no-gutters">
+      <div class="col-12">
+        <div class="search-countainer">
+          <div class="icon">
+            <font-awesome-icon icon="search" />
+          </div>
+          <input
+            id="search"
+            v-model="search"
+            class="search-input"
+            type="text"
+            name="search"
+            placeholder="search for team"
+          />
         </div>
-      </h4>
-      <div class="my-2">
-        <button
-          v-if="alreadySelected.indexOf(game.participantID) === -1"
-          class="d-inline-flex"
-          @click="
-            handleSelectTeam(selectedWeek, game.participantID, game.gameID)
-          "
-        >
-          <b> SELECT </b>
-        </button>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div
+        v-for="(game, gameIx) in createdGameObjects"
+        :key="gameIx"
+        :class="{
+          selected: isSelected(game.participantID),
+          strikeThrough: alreadySelected.indexOf(game.participantID) !== -1,
+        }"
+        class="
+          d-flex
+          justify-content-between
+          align-items-center
+          col-12
+          modal-item
+          py-0
+        "
+      >
+        <div>
+          <h4 class="font-weight-bold">
+            {{ game.longName }}
+            <br />
+            <div
+              class="
+                font-weight-bold
+                justify-content-center
+                text-black-50
+                small
+                my-0
+              "
+            >
+              {{ dayjs(game.start).format("hh:mm A DD MMM") }} -
+              {{ game.opponent }}
+            </div>
+          </h4>
+        </div>
+        <div class="my-2">
+          <button
+            v-if="alreadySelected.indexOf(game.participantID) === -1"
+            class="d-inline-flex"
+            @click="
+              handleSelectTeam(selectedWeek, game.participantID, game.gameID)
+            "
+          >
+            <b> SELECT </b>
+          </button>
+        </div>
       </div>
     </div>
   </modal>
@@ -179,6 +208,7 @@ export default {
 @import "../../../assets/styles/variables"
 
 .outline
+  border-bottom: 1px solid #969ccb
   margin: 0
   max-width: 780px
   box-shadow: 0 2px 4px 0 rgba(78, 103, 223, 0.15)
@@ -192,10 +222,34 @@ button
 
 .selected
   background: rgba(72, 226, 37, 0.4)
-.strikeThrough
-  text-decoration: line-through
 
-.input
-  background: none
-  box-shadow: 0 2px 4px 0 rgba(78, 103, 223, 0.15)
+.search-input,.search-input:focus
+  width: 100%
+  border: none
+  background-color: transparent
+  position: absolute
+  left: 30px
+.modal-button
+  background-color: #8892FF
+  border-radius: 35px
+  padding: 11px 35px
+  font-size: 12px
+.search-countainer
+  position: relative
+  display: flex
+  align-items: center
+  background-color: #FFFFFF
+  border: solid 1px #7899D4
+  color: #707070!important
+  border-radius: 8px
+  width: 100%
+  height: 41px
+  .icon
+    position: absolute
+    left: 15px
+.modal-item
+  border-bottom: 1px solid #DBDBDB
+  height: 60px
+  h4
+    color: #343B86
 </style>
