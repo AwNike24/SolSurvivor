@@ -16,6 +16,7 @@
                 d-block d-lg-inline
                 mx-auto mx-lg-0
               "
+              @click="routeToSurvivorPool"
             >
               Start Now
             </button>
@@ -39,6 +40,9 @@ export default {
   methods: {
     toggle() {
       this.active = !this.active;
+    },
+    routeToSurvivorPool() {
+      this.$router.push('/survivor-pool/my-entries');
     },
   },
 };
