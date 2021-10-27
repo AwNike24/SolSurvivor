@@ -123,31 +123,31 @@
                 <div class="abstract">
                   <span class="font-summary"> Status </span>
                   <br />
-                  <span class="fw-bold">{{ capitalize(ticket.status) }}</span>
+                  <span class="fw-bold font-summary-medium">
+                    {{ capitalize(ticket.status) }}
+                  </span>
                 </div>
               </div>
             </div>
           </div>
           <div class="card mt-3">
-            <div class="week-header card-header">
-              <div class="row">
-                <div
-                  v-for="week in weeks"
-                  :key="week"
-                  class="
-                    col-1
-                    d-flex
-                    justify-content-center
-                    flex-nowrap
-                    align-items-center
-                    my-1
-                  "
-                >
-                  {{ week }}
-                </div>
+            <div class="row week-header card-header">
+              <div
+                v-for="week in weeks"
+                :key="week"
+                class="
+                  col-1
+                  d-flex
+                  justify-content-center
+                  flex-nowrap
+                  align-items-center
+                  my-1
+                "
+              >
+                {{ week }}
               </div>
             </div>
-            <div class="row g-0">
+            <div class="row g-0 week-body">
               <pick-section
                 v-for="week in weeks"
                 :key="week"
@@ -364,6 +364,7 @@ h4
 
 .bg-body
   background-color: rgba(242, 242, 246, 1)
+  font-family: $font-poppins
 
 .pickSection
   padding: 1.35rem 1rem
@@ -396,6 +397,7 @@ h4
   font-size: $font-size-xs
   margin: 0
   width: 100%
+  padding: 5px 0 !important
   @media screen and (max-width: map_get($grid-breakpoints, sm))
     display: none
 
@@ -422,6 +424,8 @@ h4
 
   nav.navbar
     align-items: start
+    font-family: $font-poppins
+
     @media screen and (max-width: map_get($grid-breakpoints, lg))
       background-color: transparent !important
       padding: 0
@@ -512,23 +516,41 @@ h3
   border-radius: 4px
   cursor: pointer
 
-.font-summary
-  color: #343b86
-  font-weight: lighter
+.content-abstract
+  width: 100%
+  @media screen and (max-width: 991px)
+    display: block !important
 
-.abstract
-  border-radius: 7px
-  background: #fff
-  width: 25%
-  padding: 11px
-  margin-left: 9px
-  text-align: center
-  color: #343b86
-  box-shadow: 0 2px 4px 0 rgba(78, 103, 223, 0.15)
-  font-size: 12px
-  cursor: pointer
-  @media screen and (max-width: map_get($grid-breakpoints, md))
-    width: 50%
+  .font-summary
+    color: #343b86
+    font-weight: lighter
+
+  .font-summary-medium
+    font-family: $font-poppins-medium
+
+  .abstract
+    border-radius: 7px
+    background: #fff
+    width: 25%
+    padding: 11px
+    margin-left: 9px
+    text-align: center
+    color: #343b86
+    box-shadow: 0 2px 4px 0 rgba(78, 103, 223, 0.15)
+    font-size: 12px
+    cursor: pointer
+    border: 1px solid #7899D4
+
+    @media screen and (max-width: map_get($grid-breakpoints, lg))
+      margin-left: 1%
+      float: left
+      width: 47.3%
+      margin-left: 2%
+      margin-bottom: 2%
+
+    @media screen and (max-width: 550px)
+      width: 100%
+      margin-left: 0
 
 .player-chart-header
   background: #343b86
