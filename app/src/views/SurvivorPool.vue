@@ -15,7 +15,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav flex-column">
+              <ul class="navbar-nav flex-column w-100">
                 <li class="nav-item">
                   <connect-to-wallet />
                 </li>
@@ -460,7 +460,6 @@ h4
         margin-top: 6px
 
 nav
-  margin-left: -1rem
   border-right: 1px solid rgba(150, 156, 203, 0.3)
   min-height: 100%
   height: 100%
@@ -470,19 +469,13 @@ nav
     border-right: 0
     margin-left: 0
 
-    a, div
-      border-top-right-radius: 6px
-      border-bottom-right-radius: 6px
-
   a, div
     font-size: $font-size-sm
     font-weight: normal
     display: block
     width: 100%
     padding: .75rem 1rem
-    color: #0A0A0A!important
-    border-top-left-radius: 6px
-    border-bottom-left-radius: 6px
+    color: #0A0A0A !important
 
     &:not(:last-child)
       margin-bottom: .5rem
