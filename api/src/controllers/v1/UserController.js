@@ -9,7 +9,6 @@ export default class UserController {
       const serviceResult = await CreateUser.execute(ctx.request)
       user = serviceResult.result.user
     }
-    console.log({ user })
     ctx.body = {
       data: {
         user,
