@@ -1,6 +1,6 @@
 <template>
   <modal v-if="!loading" @closeModal="close">
-    <div class="row no-gutters">
+    <div class="row no-gutters mt-3">
       <div class="col-12">
         <div class="search-countainer">
           <div class="icon">
@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <div class="row no-gutters">
+    <div class="row modal-item-row no-gutters">
       <div
         v-for="(game, gameIx) in createdGameObjects"
         :key="gameIx"
@@ -29,12 +29,12 @@
           d-flex
           justify-content-between
           align-items-center
-          col-12
           modal-item
+          col-12
           py-0
         "
       >
-        <div>
+        <div class="ms-2">
           <h4 class="font-weight-bold">
             {{ game.longName }}
             <br />
@@ -45,6 +45,7 @@
                 text-black-50
                 small
                 my-0
+                mt-1
               "
             >
               {{ dayjs(game.start).format("hh:mm A DD MMM") }} -
@@ -55,12 +56,12 @@
         <div class="my-2">
           <button
             v-if="alreadySelected.indexOf(game.participantID) === -1"
-            class="d-inline-flex"
+            class="d-inline-flex btnSelected justify-content-center"
             @click="
               handleSelectTeam(selectedWeek, game.participantID, game.gameID)
             "
           >
-            <b> SELECT </b>
+            <b> Select </b>
           </button>
         </div>
       </div>
@@ -250,6 +251,23 @@ button
 .modal-item
   border-bottom: 1px solid #DBDBDB
   height: 60px
-  h4
-    color: #343B86
+h4
+  font-weight: bold
+  color: #343B86
+  font-size: 14px
+  font-family: $font-poppins !important
+.btnSelected
+  background: #8892FF 0% 0% no-repeat padding-box
+  border-radius: 35px
+  opacity: 1
+  width: 114px
+  font-family: $font-roboto !important
+  font-weight: normal
+  color: #ffffffc7
+.modal-item-row
+  padding: 10px
+::placeholder
+  font-family: $font-poppins !important
+.search-countainer .icon
+  font-size: 20px
 </style>
