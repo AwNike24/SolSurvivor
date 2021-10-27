@@ -417,7 +417,8 @@ h4
     top: 4px
     z-index: 999
     background-color: transparent
-    box-shadow: transparent
+    box-shadow: none
+    width: 230px
 
   nav.navbar
     align-items: start
@@ -427,11 +428,16 @@ h4
       border-right: transparent
       margin-left: 0
 
+    .container-fluid
+      @media screen and (max-width: map_get($grid-breakpoints, lg))
+        padding: 0 !important
+
     .navbar-toggler
       background: transparent
       color: #FFF
       border-color: transparent
       opacity: 1
+      margin: 10px 10px 0
 
       .navbar-toggler-icon
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
@@ -441,8 +447,13 @@ h4
 
     .navbar-collapse.show
       background: #FFFFFF
-      margin-top: 10px
+      margin-top: 20px
       height: 100vh
+      border-radius: 0
+      box-shadow: 0px 3px 6px #00000029
+
+      @media screen and (max-width: map-get($grid-breakpoints, md))
+        margin-top: 6px
 
 nav
   margin-left: -1rem

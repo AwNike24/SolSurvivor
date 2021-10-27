@@ -41,7 +41,7 @@ export default {
     min-height: 70px
 
     @media screen and (max-width: map-get($grid-breakpoints, md))
-      padding: .5rem 0
+      padding: 16px 0
       min-height: 49px
 
     &-logo-link
@@ -54,6 +54,5 @@ export default {
       height: 24px
       width: auto
       @media screen and (max-width: map-get($grid-breakpoints, md))
-        height: 50px
-        width: 40%
+        height: 23px
 </style>
