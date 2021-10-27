@@ -1,8 +1,62 @@
 <template>
   <main class="container-fluid bg-body">
     <div class="row no-gutters">
-      <div class="col-12 col-md-2">
-        <nav class="left-sidebar p-4">
+      <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 content-menu-dashboard">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav flex-column">
+                <li class="nav-item">
+                  <connect-to-wallet />
+                </li>
+                <li class="nav-item">
+                  <router-link
+                    to="/survivor-pool/my-entries"
+                    class="d-flex align-items-center"
+                  >
+                    <img
+                      src="../../public/icons/solsulvivor/Icon-awesome-external-link-square-alt.svg"
+                    />
+                    <h4 class="ms-3 my-0">My Entry</h4>
+                  </router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link
+                    to="/survivor-pool/all-entries"
+                    class="d-flex align-items-center"
+                  >
+                    <img
+                      src="../../public/icons/solsulvivor/Icon-material-pageview.svg"
+                    />
+                    <h4 class="ms-3 my-0">View All Entries</h4>
+                  </router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link
+                    to="/survivor-pool/rules"
+                    class="d-flex align-items-center"
+                  >
+                    <img
+                      src="../../public/icons/solsulvivor/Icon-awesome-list-alt.svg"
+                    />
+                    <h4 class="ms-3 my-0">Rules</h4>
+                  </router-link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- <nav class="left-sidebar p-4">
           <connect-to-wallet />
           <router-link
             to="/survivor-pool/my-entries"
@@ -31,20 +85,26 @@
             />
             <h4 class="ms-3 my-0">Rules</h4>
           </router-link>
-        </nav>
+        </nav> -->
       </div>
-      <div v-if="loading" class="col-10">
+      <div v-if="loading" class="col-xl-10 col-lg-9 col-md-12 col-sm-12">
         <spinner />
       </div>
-      <div v-else-if="mode === 'not-connected'" class="col-10 mt-2">
+      <div
+        v-else-if="mode === 'not-connected'"
+        class="col-xl-10 col-lg-9 col-md-12 col-sm-12 mt-2"
+      >
         <not-connected />
       </div>
-      <div v-else-if="mode === 'my-entries'" class="col-md-10 col-lg-10 col-sm-12 mt-4">
+      <div
+        v-else-if="mode === 'my-entries'"
+        class="col-xl-10 col-lg-9 col-md-12 col-sm-12 mt-4"
+      >
         <div class="container">
           <div class="card div-summary">
             <div class="card-header fw-bold">Contest Summary</div>
             <div class="card-body">
-              <div class="d-flex justify-content-center">
+              <div class="d-flex justify-content-center content-abstract">
                 <div class="abstract">
                   <span class="font-summary"> Entries Remaining </span>
                   <br />
@@ -53,23 +113,17 @@
                 <div class="abstract">
                   <span class="font-summary"> Current Selection </span>
                   <br />
-                  <span class="fw-bold">{{
-                    currentSelectedTeam
-                  }}</span>
+                  <span class="fw-bold">{{ currentSelectedTeam }}</span>
                 </div>
                 <div class="abstract">
                   <span class="font-summary"> Teams Selected </span>
                   <br />
-                  <span class="fw-bold">{{
-                    numberOfSelectedTeams
-                  }}</span>
+                  <span class="fw-bold">{{ numberOfSelectedTeams }}</span>
                 </div>
                 <div class="abstract">
                   <span class="font-summary"> Status </span>
                   <br />
-                  <span class="fw-bold">{{
-                    capitalize(ticket.status)
-                  }}</span>
+                  <span class="fw-bold">{{ capitalize(ticket.status) }}</span>
                 </div>
               </div>
             </div>
@@ -119,10 +173,16 @@
         @removeSelection="removeSelection"
         @closeModal="closeModal"
       />
-      <div v-else-if="mode === 'all-entries'" class="col-10 mt-2">
+      <div
+        v-else-if="mode === 'all-entries'"
+        class="col-xl-10 col-lg-9 col-md-12 col-sm-12 mt-2"
+      >
         <all-entry />
       </div>
-      <div v-else-if="mode === 'rules'" class="col-10 mt-2">
+      <div
+        v-else-if="mode === 'rules'"
+        class="col-xl-10 col-lg-9 col-md-12 col-sm-12 mt-2"
+      >
         <contest-rules />
       </div>
     </div>
@@ -312,20 +372,10 @@ h4
   font-size: $font-size-xs
   color: #272d58
   cursor: pointer
-  
+
   &:hover
     transform: scale(1.025)
     transition: transform 0.3s
-
-button.connect-wallet
-  border-radius: 35px
-  padding-right: 37px
-  padding-left: 37px
-  padding-top: 11px
-  padding-bottom: 11px
-  background-color: #FF443C!important
-  font-size: 12px
-  width: 100%
 
 .usernameSection
   padding: 1.35rem 1rem
@@ -348,16 +398,68 @@ button.connect-wallet
   width: 100%
   @media screen and (max-width: map_get($grid-breakpoints, sm))
     display: none
+
 .left-sidebar
   box-shadow: 0px 3px 6px #00000029
   height: 100vh
   background-color: #ffffff
+  @media screen and (max-width: map_get($grid-breakpoints, md))
+    height: auto
+
+.content-menu-dashboard
+  box-shadow: 0px 3px 6px #00000029
+  height: 100vh
+  background-color: #ffffff
+  padding: 0
+  @media screen and (max-width: map_get($grid-breakpoints, lg))
+    height: auto
+    position: absolute
+    top: 4px
+    z-index: 999
+    background-color: transparent
+    box-shadow: none
+    width: 230px
+
+  nav.navbar
+    align-items: start
+    @media screen and (max-width: map_get($grid-breakpoints, lg))
+      background-color: transparent !important
+      padding: 0
+      border-right: transparent
+      margin-left: 0
+
+    .container-fluid
+      @media screen and (max-width: map_get($grid-breakpoints, lg))
+        padding: 0 !important
+
+    .navbar-toggler
+      background: transparent
+      color: #FFF
+      border-color: transparent
+      opacity: 1
+      margin: 10px 10px 0
+
+      .navbar-toggler-icon
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+
+    .navbar-toggler:focus
+      box-shadow: none
+
+    .navbar-collapse.show
+      background: #FFFFFF
+      margin-top: 20px
+      height: 100vh
+      border-radius: 0
+      box-shadow: 0px 3px 6px #00000029
+
+      @media screen and (max-width: map-get($grid-breakpoints, md))
+        margin-top: 6px
+
 nav
   margin-left: -1rem
   border-right: 1px solid rgba(150, 156, 203, 0.3)
   min-height: 100%
   height: 100%
-  // cursor: pointer
 
   @media screen and (max-width: map_get($grid-breakpoints, md))
     min-height: 0
@@ -386,14 +488,7 @@ nav
       text-decoration: none
 
   button.connect-wallet
-    border-radius: 35px
-    padding-right: 37px
-    padding-left: 37px
-    padding-top: 11px
-    padding-bottom: 11px
-    background-color: #FF443C!important
-    font-size: 12px
-    width: 100%
+    padding: 10px !important
 
 .not-active
   background-color: #f8f8f8
@@ -430,10 +525,10 @@ h3
   text-align: center
   color: #343b86
   box-shadow: 0 2px 4px 0 rgba(78, 103, 223, 0.15)
-  // font-weight: bold
   font-size: 12px
   cursor: pointer
-// box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important
+  @media screen and (max-width: map_get($grid-breakpoints, md))
+    width: 50%
 
 .player-chart-header
   background: #343b86

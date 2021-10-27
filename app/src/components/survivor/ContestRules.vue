@@ -1,11 +1,7 @@
 <template>
   <main class="container py-md-2">
     <div class="questions-container">
-      <FAQuestion
-        id="how-to-play"
-        class="fw-light"
-        title="🤔 How To Play"
-      >
+      <FAQuestion id="how-to-play" class="fw-light" title="🤔 How To Play">
         <p>
           Unlike most "bracket-based" pools, this is a single elimination
           tournament. Select one team each day of the tournament (not each
@@ -66,11 +62,7 @@
           entry from your captain.
         </p>
       </FAQuestion>
-      <FAQuestion
-        id="schedule"
-        class="fw-light"
-        title="📅 Tournament Schedule"
-      >
+      <FAQuestion id="schedule" class="fw-light" title="📅 Tournament Schedule">
         <b> 2021 Tournament Schedule: </b>
         The Play-in round is NOT included in the pool. Here's your selection
         schedule:
@@ -93,11 +85,7 @@
           questions, please reach out.
         </p>
       </FAQuestion>
-      <FAQuestion
-        id="tiebreaker"
-        class="fw-light"
-        title="👔 Tiebreakers"
-      >
+      <FAQuestion id="tiebreaker" class="fw-light" title="👔 Tiebreakers">
         <p>
           <b>
             Scoring will be based on the number of rounds survived, not number
@@ -168,11 +156,7 @@
         tournament starts. For each entry someone creates under your captain
         code, you will receive $5.
       </FAQuestion>
-      <FAQuestion
-        id="deadline"
-        class="fw-light"
-        title="⏰ Round Deadlines"
-      >
+      <FAQuestion id="deadline" class="fw-light" title="⏰ Round Deadlines">
         <b> IMPORTANT REMINDER!!!</b>
         The deadline is when the LAST game of the round is scheduled to start.
         There are NO default selections. If you fail to make a selection, you

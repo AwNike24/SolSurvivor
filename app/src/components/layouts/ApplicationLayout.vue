@@ -21,11 +21,11 @@ export default {
   },
   data() {
     return {
-      dashboar : false,
+      dashboar: false,
     };
   },
   created() {
-    if (this.$route.path !== '/') {
+    if (this.$route.path !== "/") {
       this.dashboar = true;
     }
   },
