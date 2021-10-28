@@ -219,7 +219,7 @@ export default {
       survivorPool: {},
       teamsModalShown: false,
       ticket: {},
-      weeks: [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+      weeks: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
       capitalize: (value) => {
         if (!value) return value;
         const s = value.toString();
