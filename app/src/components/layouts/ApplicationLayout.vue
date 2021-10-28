@@ -24,10 +24,22 @@ export default {
       dashboar: false,
     };
   },
-  created() {
-    if (this.$route.path !== "/") {
-      this.dashboar = true;
-    }
+  watch: {
+    $route() {
+      this.setDashboard();
+    },
+  },
+  mounted() {
+    this.setDashboard();
+  },
+  methods: {
+    setDashboard() {
+      if (this.$route.path !== "/") {
+        this.dashboar = true;
+      } else {
+        this.dashboar = false;
+      }
+    },
   },
 };
 </script>

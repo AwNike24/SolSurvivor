@@ -61,29 +61,38 @@ export default {
           response: `Everyone who mints a SolSurvivor will get a ticket with a unique number.
           If you survive, you will get a new NFT depending on what team you select in week 1 of the contest (week 9 of NFL).
           Each week you survive, you will be able to upgrade your old NFT for a new one with another feature.
-          The less common your team is picked, the more rare the trait will be.`,
+          The less common your pick is, the more rare the trait will be if it wins.`,
           open: false,
         },
         {
-          title:
-            "How can I know what trait I will get if I pick a team to win?",
+          title: "What is the Trait Schedule?",
           response:
-            "The traits will change every week. For example, if the eagles are selected by someone in week 9 and someone else selects the eagles week 10, they will receive different traits." +
-            "a HINT: the rarity of the team you select in the first week will be important in determining the evolution of your SolSurvivor.",
+            "Week 10: Goat, Week 11: Background, Week 12: Horns, Week 13: Shirt, Week 14: Eyes, Week 15: Mouth, Week 16: Head, Week 17: Necklace, Week 18: Pixelated.",
           open: false,
         },
+        //  {
+        //    title: 'How can I know what trait I will get?',
+        //    response: 'The traits will change every week. For example, if the eagles are selected by someone in week 9 and someone else selects the eagles week 10, they will receive different traits.'
+        //      + 'a HINT: the rarity of the team you select in the first week will be important in determining the evolution of your SolSurvivor.',
+        //    open: false,
+        //  },
+        //  {
+        //    title: 'Can I get multiple of the same trait?',
+        //    response: 'No, every week all entries will get the same TYPE of trait. For example,'
+        //      + 'the first week will give you a type of goat. Week 2 will get you a background.',
+        //    open: false,
+        //  },
         {
           title: "When is the Mint, how much does it cost?",
           response:
-            "November 1st, Mint Costs 4 SOL and there will be upto 1111 SolSurvivors available",
+            "Our Mint Date is tentatively planned for November 10th, Mint Costs is TBD and there will be upto 1111 SolSurvivors available",
           open: false,
         },
         {
           title: "What Happens After The Survivor Pool?",
           response:
             "We will continue to run survivor pools! Your ticket from the genesis will serve as a pre-mint pass for future pools, " +
-            "and it will also get you voting rights when we launch our DAO before the end of this NFL Season. A portion of secondary market " +
-            "sales will be distributed to the SolSurvivor DAO.",
+            "and it will also get you voting rights when we launch our DAO before the end of this NFL Season.",
           open: false,
         },
       ],

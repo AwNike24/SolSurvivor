@@ -22,7 +22,7 @@
 // import SportsNavigation from '@/components/header/SportsNavigation.vue';
 
 export default {
-  name: "HeaderComponent",
+  name: "HeaderDashboarComponent",
   components: {},
 };
 </script>
