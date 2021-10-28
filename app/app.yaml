@@ -1,0 +1,22 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+env: standard
+service: default
+
+handlers:
+
+  - url: /(.*\.(css|png|jpg|jpeg|svg|js|webmanifest|woff|woff2))$
+    static_files: dist/\1
+    upload: dist/.*\.(css|png|jpg|jpeg|svg|js|webmanifest|woff|woff2)$
+    secure: always
+    expiration: 120d
+
+
+  - url: /.*
+    static_files: dist/index.html
+    upload: dist/index.html
+    secure: always
+    http_headers:
+      X-Frame-Options: DENY
+      X-XSS-Protection: '1; mode=block'
