@@ -34,6 +34,8 @@ export default {
       publicKey,
     } = useWallet();
 
+    let account;
+
     const connectToPhantom = async () => {
       await select('Phantom');
       await connect();
@@ -43,16 +45,14 @@ export default {
         'confirmed'
       );
 
-      let account = await connection.getAccountInfo(
+      account = await connection.getAccountInfo(
         publicKey.value,
         'confirmed'
       );
-
-      console.log('account', account);
-      console.log('connection', connection);
     };
 
     return {
+      account,
       walletProvider,
       wallet,
       disconnect,
