@@ -19,7 +19,7 @@
     ]
   },
   "engines": {
-    "node": "14.17.3"
+    "node": "14.x.x"
   },
   "dependencies": {
     "@koa/cors": "^3.1.0",
