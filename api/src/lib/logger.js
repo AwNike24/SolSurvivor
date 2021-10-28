@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import winston from 'winston'
+import { LoggingWinston } from '@google-cloud/logging-winston'
 import config from '../config/app'
 import { stringify } from 'flatted'
 
@@ -13,17 +14,21 @@ if (!fs.existsSync(logDir)) {
   fs.mkdirSync(logDir)
 }
 
-const transports = [
-  new winston.transports.File({ filename: path.join(logDir, 'error.log'), level: 'error', handleExceptions: true }),
-  new winston.transports.File({ filename: path.join(logDir, 'combined.log'), handleExceptions: true })
-]
+let transports;
 
-// if (config.get('env') !== 'production') {
-//
-// }
-transports.push(new winston.transports.Console({
-  handleExceptions: true
-}))
+if (config.get('env') !== 'production') {
+  transports = [
+    new winston.transports.File({ filename: path.join(logDir, 'error.log'), level: 'error', handleExceptions: true }),
+    new winston.transports.File({ filename: path.join(logDir, 'combined.log'), handleExceptions: true }),
+    new winston.transports.Console({
+      handleExceptions: true
+    })
+  ]
+} else {
+  transports = [
+    new LoggingWinston(),
+  ]
+}
 
 const customFormat = printf((info) => {
   let msg = `Process: ${process.pid} ${info.timestamp} [${info.label}] ${info.level}: `
