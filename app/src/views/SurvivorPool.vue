@@ -579,6 +579,7 @@ h3
     @media screen and (max-width: 550px)
       width: 100%
       margin-left: 0
+      margin-bottom: 4%
 
 .player-chart-header
   background: #343b86
