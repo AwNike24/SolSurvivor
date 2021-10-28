@@ -11,7 +11,7 @@
             <a class="dropdown-item" href="#how-it-works"> About </a>
           </div>
           <div>
-            <a class="dropdown-item" href="#about"> Demo </a>
+            <a class="dropdown-item" href="#about"> Traits </a>
           </div>
           <div>
             <a class="dropdown-item" href="#save-money"> Roadmap </a>

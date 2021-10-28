@@ -13,7 +13,7 @@
                   <div class="col-12 title">
                     <span class="nft">NFL</span> Survivor Pool
                   </div>
-                  <div class="col-12 title">2500 SOL 1st Prize</div>
+                  <div class="col-12 title">1st Wins 75% of Mint</div>
                 </div>
               </div>
               <div
@@ -76,7 +76,7 @@
                 next week. If they lose, you are eliminated from the contest.
                 Once you select a team, you can no longer pick them for the rest
                 of the contest.
-                <b> SolSurvivor NFL Starts Week 9 and ends Week 18. </b>
+                <b> SolSurvivors first mint will happen in November. </b>
               </div>
             </div>
           </div>
@@ -109,9 +109,10 @@
                 Your entry is an NFT that evolves a new trait each week you
                 advance. The rarity of your NFTs new trait is determined by how
                 many other participants selected the same team in the same week.
-                For example, if 200 people selected the Cardinals in week 9, all
-                those entries would receive the same trait if the Cardinals won.
-                <b> SolSurvivor NFL mints 1111 entries on 11/1. </b>
+                For example, if 200 people selected the Cardinals in week 11,
+                all those entries would receive the same trait if the Cardinals
+                won.
+                <b> SolSurvivor NFL will mint 1111 entries. </b>
               </div>
             </div>
           </div>
@@ -142,9 +143,9 @@
                 Before you buy the ticket you will be able to see who the entry
                 has selected.
                 <b>
-                  We plan to build a internal marketplace for SolSurvivors
-                  before the end of the year.</b
-                >
+                  We will launch an internal marketplace for SolSurvivors in
+                  November.
+                </b>
               </div>
             </div>
           </div>
@@ -177,8 +178,8 @@
                 SolSurvivor is proudly built on Solana to leverage instant
                 transfers and low transaction fees.
                 <b>
-                  Win your share of 2500 SOL by holding the NFT that survives
-                  the longest at the end of the pool.
+                  75% of the mint proceeds will go back to the community and be
+                  distributed to the winners of the pool.
                 </b>
               </div>
             </div>

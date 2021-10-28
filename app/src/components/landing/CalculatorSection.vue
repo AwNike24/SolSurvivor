@@ -141,33 +141,38 @@ export default {
         },
         {
           title: "",
-          content: "11-1 Sale begins, secondary market live.",
+          content: "11-8 Sale begins, secondary market live.",
           icon: "fa fa-globe",
         },
         {
           title: "",
-          content: "11-4 Survivor Pool Begins",
-          icon: "fa fa-globe",
-        },
-        {
-          title: "",
-          content:
-            "11-9 Survivor Pool Explorer is Live (See what every entry has previously picked)",
-          icon: "fa fa-globe",
-        },
-        {
-          title: "",
-          content: "11-22 In-House Secondary Market is Live",
+          content: "11-11 Survivor Pool Begins",
           icon: "fa fa-globe",
         },
         {
           title: "",
           content:
-            "12-30 DAO established, 25% of profits made from secondary sales are distributed to DAO",
+            "11-15 Survivor Pool Explorer is Live (See what every entry has previously picked)",
+          icon: "fa fa-globe",
+        },
+        {
+          title: "",
+          content: "11-30 In-House Secondary Market is Live",
+          icon: "fa fa-globe",
+        },
+        { title: "", content: "12-30 DAO established", icon: "fa fa-globe" },
+        {
+          title: "",
+          content: "1-10 NFL Season Ends, Prizes Distributed",
+          icon: "fa fa-globe",
+        },
+        {
+          title: "",
+          content: "1-12 NFL Playoffs Mint Launches, Prizes Distributed",
           icon: "fa fa-globe",
         },
         /*
-        { title: '', content: '1-10-22 NFL Season Ends, Prizes Distributed', icon: 'fa fa-globe' },
+        { title: '', content: '1-10 NFL Season Ends, Prizes Distributed', icon: 'fa fa-globe' },
         { title: '', content: '1-11-22 NFL Playoffs Mint Launches', icon: 'fa fa-globe' },
         { title: '', content: '11-15-22 NFL Playoffs Start', icon: 'fa fa-globe' },
         */

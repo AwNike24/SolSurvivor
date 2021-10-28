@@ -144,7 +144,6 @@
                   align-items-center
                   my-1
                   week week-movil
-
                 "
               >
                 <b class="text-week">{{ week }}</b>
