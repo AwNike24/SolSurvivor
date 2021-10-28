@@ -228,9 +228,11 @@ export default {
     };
   },
   watch: {
-    $route() {
-      this.loading = true;
-      this.getSurvivorPool();
+    $route(to) {
+      if (to.path !== "/") {
+        this.loading = true;
+        this.getSurvivorPool();
+      }
     },
   },
   computed: {
@@ -300,12 +302,9 @@ export default {
     // requests getSurvivorPool from API
     // this endpoint returns the contest and
     getSurvivorPool() {
-      if (this.mode === "not-connected") {
-        this.loading = false;
-      } else if (!this.walletConnected) {
+      if (!this.walletConnected) {
         this.$router.push("/survivor-pool/not-connected");
       } else if (this.mode === "my-entries" && this.walletConnected) {
-        console.log(this.publicKey);
         api.request("survivorPool/getSurvivorPool").then((res) => {
           this.handleSurvivorPoolResponse(res);
         });
