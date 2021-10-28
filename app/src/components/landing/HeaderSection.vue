@@ -3,11 +3,11 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-6 title-container">
-          <h1 class="text-center py-0 my-0 text-lg-left">NFT Survivor Pools</h1>
-          <h2 class="text-center py-0 my-0 text-lg-left fw-light">
+          <h1 class="text-center py-0 my-0 text-lg-start">NFT Survivor Pools</h1>
+          <h2 class="text-center py-0 my-0 text-lg-start fw-light">
             New Traits Each Week You Survive
           </h2>
-          <div class="col-12 text-center ml-1 w-100">
+          <div class="d-flex row ml-1">
             <button
               href="#how-it-works"
               class="
@@ -18,7 +18,7 @@
               "
               @click="routeToSurvivorPool"
             >
-              Start Now
+              NFL Contest
             </button>
           </div>
         </div>
@@ -55,7 +55,6 @@ div.header
   background-image: url('/images/Background-slideprincipal@2x.png')
   background-repeat: no-repeat
   background-size: 100% 100%
-  padding-top: 20px
   color: white
   min-height: 750px
   @media screen and (max-width: 1200px)
@@ -101,6 +100,7 @@ div.header
     font-weight: bold
     font-family: $font-poppins-bold
     font-size: 3.25rem
+    line-height: 1.5
     @media screen and (max-width: map_get($grid-breakpoints, sm))
       font-size: 2.6rem
 
@@ -108,6 +108,7 @@ div.header
     font-size: 1.5rem
     font-family: $font-poppins
     font-weight: lighter
+    line-height: 1.5
     @media screen and (max-width: map_get($grid-breakpoints, sm))
       font-size: 1.3rem
 
@@ -118,8 +119,8 @@ div.header
 
   .title-container
     margin-top: 150px
-    @media screen and (max-width: map_get($grid-breakpoints, lg))
-      margin-top: 100px
+    @media screen and (max-width: map_get($grid-breakpoints, md))
+      margin-top: 70px
 
     img
       margin-top: 10px
@@ -146,7 +147,8 @@ div.header
     background-color: #F5F0F6
     color: #343B86
     font-weight: bold
-    font-family: $font-roboto
+    font-family: $font-poppins
+    font-size: 1rem
     border: transparent
     width: auto
 

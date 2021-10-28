@@ -100,7 +100,7 @@
                   offset-lg-1
                   feature-title
                   mb-2
-                  text-center text-lg-left
+                  text-center text-lg-start
                 "
               >
                 Win NFT Traits
@@ -133,7 +133,7 @@
           </div>
           <div class="col-lg-6 col-12 pt-5 mt-3">
             <div class="row justify-content-center justify-content-lg-start">
-              <div class="col-12 feature-title mb-2 text-center text-lg-left">
+              <div class="col-12 feature-title mb-2 text-center text-lg-start">
                 Buy and Sell Entries
               </div>
               <div class="col-9 feature-text">
@@ -169,7 +169,7 @@
                   offset-lg-1
                   feature-title
                   mb-2
-                  text-center text-lg-left
+                  text-center text-lg-start
                 "
               >
                 Built on Solana
