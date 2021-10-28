@@ -9,9 +9,13 @@
       flex-nowrap
       align-items-center
       live
+      week-movil
     "
   >
-    <img src="../../../public/icons/solsulvivor/Icon-ionic-ios-lock.svg" />
+    <img
+      class="icon-block"
+      src="../../../public/icons/solsulvivor/Icon-ionic-ios-lock.svg"
+    />
   </div>
   <div
     class="
@@ -22,6 +26,7 @@
       flex-nowrap
       align-items-center
       live
+      week-movil
     "
     v-else-if="Object.keys(selection).length === 0"
     @click="$emit('selectWeekToPick', { weekNumber })"
@@ -38,6 +43,7 @@
       flex-nowrap
       align-items-center
       live
+      week-movil
     "
     :class="{
       winner: this.selection && this.selection.outcome === 'winner',
@@ -110,10 +116,17 @@ export default {
 
 .logo-team-img
   max-width: 36px
-
+  @media screen and (max-width: map_get($grid-breakpoints, lg))
+    max-height: 45px
+    max-width: 50px
 
 .winner
   background: rgba(72, 226, 37, 0.4)
+
 .loser
   background: $color-secondary
+
+.icon-block
+  @media screen and (max-width: map_get($grid-breakpoints, lg))
+    width: 25px
 </style>

@@ -11,14 +11,11 @@
           <br> !-->
           <span>© FOURCASTER LIMITADA, 2021 </span>
         </div>
-        <div
-          class="
-            col-12 col-md-4
-            d-flex
-            justify-content-center
-          "
-        >
-          <img src="/icons/solsulvivor/solsurvivor-color.svg" />
+        <div class="col-12 col-md-4 d-flex justify-content-center mt-4 mt-md-0">
+          <img
+            clas="logo-footer"
+            src="/icons/solsulvivor/solsurvivor-color.svg"
+          />
         </div>
         <div
           class="
@@ -34,17 +31,11 @@
             />
           </a>
           <a href="#" target="_blank" rel="noopener" class="mr-3 social-link">
-            <img
-              src="/icons/solsulvivor/Twitter.svg"
-              alt="Twitter"
-            />
+            <img src="/icons/solsulvivor/Twitter.svg" alt="Twitter" />
           </a>
 
           <a href="#" target="_blank" rel="noopener" class="mr-3 social-link">
-            <img
-              src="/icons/solsulvivor/Youtube.svg"
-              alt="Youtube"
-            />
+            <img src="/icons/solsulvivor/Youtube.svg" alt="Youtube" />
           </a>
         </div>
       </div>

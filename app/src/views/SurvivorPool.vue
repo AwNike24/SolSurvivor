@@ -130,7 +130,7 @@
               </div>
             </div>
           </div>
-          <div class="card mt-3">
+          <div class="card div-weeks mt-3">
             <div class="row week-header card-header">
               <div
                 v-for="week in weeks"
@@ -142,6 +142,7 @@
                   flex-nowrap
                   align-items-center
                   my-1
+                  week week-movil
                 "
               >
                 {{ week }}
@@ -373,6 +374,9 @@ h4
   font-size: $font-size-xs
   color: #272d58
   cursor: pointer
+  &:not(:last-child)
+    @media screen and (max-width: map_get($grid-breakpoints, lg))
+      border-bottom: 1px solid #DBDBDB
 
   &:hover
     transform: scale(1.025)
@@ -390,6 +394,14 @@ h4
     transform: scale(1.025)
     transition: transform 0.3s
 
+.div-weeks
+  @media screen and (max-width: map_get($grid-breakpoints, lg))
+    display: block !important
+    width: 100%
+    float: left
+    border-radius: 10px !important
+    margin: 25px 0 !important
+
 .week-header
   font-weight: $font-weight-semibold
   color: #272d58
@@ -398,8 +410,25 @@ h4
   margin: 0
   width: 100%
   padding: 5px 0 !important
-  @media screen and (max-width: map_get($grid-breakpoints, sm))
-    display: none
+  @media screen and (max-width: map_get($grid-breakpoints, lg))
+    width: 25%
+    float: left
+    padding: 0 0 0 10px !important
+    border-radius: 10px 0 0 10px !important
+
+    .week
+      @media screen and (max-width: map_get($grid-breakpoints, lg))
+        margin: 0 !important
+
+      &:not(:last-child)
+        @media screen and (max-width: map_get($grid-breakpoints, lg))
+          border-bottom: 1px solid #FFFFFF
+
+.week-body
+  @media screen and (max-width: map_get($grid-breakpoints, lg))
+    width: 75%
+    float: left
+    padding-right: 10px
 
 .left-sidebar
   box-shadow: 0px 3px 6px #00000029
@@ -443,6 +472,9 @@ h4
       opacity: 1
       margin: 10px 10px 0
 
+      @media screen and (max-width: map_get($grid-breakpoints, md))
+        margin: 6px 10px 0
+
       .navbar-toggler-icon
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
 
@@ -456,8 +488,11 @@ h4
       border-radius: 0
       box-shadow: 0px 3px 6px #00000029
 
+      @media screen and (max-width: map-get($grid-breakpoints, lg))
+        margin-top: 16px
+
       @media screen and (max-width: map-get($grid-breakpoints, md))
-        margin-top: 6px
+        margin-top: 7px
 
 nav
   border-right: 1px solid rgba(150, 156, 203, 0.3)
@@ -584,6 +619,9 @@ h3
   color: #fff
   border-top-left-radius: 10px
   border-top-right-radius: 10px
+  @media screen and (max-width: map_get($grid-breakpoints, lg))
+    padding: 0 0 0 10px !important
+
 .card-body
   -webkit-box-flex: 1
   -ms-flex: 1 1 auto
@@ -593,6 +631,15 @@ h3
   border-bottom-left-radius: 10px
   border-bottom-right-radius: 10px
 
+  @media screen and (max-width: map_get($grid-breakpoints, lg))
+    padding-right: 10px
   @media screen and (max-width: map_get($grid-breakpoints, md))
     padding: 1rem
+
+.week-movil
+  @media screen and (max-width: map_get($grid-breakpoints, lg))
+    width: 100%
+    padding: 10px
+    height: 115px
+    box-shadow: none
 </style>
