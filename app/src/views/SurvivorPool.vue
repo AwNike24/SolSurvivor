@@ -642,4 +642,9 @@ h3
     padding: 10px
     height: 115px
     box-shadow: none
+
+.div-summary
+  .card-header
+    @media screen and (max-width: map_get($grid-breakpoints, lg))
+      padding: 0.35rem 1.25rem !important
 </style>
