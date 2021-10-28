@@ -138,13 +138,13 @@
                 v-for="week in weeks"
                 :key="week"
                 class="
-                  items-weekens
+                  col-xs-12 col-sm-12 col-md-12 col-lg col-xl
                   p-2
                   flex-nowrap
                   align-items-center
                   my-1
                   week week-movil
-
+                  text-center
                 "
               >
                 <b class="text-week">{{ week }}</b>
