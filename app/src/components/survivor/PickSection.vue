@@ -2,7 +2,7 @@
   <div
     v-if="showLocks()"
     class="
-      col-md-1 col-3
+      items-weekens
       pickSection
       d-flex
       justify-content-center
@@ -19,7 +19,7 @@
   </div>
   <div
     class="
-      col-md-1 col-3
+      items-weekens
       pickSection
       d-flex
       justify-content-center
@@ -36,7 +36,7 @@
   <div
     v-else
     class="
-      col-md-1 col-3
+      items-weekens
       pickSection
       d-flex
       justify-content-center

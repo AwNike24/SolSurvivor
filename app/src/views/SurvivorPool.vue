@@ -131,24 +131,26 @@
             </div>
           </div>
           <div class="card div-weeks mt-3">
-            <div class="row week-header card-header">
+            <div
+              class="row week-header card-header d-flex justify-content-between"
+            >
               <div
                 v-for="week in weeks"
                 :key="week"
                 class="
-                  col-1
-                  d-flex
-                  justify-content-center
+                  items-weekens
+                  p-2
                   flex-nowrap
                   align-items-center
                   my-1
                   week week-movil
+
                 "
               >
-                {{ week }}
+                <b class="text-week">{{ week }}</b>
               </div>
             </div>
-            <div class="row g-0 week-body">
+            <div class="row g-0 week-body d-flex justify-content-between">
               <pick-section
                 v-for="week in weeks"
                 :key="week"
@@ -219,7 +221,7 @@ export default {
       survivorPool: {},
       teamsModalShown: false,
       ticket: {},
-      weeks: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+      weeks: [10, 11, 12, 13, 14, 15, 16, 17, 18],
       capitalize: (value) => {
         if (!value) return value;
         const s = value.toString();
@@ -643,9 +645,20 @@ h3
     padding: 10px
     height: 115px
     box-shadow: none
+    position: relative
 
 .div-summary
   .card-header
     @media screen and (max-width: map_get($grid-breakpoints, lg))
       padding: 0.35rem 1.25rem !important
+.items-weekens
+  width: 11%
+  text-align: center
+  @media screen and (max-width: map_get($grid-breakpoints, lg))
+    width: 100%
+.text-week
+  @media screen and (max-width: map_get($grid-breakpoints, lg))
+    position: absolute
+    top: 44%;
+    left: 42%
 </style>
