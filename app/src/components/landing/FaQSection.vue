@@ -61,7 +61,7 @@ export default {
           response: `Everyone who mints a SolSurvivor will get a ticket with a unique number.
           If you survive, you will get a new NFT depending on what team you select in week 1 of the contest (week 9 of NFL).
           Each week you survive, you will be able to upgrade your old NFT for a new one with another feature.
-          The less common the your pick, if it wins, the more rare the trait will be.`,
+          The less common your pick is, the more rare the trait will be if it wins.`,
           open: false,
         },
         {
