@@ -130,6 +130,7 @@
               </div>
             </div>
           </div>
+
           <div class="card div-weeks mt-3">
             <div
               class="row week-header card-header d-flex justify-content-between"
@@ -138,12 +139,13 @@
                 v-for="week in weeks"
                 :key="week"
                 class="
-                  items-weekens
+                  col-xs-12 col-sm-12 col-md-12 col-lg col-xl
                   p-2
                   flex-nowrap
                   align-items-center
                   my-1
                   week week-movil
+                  text-center
                 "
               >
                 <b class="text-week">{{ week }}</b>
@@ -229,11 +231,9 @@ export default {
     };
   },
   watch: {
-    $route(to) {
-      if (to.path !== "/") {
-        this.loading = true;
-        this.getSurvivorPool();
-      }
+    $route() {
+      this.loading = true;
+      this.getSurvivorPool();
     },
   },
   computed: {
@@ -303,9 +303,12 @@ export default {
     // requests getSurvivorPool from API
     // this endpoint returns the contest and
     getSurvivorPool() {
-      if (!this.walletConnected) {
+      if (this.mode === "not-connected") {
+        this.loading = false;
+      } else if (!this.walletConnected) {
         this.$router.push("/survivor-pool/not-connected");
       } else if (this.mode === "my-entries" && this.walletConnected) {
+        console.log(this.publicKey);
         api.request("survivorPool/getSurvivorPool").then((res) => {
           this.handleSurvivorPoolResponse(res);
         });
