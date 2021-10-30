@@ -67,7 +67,7 @@
           </div>
           <div class="col-lg-6 col-12 pt-5 mt-3">
             <div class="row justify-content-lg-start justify-content-center">
-              <div class="col-12 feature-title mb-2 text-center text-lg-left">
+              <div class="col-12 feature-title mb-2 text-center text-lg-start">
                 NFL Survivor Pool
               </div>
               <div class="col-9 feature-text">

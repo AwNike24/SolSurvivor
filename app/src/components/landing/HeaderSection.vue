@@ -154,9 +154,6 @@ export default {
 @import "@/assets/styles/variables"
 @import "bootstrap/scss/_variables.scss"
 
-@media (min-width: 1400px)
-  .container
-    max-width: 1140px
 header
   background-image: url('/images/Background-slideprincipal@2x.png')
   background-repeat: no-repeat
