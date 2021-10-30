@@ -242,9 +242,11 @@ export default {
     };
   },
   watch: {
-    $route() {
-      this.loading = true;
-      this.getSurvivorPool();
+    $route(to) {
+      if (to.path !== "/") {
+        this.loading = true;
+        this.getSurvivorPool();
+      }
     },
   },
   computed: {
