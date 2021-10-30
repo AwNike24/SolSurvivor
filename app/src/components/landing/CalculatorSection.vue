@@ -141,34 +141,34 @@ export default {
         },
         {
           title: "",
-          content: "11-8 Sale begins, secondary market live.",
+          content: "Q4 Sale begins, secondary market live.",
           icon: "fa fa-globe",
         },
         {
           title: "",
-          content: "11-11 Survivor Pool Begins",
+          content: "Q4 Survivor Pool Begins",
           icon: "fa fa-globe",
         },
         {
           title: "",
           content:
-            "11-15 Survivor Pool Explorer is Live (See what every entry has previously picked)",
+            "Q4 Survivor Pool Explorer is Live (See what every entry has previously picked)",
           icon: "fa fa-globe",
         },
         {
           title: "",
-          content: "11-30 In-House Secondary Market is Live",
+          content: "Q4 In-House Secondary Market is Live",
           icon: "fa fa-globe",
         },
-        { title: "", content: "12-30 DAO established", icon: "fa fa-globe" },
+        { title: "", content: "Q1 DAO established", icon: "fa fa-globe" },
         {
           title: "",
-          content: "1-10 NFL Season Ends, Prizes Distributed",
+          content: "Q1 NFL Season Ends, Prizes Distributed",
           icon: "fa fa-globe",
         },
         {
           title: "",
-          content: "1-12 NFL Playoffs Mint Launches, Prizes Distributed",
+          content: "Q1 NFL Playoffs Contest Launches",
           icon: "fa fa-globe",
         },
         /*
