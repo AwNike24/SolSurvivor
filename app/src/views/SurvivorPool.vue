@@ -1,62 +1,64 @@
 <template>
-  <main class="container-fluid bg-body">
-    <div class="row no-gutters">
-      <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 content-menu-dashboard">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav flex-column w-100">
-                <li class="nav-item">
-                  <connect-to-wallet />
-                </li>
-                <li class="nav-item">
-                  <router-link
-                    to="/survivor-pool/my-entries"
-                    class="d-flex align-items-center"
-                  >
-                    <img
-                      src="../../public/icons/solsulvivor/Icon-awesome-external-link-square-alt.svg"
-                    />
-                    <h4 class="ms-3 my-0">My Entry</h4>
-                  </router-link>
-                </li>
-                <li class="nav-item">
-                  <router-link
-                    to="/survivor-pool/all-entries"
-                    class="d-flex align-items-center"
-                  >
-                    <img
-                      src="../../public/icons/solsulvivor/Icon-material-pageview.svg"
-                    />
-                    <h4 class="ms-3 my-0">View All Entries</h4>
-                  </router-link>
-                </li>
-                <li class="nav-item">
-                  <router-link
-                    to="/survivor-pool/rules"
-                    class="d-flex align-items-center"
-                  >
-                    <img
-                      src="../../public/icons/solsulvivor/Icon-awesome-list-alt.svg"
-                    />
-                    <h4 class="ms-3 my-0">Rules</h4>
-                  </router-link>
-                </li>
-              </ul>
+  <div>
+    <header-dashboar-component />
+    <main class="container-fluid bg-body">
+      <div class="row no-gutters">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 content-menu-dashboard">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav flex-column w-100">
+                  <li class="nav-item">
+                    <connect-to-wallet />
+                  </li>
+                  <li class="nav-item">
+                    <router-link
+                      to="/survivor-pool/my-entries"
+                      class="d-flex align-items-center"
+                    >
+                      <img
+                        src="../../public/icons/solsulvivor/Icon-awesome-external-link-square-alt.svg"
+                      />
+                      <h4 class="ms-3 my-0">My Entry</h4>
+                    </router-link>
+                  </li>
+                  <li class="nav-item">
+                    <router-link
+                      to="/survivor-pool/all-entries"
+                      class="d-flex align-items-center"
+                    >
+                      <img
+                        src="../../public/icons/solsulvivor/Icon-material-pageview.svg"
+                      />
+                      <h4 class="ms-3 my-0">View All Entries</h4>
+                    </router-link>
+                  </li>
+                  <li class="nav-item">
+                    <router-link
+                      to="/survivor-pool/rules"
+                      class="d-flex align-items-center"
+                    >
+                      <img
+                        src="../../public/icons/solsulvivor/Icon-awesome-list-alt.svg"
+                      />
+                      <h4 class="ms-3 my-0">Rules</h4>
+                    </router-link>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </nav>
-        <!-- <nav class="left-sidebar p-4">
+          </nav>
+          <!-- <nav class="left-sidebar p-4">
           <connect-to-wallet />
           <router-link
             to="/survivor-pool/my-entries"
@@ -86,111 +88,118 @@
             <h4 class="ms-3 my-0">Rules</h4>
           </router-link>
         </nav> -->
-      </div>
-      <div v-if="loading" class="col-xl-10 col-lg-9 col-md-12 col-sm-12">
-        <spinner />
-      </div>
-      <div
-        v-else-if="mode === 'not-connected'"
-        class="col-xl-10 col-lg-9 col-md-12 col-sm-12 mt-2"
-      >
-        <not-connected />
-      </div>
-      <div
-        v-else-if="mode === 'my-entries'"
-        class="col-xl-10 col-lg-9 col-md-12 col-sm-12 mt-4"
-      >
-        <div class="container">
-          <div class="card div-summary">
-            <div class="card-header fw-bold">Contest Summary</div>
-            <div class="card-body">
-              <div class="d-flex justify-content-center content-abstract">
-                <div class="abstract">
-                  <span class="font-summary"> Entries Remaining </span>
-                  <br />
-                  <span class="fw-bold">1111</span>
-                </div>
-                <div class="abstract">
-                  <span class="font-summary"> Current Selection </span>
-                  <br />
-                  <span class="fw-bold">{{ currentSelectedTeam }}</span>
-                </div>
-                <div class="abstract">
-                  <span class="font-summary"> Teams Selected </span>
-                  <br />
-                  <span class="fw-bold">{{ numberOfSelectedTeams }}</span>
-                </div>
-                <div class="abstract">
-                  <span class="font-summary"> Status </span>
-                  <br />
-                  <span class="fw-bold font-summary-medium">
-                    {{ capitalize(ticket.status) }}
-                  </span>
+        </div>
+        <div v-if="loading" class="col-xl-10 col-lg-9 col-md-12 col-sm-12">
+          <spinner />
+        </div>
+        <div
+          v-else-if="mode === 'not-connected'"
+          class="col-xl-10 col-lg-9 col-md-12 col-sm-12 mt-2"
+        >
+          <not-connected />
+        </div>
+        <div
+          v-else-if="mode === 'my-entries'"
+          class="col-xl-10 col-lg-9 col-md-12 col-sm-12 mt-4"
+        >
+          <div class="container">
+            <div class="card div-summary">
+              <div class="card-header fw-bold">Contest Summary</div>
+              <div class="card-body">
+                <div class="d-flex justify-content-center content-abstract">
+                  <div class="abstract">
+                    <span class="font-summary"> Entries Remaining </span>
+                    <br />
+                    <span class="fw-bold">1111</span>
+                  </div>
+                  <div class="abstract">
+                    <span class="font-summary"> Current Selection </span>
+                    <br />
+                    <span class="fw-bold">{{ currentSelectedTeam }}</span>
+                  </div>
+                  <div class="abstract">
+                    <span class="font-summary"> Teams Selected </span>
+                    <br />
+                    <span class="fw-bold">{{ numberOfSelectedTeams }}</span>
+                  </div>
+                  <div class="abstract">
+                    <span class="font-summary"> Status </span>
+                    <br />
+                    <span class="fw-bold font-summary-medium">
+                      {{ capitalize(ticket.status) }}
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="card div-weeks mt-3">
-            <div
-              class="row week-header card-header d-flex justify-content-between"
-            >
+            <div class="card div-weeks mt-3">
               <div
-                v-for="week in weeks"
-                :key="week"
                 class="
-                  col-xs-12 col-sm-12 col-md-12 col-lg col-xl
-                  p-2
-                  flex-nowrap
-                  align-items-center
-                  my-1
-                  week week-movil
-                  text-center
+                  row
+                  week-header
+                  card-header
+                  d-flex
+                  justify-content-between
                 "
               >
-                <b class="text-week">{{ week }}</b>
+                <div
+                  v-for="week in weeks"
+                  :key="week"
+                  class="
+                    col-xs-12 col-sm-12 col-md-12 col-lg col-xl
+                    p-2
+                    flex-nowrap
+                    align-items-center
+                    my-1
+                    week week-movil
+                    text-center
+                  "
+                >
+                  <b class="text-week">{{ week }}</b>
+                </div>
               </div>
-            </div>
-            <div class="row g-0 week-body d-flex justify-content-between">
-              <pick-section
-                v-for="week in weeks"
-                :key="week"
-                :currentWeek="survivorPool.currentWeek || 0"
-                :weekNumber="week"
-                :selection="findSelectionForWeek(week)"
-                :is-dead="ticket.status === 'dead'"
-                @selectWeekToPick="selectWeekToPick"
-                @editSelection="editSelection"
-              />
+              <div class="row g-0 week-body d-flex justify-content-between">
+                <pick-section
+                  v-for="week in weeks"
+                  :key="week"
+                  :currentWeek="survivorPool.currentWeek || 0"
+                  :weekNumber="week"
+                  :selection="findSelectionForWeek(week)"
+                  :is-dead="ticket.status === 'dead'"
+                  @selectWeekToPick="selectWeekToPick"
+                  @editSelection="editSelection"
+                />
+              </div>
             </div>
           </div>
         </div>
+        <teams-modal
+          v-if="teamsModalShown && !loading"
+          :current-week="survivorPool.currentWeek"
+          :selectedWeek="selectedWeek"
+          :selectedTeams="ticket.selectedTeams"
+          :selection="findSelectionForWeek(selectedWeek)"
+          @selectTeam="selectTeam"
+          @editSelection="editSelection"
+          @removeSelection="removeSelection"
+          @closeModal="closeModal"
+        />
+        <div
+          v-else-if="mode === 'all-entries'"
+          class="col-xl-10 col-lg-9 col-md-12 col-sm-12 mt-2"
+        >
+          <all-entry />
+        </div>
+        <div
+          v-else-if="mode === 'rules'"
+          class="col-xl-10 col-lg-9 col-md-12 col-sm-12 mt-2"
+        >
+          <contest-rules />
+        </div>
       </div>
-      <teams-modal
-        v-if="teamsModalShown && !loading"
-        :current-week="survivorPool.currentWeek"
-        :selectedWeek="selectedWeek"
-        :selectedTeams="ticket.selectedTeams"
-        :selection="findSelectionForWeek(selectedWeek)"
-        @selectTeam="selectTeam"
-        @editSelection="editSelection"
-        @removeSelection="removeSelection"
-        @closeModal="closeModal"
-      />
-      <div
-        v-else-if="mode === 'all-entries'"
-        class="col-xl-10 col-lg-9 col-md-12 col-sm-12 mt-2"
-      >
-        <all-entry />
-      </div>
-      <div
-        v-else-if="mode === 'rules'"
-        class="col-xl-10 col-lg-9 col-md-12 col-sm-12 mt-2"
-      >
-        <contest-rules />
-      </div>
-    </div>
-  </main>
+    </main>
+  </div>
 </template>
 
 <script>
@@ -203,6 +212,7 @@ import NotConnected from "@/components/survivor/NotConnected.vue";
 import PickSection from "../components/survivor/PickSection";
 import TeamsModal from "../components/survivor/modals/TeamsModal";
 import Spinner from "@/components/other/Spinner.vue";
+import HeaderDashboarComponent from "../components/header/HeaderDashboarComponent.vue";
 
 export default {
   name: "SurvivorPool",
@@ -214,6 +224,7 @@ export default {
     PickSection,
     Spinner,
     TeamsModal,
+    HeaderDashboarComponent,
   },
   data() {
     return {

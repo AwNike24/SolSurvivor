@@ -78,7 +78,7 @@
               <div
                 v-for="(roadmap, index) in roadmaps"
                 :key="index"
-                class="row w-100 ml-2 box-principal"
+                class="row w-100 ms-2 box-principal"
               >
                 <div class="col-1 px-0" style="max-width: 6px">
                   <div class="h-100" style="margin-left: auto">
