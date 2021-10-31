@@ -7,7 +7,8 @@
         <span style="color: #a7c6ff; font-weight: 600"> SolSurvivor </span> NFT
         depends only on your skill predicting the NFL. Pick teams that others
         don't to get more rare traits. Everyone starts with the same NFT, the
-        rest is up to you.<br> <b> Trait schedule by week: </b>
+        rest is up to you.<br />
+        <b> Trait schedule by week: </b>
         Goat, Background, Horns, Shirt, Eyes, Mouth, Head, Necklace, Pixelated
       </h3>
       <div class="row justify-content-center">
