@@ -7,7 +7,8 @@
         <span style="color: #a7c6ff; font-weight: 600"> SolSurvivor </span> NFT
         depends only on your skill predicting the NFL. Pick teams that others
         don't to get more rare traits. Everyone starts with the same NFT, the
-        rest is up to you.<br> <b> Trait schedule by week: </b>
+        rest is up to you.<br />
+        <b> Trait schedule by week: </b>
         Goat, Background, Horns, Shirt, Eyes, Mouth, Head, Necklace, Pixelated
       </h3>
       <div class="row justify-content-center">
@@ -58,11 +59,10 @@ export default {
     return {
       cards: [
         {
-          // eslint-disable-next-line global-require
           img: require("../../../public/images/logo_card1.jpg"),
           contents: [
             {
-              title: "Hat: Jester",
+              title: "Head: Jester Hat",
               class: ["card-title"],
               badged: {
                 status: 0,
@@ -74,21 +74,20 @@ export default {
               class: ["card-subtitle"],
               badged: {
                 status: 0,
-                content: "Bengals Week 17: 0.25% Owned",
+                content: "Jaguars Week 17: 0.25% Owned",
               },
             },
           ],
         },
         {
-          // eslint-disable-next-line global-require
           img: require("../../../public/images/logo_card2.jpg"),
           contents: [
             {
-              title: "Forehead: 3rd Eye",
+              title: "Head: 3rd Eye",
               class: ["card-title"],
               badged: {
                 status: 1,
-                content: "Jaguars Week 11: .20% owned",
+                content: "Colts Week 16: 1% owned",
               },
             },
             {
@@ -102,23 +101,22 @@ export default {
           ],
         },
         {
-          // eslint-disable-next-line global-require
-          img: require("../../../public/images/logo3.jpg"),
+          img: require("../../../public/images/logo_card3.jpg"),
           contents: [
             {
-              title: "Background: Emerald",
+              title: "Head: Purple Headband",
               class: ["card-title"],
               badged: {
                 status: 0,
-                content: "Browns Week 10: 1% owned",
+                content: "Rams Week 16: 10% owned",
               },
             },
             {
-              title: "Horns: High Horns",
+              title: "Background: Coins",
               class: ["card-subtitle"],
               badged: {
                 status: 0,
-                content: "Rams Week 11: 22% owned",
+                content: "Packers Week 11: 10% owned",
               },
             },
           ],
