@@ -1,8 +1,8 @@
 <template>
-  <button class="mt-2 mb-3 connect-wallet" v-if="connected" @click="disconnect">
+  <button class="mt-0 mb-3 connect-wallet" v-if="connected" @click="disconnect">
     DISCONNECT WALLET
   </button>
-  <button class="mt-2 mb-3 connect-wallet" v-else @click="connectToPhantom">
+  <button class="mt-0 mb-3 connect-wallet" v-else @click="connectToPhantom">
     CONNECT WALLET
   </button>
 </template>

@@ -10,7 +10,7 @@
 <script>
 import HeaderSection from "@/components/landing/HeaderSection.vue";
 import FeaturesSection from "@/components/landing/FeaturesSection.vue";
-import VideoSection from "@/components/landing/VideoSection.vue";
+import VideoSection from "@/components/landing/TraitSection.vue";
 import FaqSection from "@/components/landing/FaQSection.vue";
 import CalculatorSection from "@/components/landing/CalculatorSection.vue";
 

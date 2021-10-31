@@ -1,5 +1,5 @@
 <template>
-  <div class="games mb-5">
+  <div class="games mb-5 mt-3">
     <div class="game py-3 mx-0 my-2 games-not-found">
       Connect your Phantom Wallet!
     </div>

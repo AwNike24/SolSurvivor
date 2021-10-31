@@ -59,7 +59,7 @@ export default {
         {
           title: "What will I get from minting",
           response: `Everyone who mints a SolSurvivor will get a ticket with a unique number.
-          If you survive, you will get a new NFT depending on what team you select in week 1 of the contest (week 9 of NFL).
+          If you survive, you will get a new NFT depending on what team you select in week 1 of the contest.
           Each week you survive, you will be able to upgrade your old NFT for a new one with another feature.
           The less common your pick is, the more rare the trait will be if it wins.`,
           open: false,
@@ -67,7 +67,7 @@ export default {
         {
           title: "What is the Trait Schedule?",
           response:
-            "Week 10: Goat, Week 11: Background, Week 12: Horns, Week 13: Shirt, Week 14: Eyes, Week 15: Mouth, Week 16: Head, Week 17: Necklace, Week 18: Pixelated.",
+            "Week 1: Goat, Week 2: Background, Week 3: Horns, Week 4: Shirt, Week 5: Eyes, Week 6: Mouth, Week 7: Head, Week 8: Necklace, Week 9: Pixelated.",
           open: false,
         },
         //  {

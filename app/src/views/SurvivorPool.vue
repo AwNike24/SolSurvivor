@@ -29,7 +29,7 @@
                       <img
                         src="../../public/icons/solsulvivor/Icon-awesome-external-link-square-alt.svg"
                       />
-                      <h4 class="ms-3 my-0">My Entry</h4>
+                      <h4 class="ms-3 my-0 font-weight-lighter">My Entry</h4>
                     </router-link>
                   </li>
                   <li class="nav-item">
@@ -40,7 +40,7 @@
                       <img
                         src="../../public/icons/solsulvivor/Icon-material-pageview.svg"
                       />
-                      <h4 class="ms-3 my-0">View All Entries</h4>
+                      <h4 class="ms-3 my-0">View Entries</h4>
                     </router-link>
                   </li>
                   <li class="nav-item">
@@ -425,7 +425,7 @@ h4
   font-size: $font-size-xs
   margin: 0
   width: 100%
-  padding: 5px 0 !important
+  padding: 1px 0 !important
   @media screen and (max-width: map_get($grid-breakpoints, lg))
     width: 25%
     float: left

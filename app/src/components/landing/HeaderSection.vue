@@ -64,7 +64,7 @@
               <a href="#how-it-works">About</a>
             </div>
             <div class="col-2 text-center">
-              <a href="#about">Demo</a>
+              <a href="#about">Traits</a>
             </div>
             <div class="col-2 text-center">
               <a href="#save-money">Roadmap</a>
@@ -87,7 +87,7 @@
             </div>
             <div class="col-2 text-center">
               <a
-                href="https://discord.gg/STMwQ ynkFJ"
+                href="https://discord.gg/STMwQynkFJ"
                 target="_blank"
                 rel="noopener"
               >
@@ -120,7 +120,7 @@
               "
               @click="routeToSurvivorPool"
             >
-              NFL Contest
+              NFL Demo
             </button>
           </div>
         </div>
@@ -248,7 +248,7 @@ header
       margin-top: 20px
 
   .free-acct-info
-    padding: 12px 2rem
+    padding: 14px 2rem
     border-radius: 30px
     background-color: #F5F0F6
     color: #343B86
@@ -257,6 +257,10 @@ header
     font-size: 1rem
     border: transparent
     width: auto
+
+    @media screen and (max-width: map_get($grid-breakpoints, sm))
+      padding: 12px 2rem
+
 
     &:hover, &.router-link-active
       text-decoration: none
