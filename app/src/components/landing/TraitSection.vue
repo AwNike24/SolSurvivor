@@ -151,6 +151,7 @@ h3
   font-size: 14px
   font-weight: 400
   color: white
+  line-height: 1.5
   @media screen and (max-width: map_get($grid-breakpoints, lg))
     padding-left: 0
     padding-right: 0
