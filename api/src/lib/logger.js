@@ -16,7 +16,7 @@ if (!fs.existsSync(logDir)) {
 
 let transports;
 
-if (config.get('env') !== 'production') {
+if (config.get('env') === 'development') {
   transports = [
     new winston.transports.File({ filename: path.join(logDir, 'error.log'), level: 'error', handleExceptions: true }),
     new winston.transports.File({ filename: path.join(logDir, 'combined.log'), handleExceptions: true }),
