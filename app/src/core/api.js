@@ -35,13 +35,13 @@ export default {
       // eslint-disable-next-line consistent-return
       .catch((error) => {
         if (error.message === "Network Error") {
-          this.$emit("NetworkError", error);
+          this.$emitter.emit("NetworkError", error);
         } else if (error) {
           switch (error.code) {
             case 500000: // Internal Server Error
             case 403000: // Access Denied (redirect to /sing-in)
             case 404000: // API returns Page Not Found
-              this.$emit("ApplicationError", error);
+              this.$emitter.emit("ApplicationError", error);
               break;
             default:
               if (error.response.data) {
@@ -49,7 +49,7 @@ export default {
               }
           }
         } else {
-          this.$emit("ApplicationError", []);
+          this.$emitter.emit("ApplicationError", []);
         }
       }),
 };

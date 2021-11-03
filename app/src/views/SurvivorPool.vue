@@ -248,6 +248,23 @@ export default {
         this.getSurvivorPool();
       }
     },
+    walletConnected(newValue) {
+      if (newValue) {
+        this.$emitter.emit("shown-alert", {
+          status: "ok",
+          title: "Wallet connected",
+          type: "wallet-connection",
+          detail: "Your entries have been loaded",
+        });
+      } else {
+        this.$emitter.emit("shown-alert", {
+          status: "ok",
+          title: "Wallet disconnected",
+          type: "wallet-connection",
+          detail: "Your wallet has been disconnected",
+        });
+      }
+    },
   },
   computed: {
     ...mapState({
