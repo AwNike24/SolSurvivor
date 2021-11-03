@@ -13,6 +13,7 @@ const initialState = () => ({
   username: "",
   userToken: "",
   walletConnected: false,
+  notifications: [],
 });
 
 export default createStore({
@@ -40,6 +41,12 @@ export default createStore({
       Object.keys(s).forEach((key) => {
         state[key] = s[key];
       });
+    },
+    addNotification(state, payload) {
+      state.notifications.push(payload);
+    },
+    removeNotificationByIndex(state, index) {
+      state.notifications.splice(index, 1);
     },
   },
   actions: {

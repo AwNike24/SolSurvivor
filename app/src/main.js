@@ -5,6 +5,7 @@ import store from "./store";
 
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'animate.css';
 // Font awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -13,12 +14,18 @@ import {
   faAngleDown,
   faChevronDown,
   faSearch,
+  faCheckCircle,
 } from "@fortawesome/free-solid-svg-icons";
-library.add(faPhone, faAngleUp, faAngleDown, faChevronDown, faSearch);
+library.add(faPhone, faAngleUp, faAngleDown, faChevronDown, faSearch, faCheckCircle);
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-createApp(App)
-  .use(router)
+// mitt
+import mitt from "mitt";
+const emitter = mitt();
+const app = createApp(App);
+app.config.globalProperties.$emitter = emitter;
+
+app.use(router)
   .use(store)
   .component("font-awesome-icon", FontAwesomeIcon)
   .mount("#app");
