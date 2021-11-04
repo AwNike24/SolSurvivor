@@ -254,7 +254,7 @@ export default {
           status: "ok",
           title: "Wallet connected",
           type: "wallet-connection",
-          detail: "Your entries have been loaded",
+          detail: "Your entry has been loaded",
         });
       } else {
         this.$emitter.emit("shown-alert", {
@@ -326,7 +326,7 @@ export default {
           status: "ok",
           title: "Success",
           type: "pick-made",
-          detail: `You changed team ${oldParticipantName} to team ${newParticipantName}`,
+          detail: `You changed ${oldParticipantName} to ${newParticipantName}`,
         });
       });
     },
@@ -375,12 +375,17 @@ export default {
           status: "ok",
           title: "Success",
           type: "pick-made",
-          detail: `You selected team ${participantName}`,
+          detail: `You selected ${participantName}`,
         });
       });
     },
     // removes an already selected team from that week
-    removeSelection({ gameID, oldParticipantID, selectionID, participantName }) {
+    removeSelection({
+      gameID,
+      oldParticipantID,
+      selectionID,
+      participantName,
+    }) {
       this.closeModal();
       this.loading = true;
       const data = {
@@ -395,7 +400,7 @@ export default {
           status: "ok",
           title: "Success",
           type: "pick-made",
-          detail: `You unselected team ${participantName}`,
+          detail: `You unselected ${participantName}`,
         });
       });
     },

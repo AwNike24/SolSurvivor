@@ -177,9 +177,9 @@ export default {
           gameID,
           oldParticipantID: participantID,
           selectionID: this.selection.selection.selectionID,
-          participantName: this.games.find(
-            (game) => game.id === gameID
-          ).participants.find((team) => team.id === participantID).longName,
+          participantName: this.games
+            .find((game) => game.id === gameID)
+            .participants.find((team) => team.id === participantID).longName,
         });
       } else if (this.selection.selection) {
         this.$emit("editSelection", {
@@ -189,18 +189,18 @@ export default {
           selectedWeek,
           selectionID: this.selection.selection.selectionID,
           oldParticipantName: this.getSelectedTeam.longName,
-          newParticipantName: this.games.find(
-            (game) => game.id === gameID
-          ).participants.find((team) => team.id === participantID).longName,
+          newParticipantName: this.games
+            .find((game) => game.id === gameID)
+            .participants.find((team) => team.id === participantID).longName,
         });
       } else {
         this.$emit("selectTeam", {
           selectedWeek,
           participantID,
           gameID,
-          participantName: this.games.find(
-            (game) => game.id === gameID
-          ).participants.find((team) => team.id === participantID).longName,
+          participantName: this.games
+            .find((game) => game.id === gameID)
+            .participants.find((team) => team.id === participantID).longName,
         });
       }
     },
