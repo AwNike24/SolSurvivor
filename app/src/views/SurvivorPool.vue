@@ -307,6 +307,8 @@ export default {
       participantID,
       selectedWeek,
       selectionID,
+      oldParticipantName,
+      newParticipantName,
     }) {
       this.closeModal();
       this.loading = true;
@@ -320,6 +322,12 @@ export default {
       };
       api.request("survivorPool/editSelection", data).then((res) => {
         this.handleSurvivorPoolResponse(res);
+        this.$emitter.emit("shown-alert", {
+          status: "ok",
+          title: "Success",
+          type: "pick-made",
+          detail: `You changed team ${oldParticipantName} to team ${newParticipantName}`,
+        });
       });
     },
     findSelectionForWeek(weekNumber) {
@@ -352,7 +360,7 @@ export default {
       this.loading = false;
     },
     // adds a new selection to the users survivor pool ticket
-    selectTeam({ selectedWeek, participantID, gameID }) {
+    selectTeam({ selectedWeek, participantID, gameID, participantName }) {
       this.closeModal();
       this.loading = true;
       const data = {
@@ -363,10 +371,16 @@ export default {
       };
       api.request("survivorPool/createSelection", data).then((res) => {
         this.handleSurvivorPoolResponse(res);
+        this.$emitter.emit("shown-alert", {
+          status: "ok",
+          title: "Success",
+          type: "pick-made",
+          detail: `You selected team ${participantName}`,
+        });
       });
     },
     // removes an already selected team from that week
-    removeSelection({ gameID, oldParticipantID, selectionID }) {
+    removeSelection({ gameID, oldParticipantID, selectionID, participantName }) {
       this.closeModal();
       this.loading = true;
       const data = {
@@ -377,6 +391,12 @@ export default {
       };
       api.request("survivorPool/removeSelection", data).then((res) => {
         this.handleSurvivorPoolResponse(res);
+        this.$emitter.emit("shown-alert", {
+          status: "ok",
+          title: "Success",
+          type: "pick-made",
+          detail: `You unselected team ${participantName}`,
+        });
       });
     },
     // initialize select teams modal
