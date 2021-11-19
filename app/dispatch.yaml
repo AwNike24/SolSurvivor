@@ -1,5 +1,5 @@
 dispatch:
-  - url: "www.solanasurvivor.io/*"
+  - url: "www.solanasurvivor.com/*"
     service: sol-survivor
-  - url: "solanasurvivor.io/*"
+  - url: "solanasurvivor.com/*"
     service: sol-survivor
