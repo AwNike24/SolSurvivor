@@ -64,6 +64,13 @@ const config = convict({
     format: String,
     default: '127.0.0.1:8081',
     env: 'CORS_ORIGIN_SOL_SURVIVOR'
+  },
+
+  cors_origin_sol_survivor_app_www: {
+    doc: 'cors origin of Sol Survivor client',
+    format: String,
+    default: '127.0.0.1:8081',
+    env: 'CORS_ORIGIN_SOL_SURVIVOR_WWW'
   }
 })
 

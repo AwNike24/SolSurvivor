@@ -1,12 +1,7 @@
 <template>
   <main class="container py-md-2">
-    <h3 class="text-center">4casters March Madness Survivor Pool</h3>
     <div class="questions-container">
-      <FAQuestion
-        id="how-to-play"
-        class="font-weight-light"
-        title="🤔 How To Play"
-      >
+      <FAQuestion id="how-to-play" class="fw-light" title="🤔 How To Play">
         <p>
           Unlike most "bracket-based" pools, this is a single elimination
           tournament. Select one team each day of the tournament (not each
@@ -23,7 +18,7 @@
       </FAQuestion>
       <FAQuestion
         id="how-do-i-get-paid"
-        class="font-weight-light"
+        class="fw-light"
         title="💰 Registration Rules"
       >
         Entry fee is $100 per entry
@@ -53,7 +48,7 @@
       </FAQuestion>
       <FAQuestion
         id="more-entry"
-        class="font-weight-light"
+        class="fw-light"
         title="🌴 How Can I Get More Than 1 Entry?"
       >
         <p>
@@ -67,11 +62,7 @@
           entry from your captain.
         </p>
       </FAQuestion>
-      <FAQuestion
-        id="schedule"
-        class="font-weight-light"
-        title="📅 Tournament Schedule"
-      >
+      <FAQuestion id="schedule" class="fw-light" title="📅 Tournament Schedule">
         <b> 2021 Tournament Schedule: </b>
         The Play-in round is NOT included in the pool. Here's your selection
         schedule:
@@ -94,11 +85,7 @@
           questions, please reach out.
         </p>
       </FAQuestion>
-      <FAQuestion
-        id="tiebreaker"
-        class="font-weight-light"
-        title="👔 Tiebreakers"
-      >
+      <FAQuestion id="tiebreaker" class="fw-light" title="👔 Tiebreakers">
         <p>
           <b>
             Scoring will be based on the number of rounds survived, not number
@@ -132,7 +119,7 @@
           point.
         </p>
       </FAQuestion>
-      <FAQuestion id="covid" class="font-weight-light" title="🤒 COVID RULES">
+      <FAQuestion id="covid" class="fw-light" title="🤒 COVID RULES">
         COVID RULES:
         <li>
           If a team has to forfeit OR advances as a result of a no-contest, the
@@ -155,7 +142,7 @@
       </FAQuestion>
       <FAQuestion
         id="Friends"
-        class="font-weight-light"
+        class="fw-light"
         title="👥 Inviting Friends/Captain"
       >
         <b>
@@ -169,11 +156,7 @@
         tournament starts. For each entry someone creates under your captain
         code, you will receive $5.
       </FAQuestion>
-      <FAQuestion
-        id="deadline"
-        class="font-weight-light"
-        title="⏰ Round Deadlines"
-      >
+      <FAQuestion id="deadline" class="fw-light" title="⏰ Round Deadlines">
         <b> IMPORTANT REMINDER!!!</b>
         The deadline is when the LAST game of the round is scheduled to start.
         There are NO default selections. If you fail to make a selection, you
@@ -185,7 +168,7 @@
       </FAQuestion>
       <FAQuestion
         id="how-do-i-get-paid"
-        class="font-weight-light"
+        class="fw-light"
         title="👁️ Can I See Other People's Entries"
       >
         Yes, but you will only see their picks after each game has started. You
@@ -194,14 +177,14 @@
       </FAQuestion>
       <FAQuestion
         id="how-do-i-get-paid"
-        class="font-weight-light"
+        class="fw-light"
         title="🤑 How Will The Winners Get Paid"
       >
         All Winners will be paid with Bitcoin regardless of the method they
         chose to pay their captain.
         <p>The winner(s) will receive 90% of the prize pool.</p>
       </FAQuestion>
-      <h4 class="my-2 text-black-50 text-center font-weight-normal">
+      <h4 class="my-2 text-black-50 text-center fw-normal">
         That’s it for now. We’re sure you have a host of questions about the
         pool and we’re looking forward to helping you. Good Luck!
       </h4>

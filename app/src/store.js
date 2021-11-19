@@ -1,42 +1,40 @@
 import { createStore } from "vuex";
-import createPersistedState from "vuex-persistedstate";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap";
 import api from "./core/api";
 
 const initialState = () => ({
   id: "",
   isAdmin: false,
-  isLoggedIn: false,
   publicKey: null,
   survivorBalance: 0,
   type: "",
   username: "",
   userToken: "",
+  walletConnected: false,
+  notifications: [],
 });
 
 export default createStore({
   state: initialState(),
   mutations: {
     setPublicKey(state, publicKey) {
+      if (publicKey) {
+        state.walletConnected = true;
+      } else {
+        state.walletConnected = false;
+      }
       state.publicKey = publicKey;
-    },
-    getMe(state, payload) {
-      state.id = payload.id;
-      state.isAdmin = payload.isAdmin;
-      state.isLoggedIn = true;
-      state.survivorBalance = payload.survivorBalance;
-      state.type = payload.type;
-      state.username = payload.username;
-      state.userToken = payload.auth;
     },
     logIn(state, payload) {
       state.id = payload.id;
       state.isAdmin = payload.isAdmin;
-      state.isLoggedIn = true;
       state.survivorBalance = payload.survivorBalance;
       state.type = payload.type;
       state.username = payload.username;
-      state.userToken = payload.auth;
+      state.publicKey = payload.publicKey;
+      state.walletConnected = true;
     },
     logOut(state) {
       const s = initialState();
@@ -44,8 +42,18 @@ export default createStore({
         state[key] = s[key];
       });
     },
+    addNotification(state, payload) {
+      state.notifications.push(payload);
+    },
+    removeNotificationByIndex(state, index) {
+      state.notifications.splice(index, 1);
+    },
   },
   actions: {
+    findOrCreate: async (context) => {
+      const response = await api.request("user/findOrCreateUser");
+      context.commit("logIn", response.user);
+    },
     signUp: (context, payload) =>
       api
         .request("user/create/", {
@@ -58,25 +66,6 @@ export default createStore({
           context.commit("makeJustSignedUpTruthy");
           context.commit("logIn", response.user);
         }),
-
-    logIn: (context, payload) =>
-      api
-        .request("user/login/", {
-          username: payload.username,
-          password: payload.password,
-        })
-        .then((response) => {
-          context.commit("logIn", response.user);
-        }),
-
-    getMe: (context) =>
-      api.request("user/getMe/").then((response) => {
-        if (Object.keys(response).length === 0) context.commit("logOut");
-        else {
-          context.commit("getMe", response.user);
-        }
-      }),
   },
   strict: process.env.NODE_ENV !== "production",
-  plugins: [createPersistedState({ storage: window.localStorage })],
 });

@@ -11,9 +11,9 @@
               <div class="col-10">
                 <div class="row feature-main">
                   <div class="col-12 title">
-                    <span class="nft">NFT</span> Survivor pools
+                    <span class="nft">NFL</span> Survivor Pool
                   </div>
-                  <div class="col-12 title">500 sol 1st prize</div>
+                  <div class="col-12 title">1st Wins 75% of Mint</div>
                 </div>
               </div>
               <div
@@ -24,6 +24,7 @@
                   feature-main-content
                   py-3
                   px-2
+                  position-relative
                 "
               >
                 <img
@@ -31,13 +32,13 @@
                   src="/images/NFT-element@2x.png"
                 />
                 <span class="position-absolute w-100">
-                  A survivor pool is a strategic prediction game where you
-                  select one team to win each weel. If the team wins, you
-                  advance from the contest. If they lose, you are eliminated
-                  from the contest. Once you select a team, you can no longer
-                  pick them for the rest of the contest. The goal is to select a
-                  differente team to win each weel for 10 weeks in a wow</span
-                >
+                  SolSurvivor is an NFL Survivor Pool featuring NFTs that are
+                  minted as contest entries and evolve each week you advance.
+                  The NFTs evolve depending on the holder's selections in the
+                  pool. Each week the holder selects a team that wins, the NFT
+                  advances and evolves a new trait. The rarer the selection in
+                  the pool, the rarer the new NFT trait.
+                </span>
                 <img
                   class="position-relative d-none d-xl-block"
                   src="/images/cuadricula-purple@4x.png"
@@ -47,7 +48,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-6 position-relative">
         <div class="circle position-absolute" />
         <img
           class="feature-principal d-block d-lg-inline mx-auto mx-lg-0"
@@ -66,16 +67,16 @@
           </div>
           <div class="col-lg-6 col-12 pt-5 mt-3">
             <div class="row justify-content-lg-start justify-content-center">
-              <div class="col-12 feature-title mb-2 text-center text-lg-left">
+              <div class="col-12 feature-title mb-2 text-center text-lg-start">
                 NFL Survivor Pool
               </div>
               <div class="col-9 feature-text">
-                A survivor pool is a strategic prediction game where you Select
-                one team to win each weel. If the team wins, you advance from
-                the contest. If they lose, you are eliminated from the contest.
+                A survivor pool is a strategic prediction game where you select
+                one team to win each week. If the team wins, you advance to the
+                next week. If they lose, you are eliminated from the contest.
                 Once you select a team, you can no longer pick them for the rest
-                of the contest. The goal is to select a differente team to win
-                each weel for 10 weeks in a wow
+                of the contest.
+                <b> SolSurvivors first mint will happen in November. </b>
               </div>
             </div>
           </div>
@@ -99,16 +100,19 @@
                   offset-lg-1
                   feature-title
                   mb-2
-                  text-center text-lg-left
+                  text-center text-lg-start
                 "
               >
-                Rare Picks, Rare NFT
+                Win NFT Traits
               </div>
               <div class="col-9 offset-lg-1 feature-text">
-                Everyone will start with the same NFT and it Will evolve each
-                week based on what team you pick. If the team you picked wins.
-                you Will receive a new trait on your NFT. The more rare teams
-                you pick, the more rare your traits Will be.
+                Your entry is an NFT that evolves a new trait each week you
+                advance. The rarity of your NFTs new trait is determined by how
+                many other participants selected the same team in the same week.
+                For example, if 200 people selected the Cardinals in week 11,
+                all those entries would receive the same trait if the Cardinals
+                won.
+                <b> SolSurvivor NFL will mint 1111 entries. </b>
               </div>
             </div>
           </div>
@@ -129,16 +133,19 @@
           </div>
           <div class="col-lg-6 col-12 pt-5 mt-3">
             <div class="row justify-content-center justify-content-lg-start">
-              <div class="col-12 feature-title mb-2 text-center text-lg-left">
-                2500 SOL in Prizes
+              <div class="col-12 feature-title mb-2 text-center text-lg-start">
+                Buy and Sell Entries
               </div>
               <div class="col-9 feature-text">
-                If you survive the full weeks, you will win your share of 2500
-                SOL. If nobody survives 10 weeks, the proze will be distributed
-                amongst the entries that survived the longest. Owning NFTs after
-                the contest Will get you early Access to minting the next
-                survivor entry and Will give you more voting power in our
-                Gambling Goats DAO launching in December
+                You will be able to easily buy and sell entries during the
+                survivor pool. The NFTs will function as unique login token, so
+                you will not need to worry about sharing usernames or passwords.
+                Before you buy the ticket you will be able to see who the entry
+                has selected.
+                <b>
+                  We will launch an internal marketplace for SolSurvivors in
+                  November.
+                </b>
               </div>
             </div>
           </div>
@@ -162,18 +169,18 @@
                   offset-lg-1
                   feature-title
                   mb-2
-                  text-center text-lg-left
+                  text-center text-lg-start
                 "
               >
-                Buy and Sell Entries
+                Built on Solana
               </div>
               <div class="col-9 offset-lg-1 feature-text">
-                A survivor pool is a strategic prediction game where you Select
-                one team to win each weel. If the team wins, you advance from
-                the contest. If they lose, you are eliminated from the contest.
-                Once you select a team, you can no longer pick them for the rest
-                of the contest. The goal is to select a differente team to win
-                each weel for 10 weeks in a wow
+                SolSurvivor is proudly built on Solana to leverage instant
+                transfers and low transaction fees.
+                <b>
+                  75% of the mint proceeds will go back to the community and be
+                  distributed to the winners of the pool.
+                </b>
               </div>
             </div>
           </div>
@@ -193,10 +200,11 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import "../../assets/styles/variables"
+@import "@/assets/styles/variables"
 
-/*.container
-  max-width: 1400px*/
+#how-it-works
+  @media screen and (max-width: map_get($grid-breakpoints, lg))
+    padding-top: 0 !important
 
 h3
   font-size: 2.5rem
@@ -229,7 +237,7 @@ p
     max-width: 85%
 
 img.feature-left
-  width: auto
+  max-width: 100%
   max-height: 300px
 
   @media screen and (max-width: map_get($grid-breakpoints, lg))
@@ -252,7 +260,7 @@ img.solana
     line-height: 35px
 
     .nft
-      font-family: 'Poppins-bold'
+      font-family: $font-poppins-bold
       color: #343B86
 
 .feature-main-content

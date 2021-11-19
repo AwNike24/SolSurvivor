@@ -25,7 +25,7 @@ export async function getRawTickets (userID) {
 }
 
 export async function createBlankTicket ({ entryName, mongooseSession, survivorPoolID, userID }) {
-  await SurvivorPoolTicket.create([{
+  const [ticket] = await SurvivorPoolTicket.create([{
     entryName,
     selectedTeams: [],
     selections: [],
@@ -33,6 +33,7 @@ export async function createBlankTicket ({ entryName, mongooseSession, survivorP
     survivorPoolID,
     userID
   }], { session: mongooseSession })
+  return ticket
 }
 
 export async function addSelectionToTicket ({ createdSelectionID, mongooseSession, ticketID, participantID }) {

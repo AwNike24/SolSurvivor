@@ -4,13 +4,13 @@ import UserMiddleware from '../../../middlewares/user'
 
 const router = new Router()
 
-router.use(UserMiddleware.auth())
+router.use(UserMiddleware.publicKeyAuth())
 router
   .post('/getSurvivorPool', SurvivorPoolController.getSurvivorPool)
   .post('/getGamesByWeek', SurvivorPoolController.getGamesByWeek)
-  .post('/createBlankEntry', SurvivorPoolController.createBlankEntry)
   .post('/createSelection', SurvivorPoolController.createSelection)
   .post('/editSelection', SurvivorPoolController.editSelection)
   .post('/removeSelection', SurvivorPoolController.removeSelection)
+  .post('/demoAdvanceWeek', SurvivorPoolController.demoAdvanceWeek)
 
 export default router

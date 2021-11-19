@@ -1,22 +1,10 @@
 <template>
-  <div class="col-auto order-lg-2 order-1">
-    <div class="d-flex align-items-center">
-      <button
-        class="sign-up-button font-weight-bold"
-        v-if="connected"
-        @click="disconnect"
-      >
-        DISCONNECT WALLET
-      </button>
-      <button
-        class="sign-up-button font-weight-bold"
-        v-else
-        @click="connectToPhantom"
-      >
-        CONNECT WALLET
-      </button>
-    </div>
-  </div>
+  <button class="mt-0 mb-3 connect-wallet" v-if="connected" @click="disconnect">
+    DISCONNECT WALLET
+  </button>
+  <button class="mt-0 mb-3 connect-wallet" v-else @click="connectToPhantom">
+    CONNECT WALLET
+  </button>
 </template>
 
 <script>
@@ -24,7 +12,7 @@
 // @ is an alias to /src
 // import HelloWorld from "@/components/HelloWorld.vue";
 // import { ref } from 'vue';
-import { mapMutations } from "vuex";
+import { mapActions, mapMutations, mapState } from "vuex";
 import { getPhantomWallet } from '@solana/wallet-adapter-wallets';
 import { Connection, clusterApiUrl } from '@solana/web3.js';
 import { initWallet, useWallet } from '../../useWallet';
@@ -46,6 +34,8 @@ export default {
       publicKey,
     } = useWallet();
 
+    let account;
+
     const connectToPhantom = async () => {
       await select('Phantom');
       await connect();
@@ -55,16 +45,14 @@ export default {
         'confirmed'
       );
 
-      let account = await connection.getAccountInfo(
+      account = await connection.getAccountInfo(
         publicKey.value,
         'confirmed'
       );
-
-      console.log('account', account);
-      console.log('connection', connection);
     };
 
     return {
+      account,
       walletProvider,
       wallet,
       disconnect,
@@ -74,13 +62,20 @@ export default {
       publicKey,
     };
   },
+  computed: {
+    ...mapState({
+      storedPublicKey: (state) => state.publicKey,
+    }),
+  },
   watch: {
     connected () {
       if (this.connected) {
         this.setPublicKey(this.publicKey.toString());
-        this.$router.push('/survivor-pool/my-entries');
+        this.findOrCreate().then(() => {
+          this.$router.push('/survivor-pool/my-entries');
+        })
       } else {
-        this.$router.push('/');
+        this.setNullPubKeyAndRedirect();
       }
     },
   },
@@ -88,6 +83,13 @@ export default {
     ...mapMutations([
       'setPublicKey'
     ]),
+    ...mapActions([
+      'findOrCreate',
+    ]),
+    setNullPubKeyAndRedirect () {
+      this.setPublicKey(null);
+      this.$router.push('/');
+    }
   }
 };
 </script>
@@ -95,15 +97,10 @@ export default {
 <style scoped lang="sass">
 @import "../../assets/styles/variables"
 
-.sign-up-button
-  background: white
-  transition: color ease .2s
-  color: $color-primary
-  border: 3px solid #969ccb
-
-  &:hover, &.router-link-active
-    text-decoration: none
-
-    transform: scale(1.025)
-    transition: transform 0.3s
+button.connect-wallet
+  border-radius: 35px
+  padding: 10px
+  background-color: #FF443C!important
+  font-size: 12px
+  width: 100%
 </style>

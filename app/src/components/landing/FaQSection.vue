@@ -58,31 +58,41 @@ export default {
         },
         {
           title: "What will I get from minting",
-          response: `To start, everyone will get a ticket with a unique number. Depending on what team you select in week 1 of the contest (week 9 of NFL)
-          you will get an upgraded NFT if you win. Each week you survive, you will be able to upgrade your old NFT for a new one with another feature.
-          The less common your team is picked, the more rare the trait will be.`,
+          response: `Everyone who mints a SolSurvivor will get a ticket with a unique number.
+          If you survive, you will get a new NFT depending on what team you select in week 1 of the contest.
+          Each week you survive, you will be able to upgrade your old NFT for a new one with another feature.
+          The less common your pick is, the more rare the trait will be if it wins.`,
           open: false,
         },
         {
-          title:
-            "How can I know what trait I will get if I pick a team to win?",
+          title: "What is the Trait Schedule?",
           response:
-            "The traits will change every week, if the eagles are selected week 9 and someone else selects the eagles week 10, you will receive totally different traits." +
-            "a HINT: the rarity of the team you select week 1 will be important in determining the evolution of your SolSurvivor.",
+            "Week 1: Goat, Week 2: Background, Week 3: Horns, Week 4: Shirt, Week 5: Eyes, Week 6: Mouth, Week 7: Head, Week 8: Necklace, Week 9: Pixelated.",
           open: false,
         },
+        //  {
+        //    title: 'How can I know what trait I will get?',
+        //    response: 'The traits will change every week. For example, if the eagles are selected by someone in week 9 and someone else selects the eagles week 10, they will receive different traits.'
+        //      + 'a HINT: the rarity of the team you select in the first week will be important in determining the evolution of your SolSurvivor.',
+        //    open: false,
+        //  },
+        //  {
+        //    title: 'Can I get multiple of the same trait?',
+        //    response: 'No, every week all entries will get the same TYPE of trait. For example,'
+        //      + 'the first week will give you a type of goat. Week 2 will get you a background.',
+        //    open: false,
+        //  },
         {
           title: "When is the Mint, how much does it cost?",
           response:
-            "November 1st 3PM CST, Mint Costs 4 SOL and there will be upto 1111 SolSurvivors available",
+            "Our Mint Date is tentatively planned for November 10th, Mint Costs is TBD and there will be upto 1111 SolSurvivors available",
           open: false,
         },
         {
           title: "What Happens After The Survivor Pool?",
           response:
-            "We will continue to run new survivor pools for the NFL PLayoffs and then other sports." +
-            "Your ticket from the old pools will serve as a pre-mint pass for future pools and will also get you voting" +
-            "rights when we launch our DAO before the end of this NFL Season.",
+            "We will continue to run survivor pools! Your ticket from the genesis will serve as a pre-mint pass for future pools, " +
+            "and it will also get you voting rights when we launch our DAO before the end of this NFL Season.",
           open: false,
         },
       ],
@@ -130,8 +140,7 @@ export default {
 };
 </script>
 <style lang="sass" scoped>
-@import "~bootstrap/scss/functions"
-@import "~bootstrap/scss/variables"
+@import "@/assets/styles/variables"
 
 #faquestions
   background-image: url('/images/cuadricula-purple.png')
@@ -147,13 +156,13 @@ h5
 .text-faq
   font-size: 30px
   text-align: left
-  font-family: 'poppins-medium' !important
+  font-family: $font-poppins-medium !important
   letter-spacing: 0px
   color: #0A0A0A
 .sign
   font-size: 30px !important
   text-align: left
-  font-family: 'poppins-medium' !important
+  font-family: $font-poppins-medium !important
   letter-spacing: 0px
   color: #7784D5
 img.fq-left
@@ -213,7 +222,7 @@ button
   color: #000
   font-weight: bold
   font-size: 14px
-  font-family: 'poppins-medium' !important
+  font-family: $font-poppins-medium !important
   letter-spacing: 0px
   opacity: 1
   white-space: nowrap
@@ -244,7 +253,7 @@ button
   padding-top: 18px
   color: #343b86
   font-weight: lighter
-  font-family: 'poppins-medium' !important
+  font-family: $font-poppins-medium !important
   @media screen and (max-width: map_get($grid-breakpoints, lg))
     width: 100%
   @media screen and (max-width: map_get($grid-breakpoints, md))

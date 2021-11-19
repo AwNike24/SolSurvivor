@@ -10,7 +10,8 @@ import mongoMiddleware from './src/middlewares/mongo'
 import routes from './src/routes'
 
 const corsWhitelist = [
-  config.get('cors_origin_sol_survivor_app')
+  config.get('cors_origin_sol_survivor_app'),
+  config.get('cors_origin_sol_survivor_app_www')
 ]
 
 const checkOriginAgainstWhitelist = (ctx) => {

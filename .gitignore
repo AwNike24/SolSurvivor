@@ -4,6 +4,7 @@ app/node_modules
 api/node_modules
 app/dist
 api/dist
+api/logs
 
 
 # local env files
@@ -12,6 +13,8 @@ api/dist
 
 # api env files
 api/.env.*
+
+app/.env.production
 
 # Log files
 npm-debug.log*

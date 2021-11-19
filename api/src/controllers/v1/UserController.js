@@ -1,39 +1,18 @@
 import CreateUser from '../../services/user/createUser'
-import LogIn from '../../services/user/logIn'
-import GetMe from '../../services/user/getMe'
+import { getUserByPublicKey } from '../../db/models/user'
 
 export default class UserController {
-  static async createUser (ctx) {
-    const serviceResult = await CreateUser.execute(ctx.request)
-    const { user, token } = serviceResult.result
-    ctx.cookies.set('auth', token, { signed: true })
+  static async findOrCreateUser (ctx) {
+    const { publicKey } = ctx.request.body
+    let user = await getUserByPublicKey(publicKey)
+    if (!user) {
+      const serviceResult = await CreateUser.execute(ctx.request)
+      user = serviceResult.result.user
+    }
     ctx.body = {
       data: {
-        user
+        user,
       }
-    }
-  }
-
-  static async logIn (ctx) {
-    const serviceResult = await LogIn.execute(ctx.request)
-    const { user, token } = serviceResult.result
-
-    ctx.cookies.set('auth', token, { signed: true })
-
-    ctx.body = {
-      data: { user }
-    }
-  }
-
-  static async getMe (ctx) {
-    const { user, token } = ctx.state
-
-    const parsedUser = await GetMe.run({ user, token })
-
-    ctx.cookies.set('auth', token, { signed: true })
-
-    ctx.body = {
-      data: { user: parsedUser }
     }
   }
 }

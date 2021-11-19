@@ -3,11 +3,13 @@
     <div class="container py-5 margin text-center">
       <h1>Rarity</h1>
       <h3 class="my-4">
-        Unlike other NFTS, the rarity of your
+        Unlike other NFTs, the rarity of your
         <span style="color: #a7c6ff; font-weight: 600"> SolSurvivor </span> NFT
         depends only on your skill predicting the NFL. Pick teams that others
-        don't to get rare traits. Everyone starts with the same NFT, the rest is
-        up to you.
+        don't to get more rare traits. Everyone starts with the same NFT, the
+        rest is up to you.<br />
+        <b> Trait schedule by week: </b>
+        Goat, Background, Horns, Shirt, Eyes, Mouth, Head, Necklace, Pixelated
       </h3>
       <div class="row justify-content-center">
         <div
@@ -57,11 +59,10 @@ export default {
     return {
       cards: [
         {
-          // eslint-disable-next-line global-require
           img: require("../../../public/images/logo_card1.jpg"),
           contents: [
             {
-              title: "Hat: Jester",
+              title: "Head: Jester Hat",
               class: ["card-title"],
               badged: {
                 status: 0,
@@ -73,21 +74,20 @@ export default {
               class: ["card-subtitle"],
               badged: {
                 status: 0,
-                content: "Bengals Week 17: 0.25% Owned",
+                content: "Jaguars Week 17: 0.25% Owned",
               },
             },
           ],
         },
         {
-          // eslint-disable-next-line global-require
           img: require("../../../public/images/logo_card2.jpg"),
           contents: [
             {
-              title: "Forehead: 3rd Eye",
+              title: "Head: 3rd Eye",
               class: ["card-title"],
               badged: {
                 status: 1,
-                content: "Jaguars Week 11: .20% owned",
+                content: "Colts Week 16: 1% owned",
               },
             },
             {
@@ -101,23 +101,22 @@ export default {
           ],
         },
         {
-          // eslint-disable-next-line global-require
-          img: require("../../../public/images/logo3.jpg"),
+          img: require("../../../public/images/logo_card3.jpg"),
           contents: [
             {
-              title: "Background: Emerald",
+              title: "Head: Purple Headband",
               class: ["card-title"],
               badged: {
                 status: 0,
-                content: "Browns Week 10: 1% owned",
+                content: "Rams Week 16: 10% owned",
               },
             },
             {
-              title: "Horns: High Horns",
+              title: "Background: Coins",
               class: ["card-subtitle"],
               badged: {
                 status: 0,
-                content: "Rams Week 11: 22% owned",
+                content: "Packers Week 11: 10% owned",
               },
             },
           ],
@@ -139,19 +138,20 @@ export default {
 };
 </script>
 <style lang="sass" scoped>
-@import "~bootstrap/scss/functions"
-@import "~bootstrap/scss/variables"
+@import "@/assets/styles/variables"
+
 h1
-  font-family: 'poppins-bold'
+  font-family: $font-poppins-bold
   font-weight: bolder
   font-size: 2rem
   color: #A7C6FF
 
 h3
-  font-family: 'poppins-regular'
+  font-family: $font-poppins
   font-size: 14px
-  font-weight : 400
+  font-weight: 400
   color: white
+  line-height: 1.5
   @media screen and (max-width: map_get($grid-breakpoints, lg))
     padding-left: 0
     padding-right: 0
@@ -235,12 +235,12 @@ button
 .card-body
   padding:(10px)
 .card-title
-  font-family: 'poppins-bold'
-  font-size: 0.9rem;
+  font-family: $font-poppins-bold
+  font-size: 0.9rem
   color: #0A0A0A
 .card-subtitle
-  font-family: 'poppins-regular'
-  font-size: 0.9rem;
+  font-family: $font-poppins
+  font-size: 0.9rem
   color: #0A0A0A
 .imagen-card
   border-top-right-radius:(20px)
@@ -257,7 +257,7 @@ button
     white-space: nowrap
     vertical-align: baseline
     border-radius: .25rem
-    font-family: 'poppins-regular'
+    font-family: $font-poppins
     padding: .8rem .75rem
 .badge-middle
   background-color: #757DCE
