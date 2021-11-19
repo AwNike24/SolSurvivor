@@ -1,5 +1,5 @@
 runtime: nodejs14
-service: api
+service: sol-survivor-api
 
 automatic_scaling:
   min_instances: 1
